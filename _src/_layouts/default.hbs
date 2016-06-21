@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if gt IE 9]><!--> <html class="no-js ffly" lang="en"> <!--<![endif]-->
+<head>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="{{$$.site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+
+    <!-- ICONS -->
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/ico">
+
+    <!-- CSS Includes (PRODUCTION) -->
+    <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700">-->
+    <link rel="stylesheet" href="/css/core.min.css"/>
+
+</head>
+
+<body>
+{{inc src="public/img/icons/icons.svg"}}
+<header>Header</header>
+{{content}}
+{{inc src="icon.hbs" icon="twitter"}}
+<footer>Footer</footer>
+</body>

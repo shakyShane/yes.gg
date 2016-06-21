@@ -1,0 +1,69 @@
+watch:
+  default:
+    before:
+      - serve
+      - bs --init
+    _src:
+      - templates
+      - bs --reload
+    scss:
+      - crossbow-sass --production
+      - bs --reload core.min.css
+
+tasks:
+
+  serve:
+    - docker
+
+  docker:
+    - '@sh docker-compose -f docker-compose-dev.yaml up -d'
+    - '@sh docker ps'
+
+  build-all@p:
+    description: Create Production Assets
+    tasks:
+      - templates
+      - crossbow-sass --production
+      - icons
+
+  templates:
+    description: Compile HTML Templates
+    tasks:
+      - crossbow
+
+  deploy:
+    - rsync
+
+  rsync:
+    description: Copy files from local to remote server
+    tasks:
+      - >
+        @sh rsync -ra
+        public public-html docker-compose.yaml nginx.conf
+        $AUTH:~/yes.gg --delete
+
+env:
+  AUTH: root@178.62.100.243
+
+options:
+  crossbow:
+    config:
+      base: '_src'
+      prettyUrls: true
+      defaultLayout: 'default.hbs'
+    input:
+      - _src/*.hbs
+    output: 'public-html'
+    data:
+      $$: "all:data"
+
+  bs:
+    proxy: 0.0.0.0:8080
+
+  crossbow-sass:
+    input: scss/core.scss
+    output: public/css
+
+  icons:
+    input: public/img/svg/**
+    output: public/img/icons

@@ -1,0 +1,17 @@
+- label: Home
+  url: /
+
+- label: Services
+  url: /services
+  items:
+    - label: View All
+      url: /services
+
+- label: About Us
+  url: /about
+
+- label: Contact Us
+  url: /contact
+
+- label: Testimonials
+  url: /testimonials

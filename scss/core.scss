@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "vars";
+
+@import "../node_modules/normalize.css/normalize.css";
+
+svg {
+
+    display: inline-block;
+    fill: currentColor !important;
+    vertical-align: middle;
+    line-height: 1em;
+
+    &.svg-icon {
+        height: 1em;
+        width: 1em;
+    }
+}
+
+body {
+    color: black;
+}
+
