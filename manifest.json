@@ -1,0 +1,36 @@
+{
+  "public-html": {
+    "path": "public-html",
+    "hash": "ef76041a82515e202d531f51fe18c28019b0cdc5cfe9335a9d66900b203a655d",
+    "tree": [
+      {
+        "path": "index.html",
+        "hash": "ecd5830346cf558771d4fc365971fe4c66b8a87ea7c77d752d47cadc6bfdefe5"
+      }
+    ],
+    "date": "June 21st 2016, 9:30:33 pm"
+  },
+  "public/css": {
+    "path": "public/css",
+    "hash": "852069bc332dfd459a10223b812b7be2c1f5ace09e2d4d5efe9908a989654431",
+    "tree": [
+      {
+        "path": "core.css",
+        "hash": "8eb5bfaa29aaa20a07bd91d78c5be195f6b205b676992e74a8fa9932d9da7870"
+      },
+      {
+        "path": "core.css.map",
+        "hash": "f6d076f25e521ac33f3de657fd6a49b5f9c72cc8641369e6ae8f3d0536ccd1c7"
+      },
+      {
+        "path": "core.min.css",
+        "hash": "796165703795298b753f3aa8ab47ebc7437edccb6b67bf36d677ddb2a971e32c"
+      },
+      {
+        "path": "core.min.css.map",
+        "hash": "79e69343cdf9aea7c65e87c54cfe3666d653e815588b158d463ff5d69cdc0414"
+      }
+    ],
+    "date": "June 21st 2016, 9:30:33 pm"
+  }
+}

@@ -18,6 +18,11 @@ tasks:
       - templates
       - crossbow-sass --production
       - icons
+      - _merkle
+
+  _merkle:
+    - merkle --dir public-html
+    - merkle --dir public/css
 
   docker:
     description: Run docker-compose with **dev** config files
