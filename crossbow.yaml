@@ -12,6 +12,13 @@ watch:
 
 tasks:
 
+  build-all@p:
+    description: Create Production Assets
+    tasks:
+      - templates
+      - crossbow-sass --production
+      - icons
+
   serve:
     - docker
 
@@ -19,12 +26,6 @@ tasks:
     - '@sh docker-compose -f docker-compose-dev.yaml up -d'
     - '@sh docker ps'
 
-  build-all@p:
-    description: Create Production Assets
-    tasks:
-      - templates
-      - crossbow-sass --production
-      - icons
 
   templates:
     description: Compile HTML Templates
@@ -42,8 +43,13 @@ tasks:
         public public-html docker-compose.yaml nginx.conf
         $AUTH:~/yes.gg --delete
 
+  open:
+    - '@sh open http://$DO_IP'
+
 env:
   AUTH: root@178.62.100.243
+  DO_IP: 178.62.100.243
+  DO_USER: root
 
 options:
   crossbow:
