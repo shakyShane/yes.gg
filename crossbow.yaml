@@ -1,7 +1,7 @@
 watch:
   default:
     before:
-      - serve
+      - docker
       - bs --init
     _src:
       - templates
@@ -19,21 +19,22 @@ tasks:
       - crossbow-sass --production
       - icons
 
-  serve:
-    - docker
-
   docker:
-    - '@sh docker-compose -f docker-compose-dev.yaml up -d'
-    - '@sh docker ps'
-
+    description: Run docker-compose with **dev** config files
+    tasks:
+      - '@sh docker-compose -f docker-compose-dev.yaml up -d'
+      - '@sh docker ps'
 
   templates:
-    description: Compile HTML Templates
+    description: Compile HTML Templates from `_src` directory
     tasks:
       - crossbow
 
   deploy:
-    - rsync
+    description: Build-all assets & rsync to server
+    tasks:
+      - build-all
+      - rsync
 
   rsync:
     description: Copy files from local to remote server
@@ -44,7 +45,8 @@ tasks:
         $AUTH:~/yes.gg --delete
 
   open:
-    - '@sh open http://$DO_IP'
+    description: Open the live site for previewing
+    input: '@sh open http://$DO_IP'
 
 env:
   AUTH: root@178.62.100.243

@@ -10,10 +10,9 @@ $ crossbow run <taskname>
 |Task name|Description|
 |---|---|
 |<pre>`build-all`</pre>|Create Production Assets|
-|<pre>`serve`</pre>|**Alias for:**<br>- `docker`|
-|<pre>`docker`</pre>|**Alias for:**<br>- `@sh docker-compose -f docker-compose-dev.yaml up -d`<br>- `@sh docker ps`|
-|<pre>`templates`</pre>|Compile HTML Templates|
-|<pre>`deploy`</pre>|**Alias for:**<br>- `rsync`|
+|<pre>`docker`</pre>|Run docker-compose with **dev** config files|
+|<pre>`templates`</pre>|Compile HTML Templates from `_src` directory|
+|<pre>`deploy`</pre>|Build-all assets & rsync to server|
 |<pre>`rsync`</pre>|Copy files from local to remote server|
 |<pre>`open`</pre>|**Alias for:**<br>- `@sh open http://$DO_IP`|
 <!--crossbow-docs-end-->
