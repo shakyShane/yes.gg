@@ -16,6 +16,11 @@ function runBs(opts, ctx, done) {
     ctx.tracker$
         .filter(x => x.type === 'end' && x.item.task.baseTaskName === 'crossbow-sass')
         .do(x => bs.sockets.emit('fullscreen:message:clear'))
+        .do(x => {
+            bs.sockets.emit('replace-plugin:replace', {
+                locator: /core\.min\.(.+?)\.css/.source
+            })
+        })
         .subscribe();
 
     ctx.tracker$
@@ -44,7 +49,17 @@ function runBs(opts, ctx, done) {
     bs.init({
         logFileChanges: false,
         proxy: opts.proxy,
-        plugins: ['bs-fullscreen-message', 'bs-console-info', 'bs-latency']
+        open: false,
+        plugins: ['bs-fullscreen-message', 'bs-console-info', 'bs-latency', {
+            module: {
+                plugin: function () {
+                	console.log('Runnnign');
+                },
+                hooks: {
+                    "client:js": require('fs').readFileSync('tasks/replace-plugin.js', 'utf8')
+                }
+            }
+        }]
     }, function (err, bs) {
         if (err) {
             return done(err);

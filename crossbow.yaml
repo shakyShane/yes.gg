@@ -8,7 +8,6 @@ watch:
       - bs --reload
     scss:
       - crossbow-sass --production
-      - bs --reload core.min.css
 
 tasks:
 
