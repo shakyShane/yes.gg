@@ -18,7 +18,7 @@ function runBs(opts, ctx, done) {
         .do(x => bs.sockets.emit('fullscreen:message:clear'))
         .do(x => {
             bs.sockets.emit('replace-plugin:replace', {
-                locator: /core\.min\.(.+?)\.css/.source
+                regex: /core\.min\.(.+?)\.css/.source
             })
         })
         .subscribe();
@@ -53,7 +53,7 @@ function runBs(opts, ctx, done) {
         plugins: ['bs-fullscreen-message', 'bs-console-info', 'bs-latency', {
             module: {
                 plugin: function () {
-                	console.log('Runnnign');
+                	console.log('Runnning');
                 },
                 hooks: {
                     "client:js": require('fs').readFileSync('tasks/replace-plugin.js', 'utf8')
