@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-@import "vars";
-
 @import "../node_modules/normalize.css/normalize.css";
+@import "vars";
+@import "mixins";
+@import "theme/global";
+@import "theme/fonts";
+@import "theme/header";
+@import "theme/footer";
 
 svg {
 
@@ -15,9 +19,5 @@ svg {
         height: 1em;
         width: 1em;
     }
-}
-
-body {
-    color: red;
 }
 

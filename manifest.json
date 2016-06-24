@@ -1,18 +1,18 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "ef76041a82515e202d531f51fe18c28019b0cdc5cfe9335a9d66900b203a655d",
+    "hash": "fd05e78ce547a5a75242fae84a5a5eb8356a211e9ce550317fb09c0b6349cc1e",
     "tree": [
       {
         "path": "index.html",
-        "hash": "ecd5830346cf558771d4fc365971fe4c66b8a87ea7c77d752d47cadc6bfdefe5"
+        "hash": "b38b7c20d1010be773919b803dcbdf835a10a1308b6038195511a79815535978"
       }
     ],
-    "date": "June 21st 2016, 9:30:33 pm"
+    "date": "June 24th 2016, 9:10:22 pm"
   },
   "public/css": {
     "path": "public/css",
-    "hash": "852069bc332dfd459a10223b812b7be2c1f5ace09e2d4d5efe9908a989654431",
+    "hash": "1286c56f4d224f46e38f11789671a070747c66947106b0f6825320e8fdea7ae2",
     "tree": [
       {
         "path": "core.css",
@@ -24,13 +24,13 @@
       },
       {
         "path": "core.min.css",
-        "hash": "796165703795298b753f3aa8ab47ebc7437edccb6b67bf36d677ddb2a971e32c"
+        "hash": "e890e85db57023fdd3c0de1d11559b30fee94cb4f8b60b077a0e1a2aab356430"
       },
       {
         "path": "core.min.css.map",
-        "hash": "79e69343cdf9aea7c65e87c54cfe3666d653e815588b158d463ff5d69cdc0414"
+        "hash": "beb6db92f96ba56c08f90424991bdb03eab61e64f8c5056ea20fe38a2d4c515d"
       }
     ],
-    "date": "June 21st 2016, 9:30:33 pm"
+    "date": "June 24th 2016, 9:10:22 pm"
   }
 }
