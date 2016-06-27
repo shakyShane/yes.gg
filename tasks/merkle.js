@@ -17,9 +17,9 @@ module.exports = function (opts, ctx, done) {
             existing[opts.dir].tree = tree.tree;
             existing[opts.dir].date = moment().format('MMMM Do YYYY, h:mm:ss a');
             write(existing);
-            console.log(`merkle: Writing ${opts.dir} in manifest.json`);
+            console.log(`merkle: ${opts.dir} Writing in manifest.json`);
         } else {
-            console.log('merkle: No changes detected');
+            console.log(`merkle: ${opts.dir} No changes detected`);
         }
         done();
     });

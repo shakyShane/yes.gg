@@ -1,6 +1,7 @@
 watch:
   default:
     before:
+      - '@bg webpack --config webpack-prod.config.js -w'
       - docker
       - bs --init
     _src:
@@ -11,8 +12,15 @@ watch:
     public/img/*:
       - templates
       - bs --reload
+    public/js:
+      - bs --reload
 
 tasks:
+
+  js: '@npm watchify -v ts/app.ts -p tsify --debug -o public/js/index.js'
+
+  webpack:
+    - '@npm webpack --config webpack-prod.config.js'
 
   build-all@p:
     description: Create Production Assets
@@ -25,6 +33,7 @@ tasks:
   _merkle:
     - merkle --dir public-html
     - merkle --dir public/css
+    - merkle --dir public/js
 
   docker:
     description: Run docker-compose with **dev** config files
@@ -43,13 +52,14 @@ tasks:
       - build-all
       - rsync
       - docker-remote
+      - open
 
   rsync:
     description: Copy files from local to remote server
     tasks:
       - >
         @sh rsync -ra
-        public public-html docker-compose.yaml nginx.conf
+        public public-html docker-compose.yaml nginx.conf manifest.json
         $AUTH:~/yes.gg --delete
 
   docker-remote: >

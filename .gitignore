@@ -3,3 +3,4 @@ node_modules
 /public-html
 /public/css/core.min.css
 /public/css/core.min.css.map
+/public/js/
