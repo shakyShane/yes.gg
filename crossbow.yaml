@@ -42,6 +42,7 @@ tasks:
     tasks:
       - build-all
       - rsync
+      - docker-remote
 
   rsync:
     description: Copy files from local to remote server
@@ -50,6 +51,9 @@ tasks:
         @sh rsync -ra
         public public-html docker-compose.yaml nginx.conf
         $AUTH:~/yes.gg --delete
+
+  docker-remote: >
+    @sh ssh $AUTH 'cd yes.gg && docker-compose restart'
 
   open:
     description: Open the live site for previewing

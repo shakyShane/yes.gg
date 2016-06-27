@@ -1,28 +1,28 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "34b150c69b2ff1ff3b8e9c60d34c2271770098929e6adbfcfbd51549adf3865a",
+    "hash": "a8c17ec40fd980d799c5c443cc51bb27dffde39c1d2d80fa278335d4ce0283ce",
     "tree": [
       {
         "path": "index.html",
-        "hash": "778970e2efa865c3aa8dc3f2154d9a9e1c415402cba351a6abc06c30fb6d3a5e"
+        "hash": "734008413652e792ea8ea4838ebb730e1c0c3f5ef523d7492b26e06ea7661eeb"
       },
       {
         "path": "markup",
-        "hash": "39da2f5b4984687577d1239322b7254d5a742ed39454f7c83b100dcf94f1ffed",
+        "hash": "411b3518696faec690f744fdc179796a5e5789ed1efabcb8a0b8ef2aa09aee0d",
         "tree": [
           {
             "path": "markup/index.html",
-            "hash": "249d01274aa822f81d67b9f3509b39bd0b7716126a5c3533a2a6d1dc367f81cb"
+            "hash": "3e3dfb9a81d401443f0af8a8a8e910c54d33c404917c4389602e3f7b45c3dfd3"
           }
         ]
       }
     ],
-    "date": "June 27th 2016, 4:30:23 pm"
+    "date": "June 27th 2016, 6:21:24 pm"
   },
   "public/css": {
     "path": "public/css",
-    "hash": "08306776ee540f3de1463a5062e36e336e7bcc26e408f26c37cd5f5620b17bbb",
+    "hash": "3f04cbd8abe8689da8318da8bf311c7f8c090c49f3aff15f8f79935136b028a0",
     "tree": [
       {
         "path": "core.css",
@@ -34,13 +34,13 @@
       },
       {
         "path": "core.min.css",
-        "hash": "10b662560b7b551800d201d48d4fc866ab4029ae52cf99ec6310d16621b18982"
+        "hash": "42fcfeb8c408a5a1ba592761d7140ca466b0550ca106fd58ca700e33331bd32f"
       },
       {
         "path": "core.min.css.map",
-        "hash": "5a87ccd61f86fd243cb7c6add287e9525219788e9dd6c557d2aec5435af21c43"
+        "hash": "d856cd92212cd11f1603d3cde9f31550189415822a22cde646426f639e2449ce"
       }
     ],
-    "date": "June 27th 2016, 4:30:23 pm"
+    "date": "June 27th 2016, 6:21:24 pm"
   }
 }
