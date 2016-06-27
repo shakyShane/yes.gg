@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
+  "scripts": {
+    "watch": "crossbow watch"
+  },
   "devDependencies": {
     "ansispan": "0.0.4",
     "browser-sync": "2.13.0",

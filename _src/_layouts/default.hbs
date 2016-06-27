@@ -1,10 +1,54 @@
 ---
 layout: 'base.hbs'
 ---
-<header class="wrapper site-header">
-    <div class="container">
-        <p>Some Header content</p>
+<header class="site-header">
+    <div class="wrapper header-wrapper">
+        <div class="container">
+
+            <div class="controls">
+                <a href="/" class="logo">
+                    {{inc src="public/img/logo.svg"}}
+                </a>
+                <div class="controls__skip-links">
+                    <a href="#" class-toggle="site-contact--open" class="skip skip--contact">
+                        Contact {{inc src="icon.hbs" icon="menu"}}
+                    </a>
+                    <a href="#" class-toggle="site-nav--open" class="skip skip--site-nav">
+                        Menu {{inc src="icon.hbs" icon="menu"}}
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <!-- Site Navigation -->
+    <nav class="wrapper site-nav">
+        <div class="container">
+
+            <ul class="site-nav__items">
+                <li class="site-nav__item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="site-nav__item site-nav__item--with-children">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Site Contact Info -->
+    <section class="wrapper site-contact">
+
+        <ul>
+            <li>Contact Link 1</li>
+            <li>Contact Link 2</li>
+        </ul>
+
+    </section>
+
+
 </header>
 
 {{content}}

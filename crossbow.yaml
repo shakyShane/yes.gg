@@ -8,6 +8,9 @@ watch:
       - bs --reload
     scss:
       - crossbow-sass --production
+    public/img/*:
+      - templates
+      - bs --reload
 
 tasks:
 

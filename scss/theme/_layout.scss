@@ -1,6 +1,15 @@
 .wrapper {
-    padding: 0 $half-spacing;
+    padding: $base-spacing 0;
     @include media-query(min, $lap-start) {
-        padding: 0 $base-spacing;
+        padding: $base-spacing*2 0;
+    }
+}
+
+.container {
+    padding-left: $half-spacing;
+    padding-right: $half-spacing;
+    @include media-query(min, $lap-start) {
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
     }
 }
