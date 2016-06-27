@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 @import "../node_modules/normalize.css/normalize.css";
+@import "theme/reset";
 @import "vars";
 @import "mixins";
 @import "theme/global";
+@import "theme/layout";
 @import "theme/fonts";
 @import "theme/header";
 @import "theme/footer";

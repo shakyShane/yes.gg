@@ -1,0 +1,96 @@
+@mixin caret($color: white) {
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    top: 6px;
+    border-top: 4px solid $color;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    filter: alpha(opacity=100);
+}
+// Prevent text selection (for buttons, toggles, etc) https://developer.mozilla.org/en-US/docs/Web/CSS/user-select
+@mixin unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin placeholder ($color: $onyx) {
+    &::-webkit-input-placeholder {
+        color: $onyx;
+        //font-weight: bold;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $onyx;
+        //font-weight: bold;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: $onyx;
+        //font-weight: bold;
+    }
+
+    &:-ms-input-placeholder {
+        color: $onyx;
+        //font-weight: bold;
+    }
+}
+
+// Output hover rules
+@mixin hover {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+
+// Output media query block
+@mixin media-query($type, $breakpoint: $lap-start) {
+    @if $type == "min" {
+        @media only screen and (min-width: $breakpoint) { @content }
+    }
+    @else if $type == "max" {
+        @media only screen and (max-width: $breakpoint - 1px) { @content }
+    }
+    @else if $type == "palm" {
+        @media only screen and (max-width: $lap-start - 1px) { @content }
+    }
+    @else if $type == "lap" {
+        @media only screen and (min-width: $lap-start) and (max-width: $desk-start - 1px) { @content }
+    }
+    @else if $type == "desk" {
+        @media only screen and (min-width: $desk-start) { @content }
+    }
+    @else if $type == "wide" {
+        @media only screen and (min-width: $wide-start) { @content }
+    }
+    @else if $type == "retina" {
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) { @content }
+    }
+}

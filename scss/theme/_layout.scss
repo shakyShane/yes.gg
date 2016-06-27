@@ -1,0 +1,6 @@
+.wrapper {
+    padding: 0 $half-spacing;
+    @include media-query(min, $lap-start) {
+        padding: 0 $base-spacing;
+    }
+}
