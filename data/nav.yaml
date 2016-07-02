@@ -1,17 +1,48 @@
-- label: Home
-  url: /
+- label: About
+  url: /about
 
 - label: Services
   url: /services
   items:
-    - label: View All
-      url: /services
+    - label: "Photo Booths"
+      icon: "booths"
+      url: "/services/photo-booths"
+      items:
+        - label: The Pod
+          icon: booths
+          url: /services/photo-booths/the-pod
+          type: 'highlight'
+        - label: The Cab
+          icon: booths
+          url: /services/photo-booths/the-cab
+          type: 'highlight'
+        - label: The mini Pod
+          icon: booths
+          url: /services/photo-booths/mini-pod
+          type: 'highlight'
+    - label: "Event Photography"
+      icon: "photography"
+      url: "/services/event-photography"
+    - label: "The Wall"
+      icon: "wall"
+      url: "/services/the-wall"
+    - label: "Magic Mirror"
+      icon: "mirror"
+      url: "/services/magic-mirror"
+    - label: "Compact Camera Hire"
+      icon: "camera"
+      url: "/services/camera-hire"
 
 - label: About Us
   url: /about
 
 - label: Contact Us
   url: /contact
-
-- label: Testimonials
-  url: /testimonials
+  items:
+    - label: <strong>Phone</strong> (01623 863132)
+      url: 'call:01623 863132'
+    - label: <strong>Email</strong> hello@yes.gg
+      url: 'mailto:hello@yes.gg'
+- label: Book
+  url: /contact#book
+  type: "cta"

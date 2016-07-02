@@ -2,7 +2,7 @@ require('zepto/zepto.min.js');
 const $ = window['Zepto'];
 
 export default function () {
-    $('a.button').on('click', function (e) {
+    $('[ui-please-wait]').on('click', function (e) {
         e.preventDefault();
         const $this = $(this);
         $this.addClass('link--disabled');

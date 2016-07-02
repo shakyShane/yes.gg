@@ -32,8 +32,20 @@ export default function () {
      */
     $triggers.on('click', function (evt) {
 
-        evt.preventDefault();
         var $elem = $(this);
+        var skip = false;
+
+        $targets.each(function () {
+            if (this.contains(evt.target) && !skip) {
+                skip = true;
+            }
+        });
+
+        if (skip) {
+            return;
+        }
+        
+        evt.preventDefault();
 
         /**
          * If Hover is not supported, always toggle

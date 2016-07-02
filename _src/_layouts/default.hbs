@@ -29,15 +29,12 @@ layout: 'base.hbs'
         <div class="container">
 
             <ul class="site-nav__items">
-                <li class="site-nav__item">
-                    <a href="/about" class="nav-link not-palm">About</a>
-                </li>
                 <li class="site-nav__item site-nav__item--with-children">
                     <a href="/services" class="nav-link not-palm">Services</a>
                     <div class="subnav">
                         <div class="subnav__content">
                             <ul class="subnav__items">
-                                <li class="subnav__item"><a href="/" class="subnav__link subnav__link--before">Photobooths</a></li>
+                                <li class="subnav__item"><a href="/services/photo-booths" class="subnav__link subnav__link--before">Photobooths</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight">Photo Booths 'The Pod'</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight">Photo Booths 'Mini Pod'</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight subnav__link--highlight--last">Photo Booths 'The Cab'</a></li>
@@ -51,7 +48,7 @@ layout: 'base.hbs'
                     </div>
                 </li>
                 <li class="site-nav__item site-nav__item--with-children not-palm">
-                    <a href="/contact-us" class="nav-link">Contact Us</a>
+                    <a href="/contact" class="nav-link">Contact Us</a>
                     <div class="subnav">
                         <div class="subnav__content">
                             <ul class="subnav__items">
@@ -69,8 +66,8 @@ layout: 'base.hbs'
                         </div>
                     </div>
                 </li>
-                <li class="site-nav__item not-palm">
-                    <a href="/contact-us" class="nav-link">Book Now</a>
+                <li class="site-nav__item site-nav__item--cta not-palm">
+                    <a href="/contact#book" class="nav-link" ui-please-wait>Book Now</a>
                 </li>
             </ul>
 

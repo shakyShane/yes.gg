@@ -89,6 +89,22 @@
     }
 }
 
+.site-nav__item--cta {
+    margin-left: $half-spacing;
+    .nav-link {
+        background: $yellow;
+        border-radius: 100px;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        &:active {
+            transform: scale(0.9);
+        }
+        &.link--disabled {
+            color: $yellow
+        }
+    }
+}
+
 .subnav {
 
     @include media-query(min, $lap-start) {
