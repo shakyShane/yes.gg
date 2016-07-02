@@ -1,4 +1,4 @@
-<div class="wrapper hero-list">
+<section class="wrapper hero-list">
     <div class="container">
         <h1 hidden="">{{$$.site.title}}</h1>
         <article class="hero hero--loading">
@@ -16,4 +16,29 @@
             <div class="loader"></div>
         </article>
     </div>
-</div>
+</section>
+
+<section class="wrapper quick-nav">
+    <div class="container">
+        <div class="quick-nav__items">
+            {{#each $$.services}}
+            <a href="{{this.url}}" class="quick-nav__item">
+                <span class="quick-nav__item__icon quick-nav__item__icon--{{this.icon}}">{{inc src="icon.hbs" icon=this.icon}}</span>
+                <span class="quick-nav__item__title">{{this.title}}</span>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+{{inc src="icon.hbs" icon="arrow-down"}}
+{{inc src="icon.hbs" icon="phone"}}
+{{inc src="icon.hbs" icon="email"}}
+{{inc src="icon.hbs" icon="photography"}}
+{{inc src="icon.hbs" icon="wall"}}
+{{inc src="icon.hbs" icon="mirror"}}
+{{inc src="icon.hbs" icon="camera"}}
+{{inc src="icon.hbs" icon="facebook"}}
+{{inc src="icon.hbs" icon="twitter"}}
+
+

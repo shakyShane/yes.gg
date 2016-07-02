@@ -12,3 +12,18 @@ body {
 h1,h2,h3,h4,h5 {
     font-weight: $font-weight-black;
 }
+
+.global-loader {
+    width: 100%;
+    background: $yellow;
+    text-align: center;
+    padding: $half-spacing 0;
+    position: fixed;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform .1s ease-in;
+
+    &.active {
+        transform: translateY(0);
+    }
+}

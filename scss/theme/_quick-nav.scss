@@ -1,0 +1,84 @@
+//----------------------
+// Wrapper for the quick nav
+//----------------------
+.quick-nav {
+    background: $black;
+    color: $white;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid lighten($black, 10%);
+}
+
+//----------------------
+// Direct parent of items
+//----------------------
+.quick-nav__items {
+    @include media-query(min, $lap-start) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//----------------------
+// Quick nav item on homepage
+//----------------------
+.quick-nav__item {
+    display: block;
+    width: 100%;
+    color: $white;
+    text-decoration: none;
+    padding: $base-spacing;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lighten($black, 10%);
+    transition: transform .05s;
+    
+    @include media-query(min, $lap-start) {
+        display: block;
+        width: auto;
+        border-bottom: 0;
+    }
+
+    .has-mouse & {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+//----------------------
+// Icon in each item
+//----------------------
+.quick-nav__item__icon {
+    display: block;
+
+    .svg-icon {
+        color: $yellow;
+        @include font-size(30px);
+    }
+}
+
+//----------------------
+// Visually resize icons
+//----------------------
+.quick-nav__item__icon--photography,
+.quick-nav__item__icon--wall {
+    .svg-icon {
+        transform: scale(0.8);
+    }
+}
+
+//----------------------
+// Text inside each item
+//----------------------
+.quick-nav__item__title {
+    display: block;
+    font-weight: $font-weight-bold;
+    padding-left: $base-spacing;
+    
+    @include media-query(min, $lap-start) {
+        padding-top: $half-spacing;
+        padding-left: 0;
+    }
+}

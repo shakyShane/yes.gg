@@ -138,6 +138,7 @@
 
 .subnav__link {
     @include link-styles;
+    position: relative;
 }
 
 .subnav__link--highlight {

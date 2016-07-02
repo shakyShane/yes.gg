@@ -3,10 +3,10 @@
 import nav from './nav';
 import overlays from './overlays';
 import heros from './heros';
-
-console.log('app.ts loaded');
+import buttons from './buttons';
 
 nav();
 overlays();
 heros();
+buttons();
 

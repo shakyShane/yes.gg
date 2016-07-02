@@ -1,29 +1,24 @@
 watch:
   default:
     before:
-      - '@bg webpack --config webpack-prod.config.js -w'
       - docker
       - bs --init
-    _src:
+    "_src:data:public/img/*":
       - templates
       - bs --reload
     scss:
       - crossbow-sass --production
-    public/img/*:
-      - templates
-      - bs --reload
-    public/js:
-      - bs --reload
 
 tasks:
 
   webpack:
     - '@npm webpack --config webpack-prod.config.js'
 
-  build-all@p:
+  build-all:
     description: Create Production Assets
     tasks:
       - templates
+      - build-js
       - build-css
       - icons
       - _merkle
@@ -87,6 +82,8 @@ options:
       defaultLayout: 'default.hbs'
     input:
       - _src/*.hbs
+      - _src/services/*.hbs
+      - _src/services/photo-booths/*.hbs
     output: 'public-html'
     data:
       $$: "all:data"

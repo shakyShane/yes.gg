@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const http = require('http');
 
 module.exports = {
     entry: {
@@ -6,8 +7,8 @@ module.exports = {
     },
     output: {
         path: __dirname + '/public/js',
-        filename: '[name].min.js',
-        sourceMapFilename: '[name].min.js.map'
+        filename: '[name].js',
+        sourceMapFilename: '[name].js.map'
     },
     devtool: 'sourcemap',
     plugins: [
