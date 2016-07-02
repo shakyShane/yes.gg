@@ -1,0 +1,30 @@
+.cards {
+    position: relative;
+    @include box-shadow;
+}
+
+.card {
+    background: $white;
+    padding: $base-spacing;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.card__logo {
+    margin-bottom: $base-spacing;
+    height: 43px;
+}
+
+.card__title {
+    @include font-size(21px);
+    font-weight: $font-weight-bold;
+}
+
+.card__summary {
+
+}
+
+.card__author {
+    color: #939296;
+}

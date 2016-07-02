@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: $font-weight;
@@ -12,6 +16,22 @@ body {
 h1,h2,h3,h4,h5 {
     font-weight: $font-weight-black;
 }
+
+p {
+    margin-bottom: $base-spacing;
+
+}
+
+h1 {
+    padding-top: $base-spacing;
+    margin-bottom: $base-spacing;
+}
+
+h2 {
+    margin-bottom: $half-spacing;
+    padding-top: $half-spacing;
+}
+
 
 .global-loader {
     width: 100%;
