@@ -1,0 +1,5 @@
+.not-palm {
+    @include media-query(max, $lap-start) {
+        display: none!important;
+    }
+}

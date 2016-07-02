@@ -9,7 +9,7 @@ export default function () {
     var $mainNav    = $('#main-nav');
     var $body       = $('body');
     var $targets    = $('.subnav');
-    var $triggers   = $('.nav-expand');
+    var $triggers   = $('.site-nav__item--with-children');
     var subMenuOpen = false;
     var supportHover = true;
     var constants   = {
@@ -34,20 +34,6 @@ export default function () {
 
         evt.preventDefault();
         var $elem = $(this);
-        var $li   = $elem.parents('li');
-        
-        /**
-         * If the click originates from the span/icon,
-         * only toggle if there's no mouse
-         */
-        if (evt.target.tagName !== 'A') {
-            if (!supportHover) {
-                return toggleSubMenu(evt, $li);
-            }
-            if (!state.aboveLap) {
-                return toggleSubMenu(evt, $li);
-            }
-        }
 
         /**
          * If Hover is not supported, always toggle
@@ -56,7 +42,7 @@ export default function () {
             if (state.aboveLap) {
                 closeAllSubMenus();
             }
-            toggleSubMenu(evt, $li);
+            toggleSubMenu(evt, $elem);
             return;
         }
 
@@ -65,32 +51,22 @@ export default function () {
          * always toggle
          */
         if (!state.hasMouse && state.aboveLap) {
-            toggleSubMenu(evt, $li);
+            toggleSubMenu(evt, $elem);
         }
     });
 
     if (supportHover) {
-        $('.site-nav__item--with-children').on('mouseenter', function hoverIn() {
+        $triggers.on('mouseenter', function hoverIn() {
             if (state.hasMouse && state.aboveLap) {
                 $(this).find('.subnav').addClass('active');
                 $(this).addClass('active');
             }
         });
-        $('.site-nav__item--with-children').on('mouseleave', function hoverIn() {
+        $triggers.on('mouseleave', function hoverIn() {
             if (state.hasMouse && state.aboveLap) {
                 closeAllSubMenus();
             }
         });
-    }
-
-
-    /**
-     * Helper to set the inline height of the main navigation element.
-     * This is done to allow the overflow-scroll effect on small screens
-     * @param {number} height
-     */
-    function setNavHeight (height) {
-        $mainNav.css('height', state.aboveLap ? 'auto' : String(height) + 'px');
     }
 
     /**
@@ -140,7 +116,7 @@ export default function () {
          * Close all OTHER submenus
          */
         if (state.aboveLap) {
-            $mainNav.find('li').not($elem).removeClass(constants.ACTIVE);
+            $triggers.not($elem).removeClass(constants.ACTIVE);
             $targets.not($target).removeClass(constants.ACTIVE);
         }
     }
@@ -149,11 +125,7 @@ export default function () {
      * Close every submenu regardless of current state
      */
     function closeAllSubMenus () {
-        $triggers
-            .removeClass(constants.ACTIVE)
-            .each(function () {
-                $(this).parents('li').removeClass(constants.ACTIVE);
-            });
+        $triggers.removeClass(constants.ACTIVE).removeClass(constants.ACTIVE);
         $targets.removeClass(constants.ACTIVE);
     }
 

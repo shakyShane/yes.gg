@@ -1,5 +1,10 @@
 .site-header {
     position: relative;
+    
+    @include media-query(min, $lap-start) {
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .header-wrapper {
@@ -7,17 +12,34 @@
     padding-bottom: 0;
 
     > .container {
-        padding-left: 0;
-        padding-right: 0;
+        @include media-query(max, $lap-start) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
 
 .logo {
     display: block;
     color: $black;
-    width: 150px;
     height: 95px;
+    max-width: 200px;
+    position: relative;
+    top: -5px;
 
+    svg {
+        width: 100%;
+    }
+    
+    @include media-query(min, $lap-start) {
+        max-width: none;
+        width: 200px;
+        top: 0;
+    }
+
+    @include media-query(min, $desk-start) {
+        width: 250px;
+    }
 }
 
 .logo__your {
@@ -38,6 +60,9 @@
 .controls__skip-links {
     display: flex;
     margin-left: auto;
+    @include media-query(min, $lap-start) {
+        display: none;
+    }
 }
 
 .skip {

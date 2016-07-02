@@ -7,8 +7,15 @@
     background: $yellow;
     width: 100%;
 
+    padding-top: $half-spacing;
+    padding-bottom: $half-spacing;
+
     .site-contact--open & {
         opacity: 1;
         visibility: visible;
+    }
+    
+    @include media-query(min, $lap-start) {
+        display: none;
     }
 }
