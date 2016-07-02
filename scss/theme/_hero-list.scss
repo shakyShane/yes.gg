@@ -30,13 +30,29 @@
 // ----------------------
 .hero {
     position: relative;
+    background: $black;
+
+    .hero--loading {
+        .loader {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 
     .loader {
-        top: 10%;
-        @include media-query(min, $lap-start) {
-            top: calc(50% - 20px);
-            transform: translateY(-50%);
-        }
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(.5);
+        color: $yellow;
+
+
+        //@include media-query(min, $lap-start) {
+        //    top: calc(50% - 20px);
+        //    transform: translateY(-50%);
+        //}
     }
 }
 
@@ -56,10 +72,11 @@
 
     &:before {
         @include coverall;
+        transition: background .3s;
         background: rgba($black, .7);
     }
 
-    @include media-query(min, 400px) {
+    @include media-query(min, 370px) {
         padding-bottom: 120%; // approx 600 high at full width
     }
 
@@ -85,7 +102,9 @@
         visibility: visible;
     }
     .hero__img {
-        opacity: 0;
+        &:before {
+            background: rgba($black, 1);
+        }
     }
 }
 
