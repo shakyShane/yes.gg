@@ -10,8 +10,14 @@ layout: 'base.hbs'
                     {{inc src="public/img/logo.svg"}}
                 </a>
                 <div class="controls__skip-links">
-                    <a href="#" class-toggle="site-contact--open" class="skip skip--contact">{{inc src="icon.hbs" icon="phone"}}</a>
-                    <a href="#" class-toggle="site-nav--open" class="skip skip--site-nav">{{inc src="icon.hbs" icon="menu"}}</a>
+                    <a href="#" class-toggle="site-contact--open" class="skip skip--contact">
+                        {{inc src="icon.hbs" icon="phone"}}
+                        {{inc src="icon.hbs" icon="close"}}
+                    </a>
+                    <a href="#" class-toggle="site-nav--open" class="skip skip--site-nav">
+                        {{inc src="icon.hbs" icon="menu"}}
+                        {{inc src="icon.hbs" icon="close"}}
+                    </a>
                 </div>
             </div>
         </div>
@@ -31,10 +37,10 @@ layout: 'base.hbs'
                     <div class="subnav">
                         <div class="subnav__content">
                             <ul class="subnav__items">
-                                <li class="subnav__item"><a href="/" class="subnav__link">Photobooths</a></li>
-                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'The Pod'</a></li>
-                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'Mini Pod'</a></li>
-                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'The Cab'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link subnav__link--before">Photobooths</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight">Photo Booths 'The Pod'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight">Photo Booths 'Mini Pod'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link subnav__link--highlight subnav__link--highlight--last">Photo Booths 'The Cab'</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link">Fun Props</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link">Event Photography</a></li>
                                 <li class="subnav__item"><a href="/" class="subnav__link">The Wall</a></li>

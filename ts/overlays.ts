@@ -8,9 +8,7 @@ const selectors = {
 
 const sections = [
     'site-nav--open',
-    'site-search--open',
-    'minicart--open',
-    'user-nav--open'
+    'site-contact--open'
 ];
 
 /**

@@ -1,0 +1,14 @@
+.site-contact {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    z-index: 4;
+    background: $yellow;
+    width: 100%;
+
+    .site-contact--open & {
+        opacity: 1;
+        visibility: visible;
+    }
+}

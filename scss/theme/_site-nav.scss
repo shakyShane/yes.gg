@@ -1,0 +1,79 @@
+// ---------------------
+// Main nav wrapper
+// ---------------------
+.site-nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    z-index: 4;
+    background: $yellow;
+    width: 100%;
+
+    .site-nav--open & {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    //@include media-query(min, $lap-start) {
+    //    position: relative;
+    //    opacity: 1;
+    //    visibility: visible;
+    //    padding-bottom: $half-spacing;
+    //    padding-top: $half-spacing;
+    //}
+    //
+    //@include media-query(min, $desk-start) {
+    //    padding-bottom: $base-spacing;
+    //    padding-top: $base-spacing;
+    //}
+}
+
+@mixin link-styles {
+
+    display: block;
+    text-decoration: none;
+    color: $black;
+    padding: $half-spacing 0;
+    text-align: center;
+    border-bottom: 1px solid $yellow-border;
+}
+
+.nav-link {
+    @include link-styles;
+}
+
+
+.subnav__link {
+    @include link-styles;
+}
+
+.subnav__link--highlight {
+    background: lighten($yellow, 5%);
+    border-bottom-color: lighten($yellow, 5%);
+    position: relative;
+
+    &:after {
+        content: '';
+        width: calc(100% - 24px);
+        position: absolute;
+        height: 1px;
+        background: $yellow-border;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.subnav__link--before {
+    border-bottom: 0;
+}
+.subnav__link--after {
+    border-top: 0;
+}
+.subnav__link--highlight--last {
+    &:after {
+        display: none;
+    }
+}
