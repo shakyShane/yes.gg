@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160511151334"
+  },
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160701124751",
+    "node": "registry:env/node#6.0.0+20160622202520"
+  }
+}
