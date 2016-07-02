@@ -23,3 +23,10 @@ svg {
     }
 }
 
+
+.mobile--hidden {
+    display: none;
+    @include media-query(min, $lap-start) {
+        display: block;
+    }
+}

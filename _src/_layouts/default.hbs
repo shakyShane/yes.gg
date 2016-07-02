@@ -3,23 +3,19 @@ layout: 'base.hbs'
 ---
 <header class="site-header">
     <div class="wrapper header-wrapper">
-        <div class="container">
 
+        <div class="container">
             <div class="controls">
                 <a href="/" class="logo">
                     {{inc src="public/img/logo.svg"}}
                 </a>
                 <div class="controls__skip-links">
-                    <a href="#" class-toggle="site-contact--open" class="skip skip--contact">
-                        Contact {{inc src="icon.hbs" icon="menu"}}
-                    </a>
-                    <a href="#" class-toggle="site-nav--open" class="skip skip--site-nav">
-                        Menu {{inc src="icon.hbs" icon="menu"}}
-                    </a>
+                    <a href="#" class-toggle="site-contact--open" class="skip skip--contact">{{inc src="icon.hbs" icon="phone"}}</a>
+                    <a href="#" class-toggle="site-nav--open" class="skip skip--site-nav">{{inc src="icon.hbs" icon="menu"}}</a>
                 </div>
             </div>
-
         </div>
+
     </div>
 
     <!-- Site Navigation -->
@@ -28,10 +24,31 @@ layout: 'base.hbs'
 
             <ul class="site-nav__items">
                 <li class="site-nav__item">
-                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
                 </li>
                 <li class="site-nav__item site-nav__item--with-children">
                     <a href="/services" class="nav-link">Services</a>
+                    <div class="subnav">
+                        <div class="subnav__content">
+                            <ul class="subnav__items">
+                                <li class="subnav__item"><a href="/" class="subnav__link">Photobooths</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'The Pod'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'Mini Pod'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Photo Booths 'The Cab'</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Fun Props</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Event Photography</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">The Wall</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Magical Mirror</a></li>
+                                <li class="subnav__item"><a href="/" class="subnav__link">Compact Camera Hire</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav__item">
+                    <a href="/contact-us" class="nav-link">Contact Us</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="/contact-us" class="nav-link">Book Now</a>
                 </li>
             </ul>
 

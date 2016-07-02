@@ -418,7 +418,144 @@ textarea {
   font: inherit; /* 2 */
 }
 
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0; }
+
+abbr[title],
+dfn[title] {
+  cursor: help; }
+
+u,
+ins {
+  text-decoration: none; }
+
+ins {
+  border-bottom: 1px solid; }
+
 body {
-  background: red; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600; }
+
+.wrapper {
+  padding: 24px 0; }
+
+@media only screen and (min-width: 640px) {
+    .wrapper {
+      padding: 48px 0; } }
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+@media only screen and (min-width: 640px) {
+    .container {
+      padding-left: 24px;
+      padding-right: 24px; } }
+
+.header-wrapper {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.header-wrapper > .container {
+    padding-left: 0;
+    padding-right: 0; }
+
+.logo {
+  display: block;
+  color: #000;
+  width: 150px; }
+
+.logo__your {
+  display: none; }
+
+.logo__event {
+  display: none; }
+
+.logo__solutions {
+  display: none; }
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.controls__skip-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto; }
+
+.skip {
+  display: block;
+  width: 75px;
+  height: 95px;
+  position: relative;
+  color: #000; }
+
+.skip:before {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    border: 1px solid #eeaf2c;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%); }
+
+.skip.active {
+    background: #eeaf2c; }
+
+.skip.active:before {
+      border-color: #000; }
+
+.skip .svg-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%); }
+
+.skip--contact {
+  color: #eeaf2c; }
+
+.skip--contact.active {
+    color: #000; }
+
+.skip--site-nav:before {
+  background: #eeaf2c; }
+
+svg {
+  display: inline-block;
+  fill: currentColor !important;
+  vertical-align: middle;
+  line-height: 1em; }
+
+svg.svg-icon {
+    height: 1em;
+    width: 1em; }
+
+.mobile--hidden {
+  display: none; }
+
+@media only screen and (min-width: 640px) {
+    .mobile--hidden {
+      display: block; } }
 
 /*# sourceMappingURL=core.css.map */

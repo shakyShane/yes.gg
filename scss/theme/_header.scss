@@ -1,7 +1,17 @@
+.header-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .logo {
-    //outline: 1px solid red;
     display: block;
     color: $black;
+    width: 150px;
 }
 
 .logo__your {
@@ -10,10 +20,71 @@
 .logo__event {
     display: none;
 }
+
 .logo__solutions {
     display: none;
 }
 
 .controls {
+    display: flex;
+}
 
+.controls__skip-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.skip {
+    display: block;
+    width: 75px;
+    height: 95px;
+    position: relative;
+    //outline: 1px dotted $grey-lt;
+    //border: 1px solid $yellow;
+    //border-radius: 100%;
+    color: $black;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 55px;
+        height: 55px;
+        border: 1px solid $yellow;
+        border-radius: 100%;
+        top: 0;
+        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    &.active {
+        background: $yellow;
+        &:before {
+            border-color: $black;
+        }
+    }
+
+    .svg-icon {
+        //outline: 1px solid red;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+.skip--contact {
+    color: $yellow;
+    &.active {
+        color: $black;
+
+    }
+}
+.skip--site-nav {
+    &:before {
+        background: $yellow;
+    }
+    //color: $yellow;
 }

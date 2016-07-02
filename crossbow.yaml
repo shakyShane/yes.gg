@@ -17,8 +17,6 @@ watch:
 
 tasks:
 
-  js: '@npm watchify -v ts/app.ts -p tsify --debug -o public/js/index.js'
-
   webpack:
     - '@npm webpack --config webpack-prod.config.js'
 
@@ -26,9 +24,16 @@ tasks:
     description: Create Production Assets
     tasks:
       - templates
-      - crossbow-sass --production
+      - build-css
       - icons
       - _merkle
+
+  build-js:
+    - '@npm webpack --config webpack-prod.config.js'
+
+  build-css:
+    - crossbow-sass
+    - crossbow-sass --production
 
   _merkle:
     - merkle --dir public-html
