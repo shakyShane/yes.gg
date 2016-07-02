@@ -1,5 +1,21 @@
-<div class="wrapper">
+<div class="wrapper hero-list">
     <div class="container">
 
+        <h1 hidden="">{{$$.site.title}}</h1>
+
+        <article class="hero">
+            <section class="hero__img" hero-src="/content/hero-01.jpg" hero-src-large="/content/hero-01.jpg">
+                <section class="hero__content">
+                    <h2 class="hero__title">{{$$.site.title}}</h2>
+                    <p class="hero__summary">We’re an entertainments company with a difference we don’t just do events we create event solutions
+                        especially for you, whatever you need we can accommodate you</p>
+                    <div class="hero__cta">
+                        <a href="/services" class="button">Our Services</a>
+                        <a href="/contact" class="button button--trans">Get In Touch</a>
+                    </div>
+                </section>
+            </section>
+            <div class="loader"></div>
+        </article>
     </div>
 </div>

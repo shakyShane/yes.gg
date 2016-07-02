@@ -1,9 +1,12 @@
 .site-header {
     position: relative;
+    max-width: $page-width;
+    margin: 0 auto;
     
     @include media-query(min, $lap-start) {
         display: flex;
         align-items: flex-end;
+        margin-bottom: $half-spacing;
     }
 }
 

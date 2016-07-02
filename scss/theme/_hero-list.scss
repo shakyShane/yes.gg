@@ -1,0 +1,183 @@
+// -----------------------------------------------------------------
+// Wrapper for the hero LIST on the homepage (in case there are many
+// -----------------------------------------------------------------
+.hero-list {
+    //@include container;
+    padding: 0;
+
+    > .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+    }
+}
+
+// -----------------------------
+// Wrapper for each hero element.
+// This is done to allow img/text to be separate
+// elements so that they can stack on mobile, but be overlaid
+// on desktop
+// <article class="hero">
+//   <div class="hero__img hero--feature" hero-src="/content/hero-01-small.jpg" hero-src-large="/content/hero-01.jpg" style="background-image: url(&quot;/content/hero-01.jpg&quot;);"></div>
+//      <div class="hero__content">
+//          <h2 class="hero__title">Exclusive</h2>
+//          <p class="hero__summary">For the contemporary adventurer</p>
+//          <div class="hero__cta">
+//          <a href="/store-category.php" class="button">Shop now</a>
+//      </div>
+//   </div>
+// </article>
+// ----------------------
+.hero {
+    position: relative;
+
+    .loader {
+        top: 10%;
+        @include media-query(min, $lap-start) {
+            top: calc(50% - 20px);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// -----------------------------------
+// Hero img container (padded box trick)
+// -----------------------------------
+.hero__img {
+    //outline: 1px solid red;
+    display: flex;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 150%;
+    opacity: 1;
+    transition: opacity 1s;
+
+    &:before {
+        @include coverall;
+        background: rgba($black, .7);
+    }
+
+    @include media-query(min, 400px) {
+        padding-bottom: 120%; // approx 600 high at full width
+    }
+
+    @include media-query(min, $lap-start) {
+        padding-bottom: 60.86%; // approx 600 high at full width
+    }
+
+    @include media-query(min, $lap-start) {
+        padding-bottom: 42%; // approx 600 high at full width
+    }
+    @include media-query(min, $page-width) {
+        padding-bottom: 500px; // approx 600 high at full width
+    }
+}
+
+// -----------------------------------------
+// Loading state for each hero
+// This is seen when an image is not visible
+// -----------------------------------------
+.hero--loading {
+    .loader {
+        opacity: 1;
+        visibility: visible;
+    }
+    .hero__img {
+        opacity: 0;
+    }
+}
+
+// ---------------------------
+// Hero content wrapper for everything text based
+// (which ends up being below the image on mobile (ie: text/cta)
+// ---------------------------
+.hero__content {
+
+    width: 100%;
+    padding: $base-spacing;
+    color: $white;
+    //background: rgba($black, .5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    text-align: center;
+    //bottom: 0;
+    //height: 100%;
+
+    //@include media-query(min, $lap-start) {
+    //}
+    //
+    //@include media-query(min, $desk-start) {
+    //    padding-left: $base-spacing * 3;
+    //}
+}
+
+// ----------------------
+// Hero tags are lines such as 'exclusive' above
+// the hero title
+// ----------------------
+.hero__tag {
+    //color: $orange;
+    @include font-size(27px);
+    font-family: $font-weight-black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+// -----------------------------
+// Title inside the hero content
+// -----------------------------
+.hero__title {
+    font-family: $font-weight-black;
+    text-transform: uppercase;
+    margin-bottom: $half-spacing;
+
+    @include font-size(40px);
+
+    @include media-query(min, $desk-start) {
+        @include font-size(50px);
+    }
+}
+
+// -----------------------------------------
+// Summary is the serif line below the title
+// -----------------------------------------
+.hero__summary {
+    //font-family: $serif;
+    //color: $orange;
+
+    @include font-size(18px);
+    line-height: 29px;
+
+    max-width: 660px;
+    margin: 0 auto;
+    margin-bottom: $base-spacing;
+}
+
+// -------------------------------------
+// cta contains the button/other actions
+// -------------------------------------
+.hero__cta {
+
+    width: 150px;
+    margin: 0 auto;
+    
+
+    .button {
+        width: 100%;
+        margin-bottom: $half-spacing;
+    }
+    
+    @include media-query(min, $lap-start) {
+        width: auto;
+        .button {
+            width: auto;
+            margin-left: $half-spacing/2;
+            margin-right: $half-spacing/2;
+        }
+    }
+    
+}

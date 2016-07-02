@@ -1,0 +1,59 @@
+.input {
+    /* Calculated properties */
+    line-height: 1.5;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    border-width: 0;
+
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: baseline;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.input::moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+// http://jxnblk.com/formula/?fontFamily=-apple-system%2C%20sans-serif&scale=16&scale=24&scale=20&scale=14&scale=12&lineHeight=1.5&pad=0.5625&baselineShift=0&border=0&borderRadius=4&proportionalBorderRadius=false
+.button {
+    /* Calculated properties */
+    line-height: 1.5;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    border-width: 0;
+
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    display: inline-block;
+    margin: 0;
+    vertical-align: baseline;
+    appearance: none;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: $black;
+    font-weight: $font-weight-bold;
+    background: $yellow;
+
+    border-radius: 100px;
+    //+ .button {
+    //    outline: 1px solid red;
+    //}
+}
+
+.button--trans {
+    background: transparent;
+    color: $white;
+    border: 1px solid $yellow;
+    padding-top: calc(0.5625em - 1px);
+    padding-bottom: calc(0.5625em - 1px);
+}
+

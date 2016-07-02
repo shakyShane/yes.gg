@@ -1,3 +1,4 @@
+
 .wrapper {
     padding: $base-spacing 0;
     @include media-query(min, $lap-start) {
@@ -5,11 +6,20 @@
     }
 }
 
-.container {
+@mixin container {
+
     padding-left: $half-spacing;
     padding-right: $half-spacing;
+    max-width: $page-width;
+    margin: 0 auto;
+
     @include media-query(min, $lap-start) {
         padding-left: $base-spacing;
         padding-right: $base-spacing;
     }
 }
+
+.container {
+    @include container;
+}
+
