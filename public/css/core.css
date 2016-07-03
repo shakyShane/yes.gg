@@ -776,6 +776,30 @@ h2 {
 .skip--site-nav:before {
   background: #FBC138; }
 
+.site-footer {
+  background: #000;
+  color: #FFF;
+  background: #000 url(/img/footer-bg.svg) no-repeat -100px 0; }
+
+@media only screen and (min-width: 640px) {
+    .site-footer {
+      background: #000 url(/img/footer-bg.svg) no-repeat;
+      background-position: calc(50% - 100px) 12px;
+      padding-top: 72px; } }
+
+@media only screen and (min-width: 640px) {
+    .site-footer > .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.copyright {
+  text-align: center;
+  color: #939296;
+  margin-bottom: 0; }
+
 .site-contact {
   opacity: 0;
   visibility: hidden;
@@ -862,7 +886,9 @@ h2 {
   color: #000;
   padding: 12px 0;
   text-align: center;
-  border-bottom: 1px solid #E9B435; }
+  border-bottom: 1px solid #E9B435;
+  -webkit-transition: background .2s;
+  transition: background .2s; }
 
 @media only screen and (min-width: 640px) {
     .nav-link {
@@ -931,7 +957,12 @@ h2 {
   padding: 12px 0;
   text-align: center;
   border-bottom: 1px solid #E9B435;
+  -webkit-transition: background .2s;
+  transition: background .2s;
   position: relative; }
+
+.has-mouse .subnav__link:hover {
+    text-decoration: underline; }
 
 .subnav__link--highlight {
   background: #fcc951;
@@ -1040,8 +1071,8 @@ h2 {
     position: absolute;
     z-index: 1;
     top: 0;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
     -webkit-transform-origin: top left;
             transform-origin: top left; }
 
@@ -1347,6 +1378,107 @@ http://flickity.metafizzy.co
         width: auto;
         margin-left: 6px;
         margin-right: 6px; } }
+
+.social__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  color: #FBC138;
+  border: 1px solid #FBC138;
+  border-radius: 100%;
+  position: relative;
+  margin-right: 12px;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+  background: #000; }
+
+.has-mouse .social__link:hover {
+    background: rgba(251, 193, 56, 0.2); }
+
+.social__link .svg-icon {
+    position: absolute;
+    font-size: 20px;
+    font-size: 1.25rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+
+.social__link--facebook .svg-icon {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.footer-nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 24px; }
+
+@media only screen and (min-width: 640px) {
+    .footer-nav {
+      width: 33%; } }
+
+@media only screen and (min-width: 960px) {
+    .footer-nav {
+      width: 25%; } }
+
+@media only screen and (min-width: 1160px) {
+    .footer-nav {
+      width: 20%; } }
+
+.footer-nav__link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 12px 0;
+  text-align: center;
+  border-bottom: 1px solid #E9B435;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+  color: #FFF;
+  text-align: left;
+  border-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: background .2s; }
+
+.has-mouse .footer-nav__link:hover {
+    background: rgba(251, 193, 56, 0.1); }
+
+.footer-nav__link--bold {
+  font-weight: 600; }
+
+.footer-nav__link--icon {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+.footer-nav__link--icon .svg-icon {
+    margin-right: 6px;
+    color: #FBC138;
+    position: relative;
+    top: -1px; }
+
+.footer-nav--brand {
+  display: none; }
+
+@media only screen and (min-width: 1160px) {
+    .footer-nav--brand {
+      display: block; }
+      .footer-nav--brand .logo-sm {
+        padding: 12px;
+        display: inline-block; } }
+
+@media only screen and (min-width: 640px) {
+  .footer-nav--social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 12px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; } }
 
 svg {
   display: inline-block;

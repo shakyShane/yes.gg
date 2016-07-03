@@ -1,0 +1,88 @@
+//----------------------
+// UL
+//----------------------
+.footer-nav {
+    @include list-reset;
+    margin-bottom: $base-spacing;
+    
+    @include media-query(min, $lap-start) {
+        width: 33%;
+    }
+    @include media-query(min, $desk-start) {
+        width: 25%;
+    }
+    @include media-query(min, $page-width) {
+        width: 20%;
+    }
+}
+
+//----------------------
+// LI
+//----------------------
+.footer-nav__item {}
+
+//----------------------
+// A
+//----------------------
+.footer-nav__link {
+    @include link-styles;
+    color: $white;
+    text-align: left;
+    border-bottom: 0;
+    padding-left: $half-spacing;
+    padding-right: $half-spacing;
+    transition: background .2s;
+    
+    .has-mouse & {
+        &:hover {
+            background: rgba($yellow, .1);
+        }
+    }
+}
+
+//----------------------
+// BOLD A
+//----------------------
+.footer-nav__link--bold {
+    font-weight: $font-weight-bold;
+}
+
+//----------------------
+// With Icon
+//----------------------
+.footer-nav__link--icon {
+    @include font-size(22px);
+    .svg-icon {
+        margin-right: $half-spacing/2;
+        color: $yellow;
+        position: relative;
+        top: -1px;
+    }
+}
+
+//-----------------------
+// Logo in footer on desk
+//-----------------------
+.footer-nav--brand {
+    display: none;
+    @include media-query(min, $page-width) {
+        display: block;
+        .logo-sm {
+            padding: $half-spacing;
+            display: inline-block;
+            //outline: 1px solid red;
+        }
+    }
+}
+
+//-------------------------------
+// Social links in footer on desk
+//-------------------------------
+.footer-nav--social {
+    @include media-query(min, $lap-start) {
+        display: flex;
+        justify-content: center;
+        padding-top: $half-spacing;
+        flex: 1;
+    }
+}

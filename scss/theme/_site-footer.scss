@@ -1,0 +1,26 @@
+.site-footer {
+    background: $black;
+    color: $white;
+    background: $black url(/img/footer-bg.svg) no-repeat -100px 0;
+
+    @include media-query(min, $lap-start) {
+        background: $black url(/img/footer-bg.svg) no-repeat;
+        background-position: calc(50% - 100px) $half-spacing;
+
+        padding-top: $base-spacing*3;
+    }
+
+    > .container {
+        @include media-query(min, $lap-start) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.site-copyright {}
+.copyright {
+    text-align: center;
+    color: $grey;
+    margin-bottom: 0;
+}

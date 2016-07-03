@@ -1,7 +1,6 @@
 require('zepto/zepto.min.js');
 const $ = window['Zepto'];
 import state from './state';
-// const debug = require('debug')('sd:heros.ts');
 
 export const HeroAttributes = {
     loadingClass: 'hero--loading',

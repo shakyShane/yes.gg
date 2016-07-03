@@ -3,15 +3,6 @@
     padding-bottom: $half-spacing;
     position: relative;
     margin-bottom: $base-spacing* 2;
-    &:after {
-        //position: absolute;
-        //content: " ";
-        //bottom: 0;
-        //width: 100%;
-        //height: 50px;
-        //background: $white;
-        //z-index: 1;
-    }
     &:before {
         width: 200%;
         height: 200px;
@@ -20,7 +11,7 @@
         position: absolute;
         z-index: 1;
         top: 0;
-        transform: rotate(-3deg);
+        transform: rotate(-2deg);
         transform-origin: top left;
     }
     > .container {

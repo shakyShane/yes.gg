@@ -137,15 +137,15 @@
     }
 
 // transport
-    if ( typeof define === 'function' && define.amd ) {
-        // AMD
-        define( 'jquery-bridget/jquery.bridget',[ 'jquery' ], defineBridget );
-    } else if ( typeof exports === 'object' ) {
-        defineBridget( require('jquery') );
-    } else {
-        // get jquery from browser global
-        defineBridget( window.jQuery );
-    }
+//     if ( typeof define === 'function' && define.amd ) {
+//         // AMD
+//         define( 'jquery-bridget/jquery.bridget',[ 'jquery' ], defineBridget );
+//     } else if ( typeof exports === 'object' ) {
+//         defineBridget( require('jquery') );
+//     } else {
+//         // get jquery from browser global
+//         defineBridget( window.jQuery );
+//     }
 
 })( window );
 

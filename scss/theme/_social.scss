@@ -1,0 +1,47 @@
+//----------------------
+// Social Icons
+//----------------------
+.social {}
+
+//----------------------
+// A item
+//----------------------
+.social__link {
+    //outline: 1px dashed $grey-dk;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: $yellow;
+    border: 1px solid $yellow;
+    border-radius: 100%;
+    position: relative;
+    margin-right: $half-spacing;
+    transition: background .2s;
+    background: $black;
+
+    .has-mouse & {
+        &:hover {
+            background: rgba($yellow, .2);
+        }
+    }
+
+    .svg-icon {
+        position: absolute;
+        @include font-size(20px);
+        @include centered;
+    }
+}
+
+//----------------------
+// Facebook Variant
+//----------------------
+.social__link--facebook {
+    .svg-icon {
+        @include font-size(18px);
+    }
+}
+
+//----------------------
+// Twitter variant
+//----------------------
+.social__link--twitter {}

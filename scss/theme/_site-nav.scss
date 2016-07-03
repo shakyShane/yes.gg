@@ -77,6 +77,7 @@
     padding: $half-spacing 0;
     text-align: center;
     border-bottom: 1px solid $yellow-border;
+    transition: background .2s;
 }
 
 .nav-link {
@@ -155,6 +156,16 @@
 .subnav__link {
     @include link-styles;
     position: relative;
+
+    .has-mouse & {
+        &:hover {
+            text-decoration: underline;
+            //background: darken($yellow, 5%);
+            //@include media-query(min, $lap-start) {
+            //
+            //}
+        }
+    }
 }
 
 .subnav__link--highlight {
