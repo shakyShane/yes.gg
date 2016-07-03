@@ -1,6 +1,17 @@
 .cards {
     position: relative;
-    @include box-shadow;
+
+    // MAX
+    @include media-query(max, $lap-start) {
+        background: $white;
+        @include box-shadow;
+    }
+
+    // MIN
+    @include media-query(min, $desk-start) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .card {
@@ -9,6 +20,22 @@
     text-align: center;
     z-index: 2;
     width: 100%;
+    
+    @include media-query(min, $lap-start) {
+        width: 100%;
+        @include box-shadow;
+        padding: $base-spacing*1.75;
+        margin-bottom: $half-spacing;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-query(min, $desk-start) {
+        width: 31%;
+        margin-bottom: 0;
+    }
 }
 
 .card__logo {
@@ -22,9 +49,10 @@
 }
 
 .card__summary {
-
+    
 }
 
 .card__author {
     color: #939296;
+    @include font-size(12px);
 }

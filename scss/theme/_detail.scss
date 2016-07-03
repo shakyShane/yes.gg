@@ -1,0 +1,42 @@
+.detail {
+    position: relative;
+    z-index: 2;
+    > .container {
+        @include media-query(min, $lap-start) {
+            display: flex;
+        }
+    }
+    
+    @include media-query(min, $lap-start) {
+        padding-top: $base-spacing*3;
+        padding-bottom: $base-spacing*4;
+    }
+}
+
+.detail__content {
+    flex: 1;
+}
+
+.detail__img {
+    display: none;
+    font-size: 0;
+    @include media-query(min, $lap-start) {
+        display: block;
+        img {
+            margin-left: $base-spacing*2;
+            margin-right: $base-spacing*2;
+            @include box-shadow;
+        }
+    }
+}
+
+.detail__img--right {
+    @include media-query(min, $lap-start) {
+        display: none;
+    }
+    @include media-query(min, $desk-start) {
+        display: block;
+        position: relative;
+        top: $base-spacing*5;
+    }
+}

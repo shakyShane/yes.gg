@@ -39,6 +39,7 @@
     text-decoration: none;
     cursor: pointer;
     position: relative;
+    text-align: center;
 
     color: $black;
     font-weight: $font-weight-bold;
@@ -83,6 +84,7 @@
         transform: translateY(-50%) translateX(-50%);
         animation-name: fadeIn;
         animation-duration: .2s;
+        text-align: center;
     }
 }
 

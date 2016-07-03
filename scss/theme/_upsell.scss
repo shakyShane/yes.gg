@@ -1,8 +1,12 @@
 .upsell {
     background: $yellow;
-    padding-bottom: $half-spacing;
     position: relative;
-    margin-bottom: $base-spacing* 2;
+
+    @include media-query(max, $lap-start) {
+        padding-bottom: $half-spacing;
+        margin-bottom: $base-spacing* 2;
+    }
+
     &:before {
         width: 200%;
         height: 200px;
@@ -14,12 +18,13 @@
         transform: rotate(-2deg);
         transform-origin: top left;
     }
+
     > .container {
         position: relative;
         z-index: 2;
     }
     .page-title {
         text-align: center;
-        //padding-top: 0;
+        padding-top: 0;
     }
 }

@@ -545,6 +545,7 @@ h2 {
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  text-align: center;
   color: #000;
   font-weight: 600;
   background: #FBC138;
@@ -587,7 +588,8 @@ h2 {
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-duration: .2s;
-            animation-duration: .2s; }
+            animation-duration: .2s;
+    text-align: center; }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -1059,9 +1061,12 @@ h2 {
 
 .upsell {
   background: #FBC138;
-  padding-bottom: 12px;
-  position: relative;
-  margin-bottom: 48px; }
+  position: relative; }
+
+@media only screen and (max-width: 639px) {
+    .upsell {
+      padding-bottom: 12px;
+      margin-bottom: 48px; } }
 
 .upsell:before {
     width: 200%;
@@ -1081,7 +1086,8 @@ h2 {
     z-index: 2; }
 
 .upsell .page-title {
-    text-align: center; }
+    text-align: center;
+    padding-top: 0; }
 
 /*! Flickity v1.2.1
 http://flickity.metafizzy.co
@@ -1227,8 +1233,21 @@ http://flickity.metafizzy.co
   bottom: -40px; }
 
 .cards {
-  position: relative;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+  position: relative; }
+
+@media only screen and (max-width: 639px) {
+    .cards {
+      background: #FFF;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); } }
+
+@media only screen and (min-width: 960px) {
+    .cards {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .card {
   background: #FFF;
@@ -1236,6 +1255,20 @@ http://flickity.metafizzy.co
   text-align: center;
   z-index: 2;
   width: 100%; }
+
+@media only screen and (min-width: 640px) {
+    .card {
+      width: 100%;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 42px;
+      margin-bottom: 12px; }
+      .card:last-child {
+        margin-bottom: 0; } }
+
+@media only screen and (min-width: 960px) {
+    .card {
+      width: 31%;
+      margin-bottom: 0; } }
 
 .card__logo {
   margin-bottom: 24px;
@@ -1247,7 +1280,9 @@ http://flickity.metafizzy.co
   font-weight: 600; }
 
 .card__author {
-  color: #939296; }
+  color: #939296;
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 .hero-list {
   padding: 0; }
@@ -1378,6 +1413,48 @@ http://flickity.metafizzy.co
         width: auto;
         margin-left: 6px;
         margin-right: 6px; } }
+
+.detail {
+  position: relative;
+  z-index: 2; }
+
+@media only screen and (min-width: 640px) {
+    .detail > .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media only screen and (min-width: 640px) {
+    .detail {
+      padding-top: 72px;
+      padding-bottom: 96px; } }
+
+.detail__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.detail__img {
+  display: none;
+  font-size: 0; }
+
+@media only screen and (min-width: 640px) {
+    .detail__img {
+      display: block; }
+      .detail__img img {
+        margin-left: 48px;
+        margin-right: 48px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); } }
+
+@media only screen and (min-width: 640px) {
+  .detail__img--right {
+    display: none; } }
+
+@media only screen and (min-width: 960px) {
+  .detail__img--right {
+    display: block;
+    position: relative;
+    top: 120px; } }
 
 .social__link {
   display: inline-block;
