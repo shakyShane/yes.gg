@@ -1,29 +1,47 @@
 ---
 description: >
-    3 Different Booths for any event!
+    The latest in Party Entertainment, Photo booths are becoming a must-have for parties, events or any other occasion. Available for <strong>weddings</strong>, <strong>birthday parties</strong>, <strong>corporate events</strong> and any other party or event.
 ---
 
-
-<div class="wrapper">
+<section class="wrapper hero-list">
     <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>This page will give an overview of all 3 booths and allow the user to select each</p>
+        <article class="hero hero--loading">
+            <section class="hero__img" hero-src="/content/hero-01.jpg" hero-src-large="/content/hero-01.jpg">
+                <section class="hero__content">
+                    <h1 class="hero__title">{{page.title}}</h1>
+                    <p class="hero__summary">{{{page.description}}}</p>
+                </section>
+            </section>
+            <div class="loader"></div>
+        </article>
     </div>
-</div>
+</section>
 
-<!--
-{{inc src="hero.hbs"}}
-
-<section class="wrapper quick-nav">
+<section class="wrapper detail">
     <div class="container">
-        <div class="quick-nav__items">
-            {{#each $$.booths}}
-                <a href="{{this.url}}" class="quick-nav__item">
-                    <span class="quick-nav__item__icon quick-nav__item__icon--{{this.icon}}">{{inc src="icon.hbs" icon=this.icon}}</span>
-                    <span class="quick-nav__item__title">{{this.title}}</span>
-                </a>
-            {{/each}}
+        <div class="detail__img">
+            <img src="/content/home-01.jpg" alt="">
+        </div>
+        <div class="detail__content">
+            <h2>Choose from 3 booths</h2>
+            <p class="lede">The following is included with all booths.</p>
+            <ul>
+                <li>Takes up to five people</li>
+                <li>Price includes up to 4 hours unlimited pod use</li>
+                <li>Unlimited photos in colour or black and white</li>
+                <li>Choice of Background Colour</li>
+                <li>Box of props (hats, wigs, glasses, etc.)</li>
+                <li>Photos to Facebook</li>
+                <li>USB of all images</li>
+                <li>Personalised message or logo</li>
+                <li>A friendly pod attendant to assist with the pod</li>
+            </ul>
+            <p>
+                <a href="/services" class="button" ui-please-wait>Our Services</a>
+            </p>
+        </div>
+        <div class="detail__img detail__img--right">
+            <img src="/content/home-02.jpg" alt="">
         </div>
     </div>
 </section>
--->

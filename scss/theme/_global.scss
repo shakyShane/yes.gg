@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
     font-weight: $font-weight;
     color: $black;
     min-height: 100vh;
@@ -17,9 +23,12 @@ h1,h2,h3,h4,h5 {
     font-weight: $font-weight-black;
 }
 
-p {
+ul, p {
     margin-bottom: $base-spacing;
+}
 
+ul {
+    margin-left: 2em;
 }
 
 h1 {
@@ -32,6 +41,14 @@ h2 {
     padding-top: $half-spacing;
 }
 
+h3 {
+    margin-bottom: $half-spacing;
+    padding-top: $half-spacing;
+}
+
+.lede {
+    font-size: 2.4rem;
+}
 
 .global-loader {
     width: 100%;

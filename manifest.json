@@ -1,125 +1,125 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "e7f86e50db58ed84419897a93da40872b06a7072a5183625d46d52b2fc0d4306",
+    "hash": "912aa9bed4e3ab6f52c62e3762078d7e534af29909d7628b6a0d0aef28362f24",
     "tree": [
       {
         "path": "about",
-        "hash": "d1cbf90e4d2a4e7da7b2b2479fd5ded5c485411b23ef78256f28114adc8cb443",
+        "hash": "6cf51987343027a7bd9a0598f548acf87ea4ba6ea58828e18f33994f073b27c1",
         "tree": [
           {
             "path": "about/index.html",
-            "hash": "81485f65c4b6e249325e510a4c7b65784f87d3e4972172a65ab4b36e435fe79a"
+            "hash": "b459ee03e5984027d759942e97b5742db8a1a7d0104af08a5676eaecf4f2af96"
           }
         ]
       },
       {
         "path": "book",
-        "hash": "998c555f1c2acbf1abcfd0544dff52feabca285d4bdd67c63448b051646f20e4",
+        "hash": "05a1f2e1afaa81a8d5702187c58cb46483be38b25137ecb22ce58da83893bbdb",
         "tree": [
           {
             "path": "book/index.html",
-            "hash": "f12ef97a3062711c6b323a96501ada619679ed8dd5e98e36153cdb22e83cc9e0"
+            "hash": "fe5e5a1467a09c30589fd43a0110eddc6a7fd6c7cff8e6b453b0535768f6e01e"
           }
         ]
       },
       {
         "path": "contact",
-        "hash": "e692656a827e37c33ac918c5dd508af67c8ea1a41578160c8a982563068df739",
+        "hash": "629641babf808d02e2fa841aa17f91de9a9d04933033f78a31ce095e9922f115",
         "tree": [
           {
             "path": "contact/index.html",
-            "hash": "43da1a9643d03c707bd5a0b88787a6652ddf76fbbbc8058784f1347f277582dc"
+            "hash": "339e55cf4cfaddbbe441e48043ef06500fbe52d7d4e8a3cde1c4a1a00052fa20"
           }
         ]
       },
       {
         "path": "index.html",
-        "hash": "f34398bbeab1e0dd2a00d4d5917ff34b8186c4875686aa748315b27ed69d9b58"
+        "hash": "854e38918395ebe7b26abbd5e64e50ba496dc73fcd37f0cf5a8fe59ed8afb770"
       },
       {
         "path": "markup",
-        "hash": "6eaf2c2efd596c8c376717ba9a35ab4e80feb52f2971deb194a12b680a15c7f1",
+        "hash": "4e6e35416523bd9e51d2f84c43c165d2dc38a822559579f854ebc93366eaa6bd",
         "tree": [
           {
             "path": "markup/index.html",
-            "hash": "78fcb959e0a1e4ef9737cf4d6256762514462e844ef962132a1900dbf7158b0a"
+            "hash": "74db0a3ff16505a073ef4a028e688fe03cbae3158e9f9185de6395cb1321738a"
           }
         ]
       },
       {
         "path": "services",
-        "hash": "9badd039e992ca3d56e171772e402c3fa512f9dc955a566eee86adc7de5f2175",
+        "hash": "7d4e97ae8d97286c7a5b4814ab225a7efa81ef6475abe852b209bf595944946b",
         "tree": [
           {
             "path": "services/camera-hire",
-            "hash": "ad0d11002bfaf9b5142df5e23f33a884a8bbdef1f43f14b64cef9f9f702c3616",
+            "hash": "9f8245debaa05cf2aed4248103517a397d3c73763f51d59d741d935c08fa95ff",
             "tree": [
               {
                 "path": "services/camera-hire/index.html",
-                "hash": "23f842a5d61d6ccd95e25060665c55b63dca52b966dd260811cc4986ce3e2eac"
+                "hash": "52ac9a2f16c120f1a0f0109bce0e1165fcc27fbce02ee3aa19dafa914da868cc"
               }
             ]
           },
           {
             "path": "services/event-photography",
-            "hash": "7971c02813467d6afc52cf25cc6332c858ecd7df621073d548195ec2661466c5",
+            "hash": "a04eee200465ddf43424e93cbcf06531a35e75e0bfc2c0739f0f180477cdf2db",
             "tree": [
               {
                 "path": "services/event-photography/index.html",
-                "hash": "5ba1f563d345fecd17f12b46a86f24a6f1c8898e8618542c02f619fc95e0067b"
+                "hash": "b548a3886214b45e9e264c4f82e3441c958e6e0f3ef2891c50370f008b0c44ee"
               }
             ]
           },
           {
             "path": "services/index.html",
-            "hash": "8752c6c4ca17d2c477f7a1555bcb7b9f59f70d10ac9a2bb5820debc349bc4e91"
+            "hash": "754d1c72002f09e52dd7fd7b076c4f9bfe3f693bbfa6df2f9965fa68e1081af2"
           },
           {
             "path": "services/magic-mirror",
-            "hash": "7e6a987d297e9c708043888815e35ae26674520eed09ce11149e40a03aa9fc6a",
+            "hash": "8860e6f3e824a73d0f8a0458d8e1db27e3a3e445fffa7f81bb59c58c521fa478",
             "tree": [
               {
                 "path": "services/magic-mirror/index.html",
-                "hash": "31aaabe679849f415df8980d6d71246c9038f40757d51e7b8d9d505d4da0c84c"
+                "hash": "976e136baae60455dfaee28993fd8ad97929218f0acff321996e397fa3633845"
               }
             ]
           },
           {
             "path": "services/photo-booths",
-            "hash": "c02d057cc464523c33fa2636924c5cde62138f4b71603b550beba81fade2eb0f",
+            "hash": "e68dddfaa740af06cb370c3211c863305fe840c7a1ec98c64c9a5c06377722a9",
             "tree": [
               {
                 "path": "services/photo-booths/index.html",
-                "hash": "f895a9fba6aeb53b66fc98a4bbb32af5707e1124be38f40fa5060d2253eeebdd"
+                "hash": "b6703c480a74fdc5af3a74d567b5c819591017d1b1d59a1474c2f3929d1c6abd"
               },
               {
                 "path": "services/photo-booths/mini-pod",
-                "hash": "48191e4cdcd7ba0213a0c12a270d8e32965255155a7af3c6b45c893ec08914f5",
+                "hash": "bf2c9882324fe8874f5075c12ee5870504584e46f776c09ed74321473e706758",
                 "tree": [
                   {
                     "path": "services/photo-booths/mini-pod/index.html",
-                    "hash": "31abb19e13711e3b2d67c450f731d766905354aa69210a1e268d9d15094425a3"
+                    "hash": "2d6621546a2b2821cffedf15769adb4a4bd0aba1051fb3d95a50a65184b761fe"
                   }
                 ]
               },
               {
                 "path": "services/photo-booths/the-cab",
-                "hash": "1144350c380d94e32c1793e6daca3a9324b9a304eab377b9b52760a6fdc6342c",
+                "hash": "29b4f8cd74fd22bb3b2ea88d68224719ca509360e363fcd239764d2d6c67136e",
                 "tree": [
                   {
                     "path": "services/photo-booths/the-cab/index.html",
-                    "hash": "22ff3db23a462e9af8ba042fe772c641e5b54f7a3c1333efcecb69e930c53175"
+                    "hash": "10af6cbad963325d6013f4299ce79156fb0b7a4164e96b26dd74c354683b048c"
                   }
                 ]
               },
               {
                 "path": "services/photo-booths/the-pod",
-                "hash": "f1a88ee816ff105c1787045d8e697534f4479ede78f45c9545bda9c23716cfb4",
+                "hash": "1c457fe6966cb615aad0449b578c2fd53767e30e0abf237a66d7d16961397969",
                 "tree": [
                   {
                     "path": "services/photo-booths/the-pod/index.html",
-                    "hash": "4b381709c66f9af682c2e57b97911e895204fb51ac407913ef7a128eca235668"
+                    "hash": "99aaaea4ad4150e81332b1491b35093a1c89b256a7e376feed40707e6fa3c4ad"
                   }
                 ]
               }
@@ -127,45 +127,45 @@
           },
           {
             "path": "services/the-wall",
-            "hash": "16b2c496c942181c18b09631d8644c1eb37f3f855293c8c64a0ca35b00476115",
+            "hash": "dd84f3209fb3ed9bc627623205538ced046644564c5de0cda2c5bee0d2151a4a",
             "tree": [
               {
                 "path": "services/the-wall/index.html",
-                "hash": "51f9760cd32672a3450ac454c64c6ee9b965337dc2f7850d4461a3c65b04ce9e"
+                "hash": "c1b8e5907c565bc7769212ee49769d986eda1c4b80c398daa6e556e910128a91"
               }
             ]
           }
         ]
       }
     ],
-    "date": "July 3rd 2016, 9:47:14 pm"
+    "date": "July 4th 2016, 8:36:47 am"
   },
   "public/css": {
     "path": "public/css",
-    "hash": "c9c777083d628eadd8af3924118be497a91e8557f0e02d9b7b5220ca5e46d5fc",
+    "hash": "92a408cd3f4b1c5fd53e95ce1756aaaae79de4b9141f7be985689173e5e79590",
     "tree": [
       {
         "path": "core.css",
-        "hash": "557c3fd8bc846bd992c0238c07d9f4b7036c9ad50df0f2a008f4db38bc94f3ea"
+        "hash": "352a22bc321ff52bfb825f9c1ed4b421ad9e44c7726f0004cf656901118394ee"
       },
       {
         "path": "core.css.map",
-        "hash": "57ea6d47b8fd885ec668177e8d239dfd95b43d78300b9e5cfccb68ee67687aca"
+        "hash": "cf8e98e9922ffd8744b789c4de30b1908e0f76aaa3a479b61485685f414d6612"
       },
       {
         "path": "core.min.css",
-        "hash": "0a56ae52c5bf8bd394254be7e083a36d9191f4ddcee09d5f8c0430b2471251ec"
+        "hash": "ec19557b33f2823a6bded826bec9ad597b46ff15975596f141601cb217cba65e"
       },
       {
         "path": "core.min.css.map",
-        "hash": "0fb42443dae846029e88b588948b38e265407e1195e7d07fcc00f1b9f4f2c20e"
+        "hash": "c2cc19e893871e75d41fb8c1314cab6c7b29bb00f469df6582dfb76ca8c14a17"
       }
     ],
-    "date": "July 3rd 2016, 9:36:41 pm"
+    "date": "July 4th 2016, 8:36:47 am"
   },
   "public/js": {
     "path": "public/js",
-    "hash": "12cb032dfeb879d02cd1caaeaa862863890c28eff3332bca4d8ebc8fdefc282f",
+    "hash": "20daab8fab3484dcbf9bc9c96a3c007569793a23f17deb4202beffbf0419d298",
     "tree": [
       {
         "path": "bundle.js",
@@ -173,17 +173,9 @@
       },
       {
         "path": "bundle.js.map",
-        "hash": "cc0a16731b2a1175ed9edc8e89604c9470861094a769cba4056f20ed5cf4cb5b"
-      },
-      {
-        "path": "bundle.min.js",
-        "hash": "ff8431378c9d73a7932c25c62cae7973970562e49f8b9f8b3935a03b37543afb"
-      },
-      {
-        "path": "bundle.min.js.map",
-        "hash": "85bd37751d4174bd990a32c3076d41809d59e0d79290cf77416206d7194ed714"
+        "hash": "3558b64471d1a60d7487aecc5cd1db83af747a94f4174d767f7af5b2fa01720c"
       }
     ],
-    "date": "July 3rd 2016, 9:36:41 pm"
+    "date": "July 4th 2016, 8:36:47 am"
   }
 }

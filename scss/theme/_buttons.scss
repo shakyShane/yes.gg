@@ -79,7 +79,7 @@
         top: 50%;
         left: 50%;
         color: $black;
-        @include font-size(12px);
+        font-size: 1.2rem;
         width: 100%;
         transform: translateY(-50%) translateX(-50%);
         animation-name: fadeIn;

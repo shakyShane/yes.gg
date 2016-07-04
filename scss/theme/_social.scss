@@ -27,7 +27,7 @@
 
     .svg-icon {
         position: absolute;
-        @include font-size(20px);
+        font-size: 2.0rem;
         @include centered;
     }
 }
@@ -37,7 +37,7 @@
 //----------------------
 .social__link--facebook {
     .svg-icon {
-        @include font-size(18px);
+        font-size: 1.8rem;
     }
 }
 

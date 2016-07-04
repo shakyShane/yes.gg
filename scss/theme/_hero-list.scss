@@ -140,7 +140,7 @@
 // ----------------------
 .hero__tag {
     //color: $orange;
-    @include font-size(27px);
+    font-size: 2.7rem;
     font-family: $font-weight-black;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -150,14 +150,15 @@
 // Title inside the hero content
 // -----------------------------
 .hero__title {
+    color: $white;
     font-family: $font-weight-black;
     text-transform: uppercase;
     margin-bottom: $half-spacing;
 
-    @include font-size(40px);
+    font-size: 4.0rem;
 
     @include media-query(min, $desk-start) {
-        @include font-size(50px);
+        font-size: 5.0rem;
     }
 }
 
@@ -168,7 +169,7 @@
     //font-family: $serif;
     //color: $orange;
 
-    @include font-size(18px);
+    font-size: 1.8rem;
     line-height: 29px;
 
     max-width: 660px;
