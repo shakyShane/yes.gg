@@ -1,8 +1,9 @@
 import state from './state';
+const items = document.querySelectorAll('.cards');
 
 export default function () {
 
-    if (state.aboveLap) {
+    if (state.aboveLap || !items.length) {
         return;
     }
     

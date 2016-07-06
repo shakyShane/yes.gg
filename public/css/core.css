@@ -899,7 +899,8 @@ h6, .h6 {
 
 .site-nav__items {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  margin-bottom: 0; }
 
 @media only screen and (min-width: 640px) {
     .site-nav__items {
@@ -909,6 +910,9 @@ h6, .h6 {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
+
+.site-nav__items .site-nav__item:last-child .nav-link {
+    border-bottom: 0; }
 
 .site-nav__item {
   position: relative; }
@@ -1000,7 +1004,8 @@ h6, .h6 {
 
 .subnav__items {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  margin-bottom: 0; }
 
 .subnav__items .subnav__item:last-child .subnav__link {
     border-bottom: 0; }
@@ -1344,7 +1349,8 @@ http://flickity.metafizzy.co
 
 .hero {
   position: relative;
-  background: #000; }
+  background: #000;
+  overflow: hidden; }
 
 .hero .hero--loading .loader {
     opacity: 1;
