@@ -1,9 +1,78 @@
-- title: "The Pod"
+the-pod:
+  title: "The Pod"
   icon: "booths"
+  thumb: "/content/choice-01.jpg"
   url: "/services/photo-booths/the-pod"
-- title: "The Cab"
+  tagline: >
+    The latest in Party Entertainment, Photo booths are becoming a must-have for parties, events or any other occasion.
+  desc: >
+    The latest in Party Entertainment, Photo booths are becoming a must-have for parties,
+    events or any other occasion. Available for weddings, birthday parties, corporate events
+    and any other party or event. The Pod is ideal for you and your guests to have fun and
+    make your event a memorable one.
+  features:
+    - For ages 4 to 10
+    - Up to 2 hours hire before 5.30pm
+    - USB of all images
+    - Personalised message on photo
+    - Box of Props (hats, wigs, glasses etc.)
+    - Online photo gallery
+    - A friendly attendant to assist with the pod
+    - Double prints with album
+    - Not Suitable for adults
+
+the-cab:
+  title: "The Cab"
   icon: "booths"
+  thumb: "/content/choice-02.jpg"
   url: "/services/photo-booths/the-cab"
-- title: "The mini Pod"
+  tagline: >
+    Why not hire the Cab to capture the memories as well as providing lots of fun and laughter - ideal for <strong>outdoor events</strong>
+  desc: >
+    Are you after a great value party idea that's exciting and different for your guests to remember your party by?
+    Then why not hire the Cab to capture the memories as well as providing lots of fun and laughter. Available for weddings, birthday parties, corporate events and any other party or event. The Cab is ideal for you and your guests to have fun and make your event a memorable one.
+  features:
+    - Ideal for Outdoor Events!
+    - Can be driven straight into your Marquee
+    - Have the iconic London Cab at your Event
+    - Takes up to five people
+    - Up to 4 hours unlimited pod use
+    - Unlimited photos in colour or black and white
+    - Choice of Background Colour
+    - Box of props (hats, wigs, glasses, etc.)
+    - Upload photos to Facebook
+    - Online photo gallery (with free download)
+    - USB of all images
+    - Personalised message or logo
+    - A friendly pod attendant to assist with the pod
+
+mini-pod:
+  title: "The Mini Pod"
   icon: "booths"
+  thumb: "/content/choice-03.jpg"
   url: "/services/photo-booths/mini-pod"
+  tagline: >
+    The Mini Pod is a high quality photo booth designed especially for young children.
+  desc: >
+    The Children's photo booth is the perfect entertainment for any childs party.
+    The Mini Pod is a high quality photo booth designed especially for young children.
+  features:
+    4-10:
+      - For ages 4 to 10
+      - Up to 2 hours hire before 5.30pm
+      - USB of all images
+      - Personalised message on photo
+      - Box of Props (hats, wigs, glasses etc.)
+      - Online photo gallery
+      - A friendly attendant to assist with the pod
+      - Double prints with album
+      - Not Suitable for adults
+    11-16:
+      - For ages 11 to 16
+      - Up to 3 hours hire ending at 10pm
+      - USB of all images
+      - Personalised message on photo
+      - Box of Props (hats, wigs, glasses etc.)
+      - Online photo gallery
+      - A friendly attendant to assist with the pod
+      - Double prints with album

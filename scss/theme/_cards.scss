@@ -67,12 +67,37 @@
     height: 43px;
 }
 
+.cards--full-bleed {
+    .card {
+        padding: $base-spacing;
+        padding-top: 0;
+    }
+    .card__img {
+        margin-left: -$base-spacing;
+        margin-right: -$base-spacing;
+        margin-bottom: $base-spacing;
+    }
+}
+
 // ------------------------
 // Full-bleed image variant
 // ------------------------
 .card__img {
-    margin-bottom: $base-spacing;
-    height: 43px;
+    display: block;
+    font-size: 0;
+
+    img {
+        transition: transform .1s ease-in-out;
+    }
+
+    .has-mouse & {
+        &:hover {
+            img {
+                @include box-shadow;
+                transform: scale(1.05);
+            }
+        }
+    }
 }
 
 // -----------------------

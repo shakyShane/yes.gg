@@ -23,6 +23,10 @@ h1,h2,h3,h4,h5 {
     font-weight: $font-weight-black;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul, p {
     margin-bottom: $base-spacing;
 }
@@ -47,7 +51,7 @@ h3 {
 }
 
 .lede {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .global-loader {

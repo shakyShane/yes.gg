@@ -20,10 +20,10 @@ description: >
 <section class="wrapper detail">
     <div class="container">
         <div class="detail__img">
-            <img src="/content/home-01.jpg" alt="">
+            <img src="/content/photo-booths-01.jpg" alt="">
         </div>
         <div class="detail__content">
-            <h2>Choose from 3 booths</h2>
+            <h2>Choose from three booths</h2>
             <p class="lede">The following is included with all booths.</p>
             <ul>
                 <li>Takes up to five people</li>
@@ -36,54 +36,50 @@ description: >
                 <li>Personalised message or logo</li>
                 <li>A friendly pod attendant to assist with the pod</li>
             </ul>
-            <p>
-                <a href="/services" class="button" ui-please-wait>Our Services</a>
-            </p>
         </div>
         <div class="detail__img detail__img--right">
-            <img src="/content/home-02.jpg" alt="">
+            <img src="/content/photo-booths-02.jpg" alt="">
         </div>
     </div>
 </section>
 
 <section class="wrapper upsell">
     <div class="container">
-        <h1 class="page-title">
-            Which Photo Booth is right for you?
-        </h1>
-        <div class="cards" id="photo-booths-choice">
+        <h1 class="page-title">Which Photo Booth is right for you?</h1>
+        <div class="cards cards--full-bleed" id="photo-booths-choice">
             <!-- TODO: Add info/content for each of the three pods -->
             <!-- The Pod -->
             <div class="card">
-                <div class="card__img">
-                    <img src="/content/barclays.png" alt="">
-                </div>
-                <p class="card__title">The Pod</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
+                <a class="card__img" href="{{$$.booths.the-pod.url}}">
+                    <img src="{{$$.booths.the-pod.thumb}}" alt="">
+                </a>
+                <p class="card__title">{{$$.booths.the-pod.title}}</p>
+                <p class="card__summary">{{$$.booths.the-pod.tagline}}</p>
                 <p class="card__cta">
-                    <a href="#" class="button" ui-please-wait>Book now</a>
+                    <a href="{{$$.booths.the-pod.url}}" class="button">Read More</a>
                 </p>
             </div>
+
             <!-- The Cab -->
             <div class="card">
-                <div class="card__img">
-                    <img src="/content/barclays.png" alt="">
-                </div>
-                <p class="card__title">The Cab</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
+                <a class="card__img" href="{{$$.booths.the-cab.url}}">
+                    <img src="{{$$.booths.the-cab.thumb}}" alt="">
+                </a>
+                <p class="card__title">{{$$.booths.the-cab.title}}</p>
+                <p class="card__summary">{{{$$.booths.the-cab.tagline}}}</p>
                 <p class="card__cta">
-                    <a href="#" class="button" ui-please-wait>Book now</a>
+                    <a href="{{$$.booths.the-cab.url}}" class="button">Read More</a>
                 </p>
             </div>
             <!-- Mini Pod -->
             <div class="card">
-                <div class="card__img">
-                    <img src="/content/barclays.png" alt="">
-                </div>
-                <p class="card__title">Mini Pod</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
+                <a class="card__img" href="{{$$.booths.mini-pod.url}}">
+                    <img src="{{$$.booths.mini-pod.thumb}}" alt="">
+                </a>
+                <p class="card__title">{{$$.booths.mini-pod.title}}</p>
+                <p class="card__summary">{{{$$.booths.mini-pod.tagline}}}</p>
                 <p class="card__cta">
-                    <a href="#" class="button" ui-please-wait>Book now</a>
+                    <a href="{{$$.booths.mini-pod.url}}" class="button">Read More</a>
                 </p>
             </div>
         </div>
