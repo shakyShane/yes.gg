@@ -1,11 +1,9 @@
+// ----------------------------------------
+// Cards are on the homepage (testimonials)
+// And photo-booth selection
+// ----------------------------------------
 .cards {
     position: relative;
-
-    // MAX
-    @include media-query(max, $lap-start) {
-        background: $white;
-        @include box-shadow;
-    }
 
     // MIN
     @include media-query(min, $desk-start) {
@@ -14,16 +12,38 @@
     }
 }
 
+// -----------------------------------------
+// The carousel alternative of the
+// cards puts the box-shadow on the wrapper
+// instead of each element
+// -----------------------------------------
+.cards--carousel {
+    // MAX
+    @include media-query(max, $lap-start) {
+        background: $white;
+        @include box-shadow;
+    }
+    .card {
+        margin-bottom:0;
+        box-shadow: 0 0 0 0;
+    }
+}
+
+// -----------------------
+// Card item
+// -----------------------
 .card {
     background: $white;
     padding: $base-spacing;
     text-align: center;
     z-index: 2;
     width: 100%;
-    
+    margin-bottom: $half-spacing;
+
+    @include box-shadow;
+
     @include media-query(min, $lap-start) {
         width: 100%;
-        @include box-shadow;
         padding: $base-spacing*1.75;
         margin-bottom: $half-spacing;
 
@@ -38,20 +58,48 @@
     }
 }
 
+// --------------------------
+// When a logo is present in
+// testimonials
+// --------------------------
 .card__logo {
     margin-bottom: $base-spacing;
     height: 43px;
 }
 
+// ------------------------
+// Full-bleed image variant
+// ------------------------
+.card__img {
+    margin-bottom: $base-spacing;
+    height: 43px;
+}
+
+// -----------------------
+// card title
+// -----------------------
 .card__title {
     font-size: 2.1rem;
     font-weight: $font-weight-bold;
 }
 
+// -----------------------
+// Card summary text
+// -----------------------
 .card__summary {
     
 }
 
+// -----------------------
+// Card CTA block
+// -----------------------
+.card__cta {
+    margin-bottom: 0;
+}
+
+// -----------------------
+// Author name block
+// -----------------------
 .card__author {
     color: #939296;
     font-size: 1.2rem;

@@ -1,14 +1,16 @@
 import state from './state';
-const items = document.querySelectorAll('.cards');
+const selector = 'testimonial-cards';
+const items = document.getElementById(selector);
+
 
 export default function () {
 
-    if (state.aboveLap || !items.length) {
+    if (state.aboveLap || !items) {
         return;
     }
-    
+
     const Flickity = require('./vendor/flickity');
-    const flickity = new Flickity('.cards', {
+    const flickity = new Flickity(items, {
         // wrapAround: true,
         arrowShape: {
             x0: 30,
