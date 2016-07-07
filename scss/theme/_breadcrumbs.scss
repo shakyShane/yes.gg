@@ -1,0 +1,37 @@
+.breadcrumb {
+    padding-top: $base-spacing;
+    padding-bottom: $half-spacing;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.breadcrumb__items {
+    @include list-reset;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.breadcrumb__item {
+    display: inline-block;
+    &:before {
+        display: inline-block;
+        margin: 0 $half-spacing/2;
+        content: " / ";
+        color: $grey-lt;
+    }
+    &:first-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.breadcrumb__link {
+    text-decoration: none;
+    display: inline-block;
+    color: $black;
+}
+
+.breadcrumb__item--current {
+    color: $grey;
+}
