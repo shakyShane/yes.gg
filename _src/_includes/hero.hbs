@@ -1,14 +1,13 @@
 <section class="wrapper hero-list">
     <div class="container">
-        <h1 hidden="">{{page.title}}</h1>
+        <h1 hidden>{{$$.page.title}}</h1>
         <article class="hero hero--loading">
-            <section class="hero__img" hero-src="/content/hero-01.jpg" hero-src-large="/content/hero-01.jpg">
+            <section class="hero__img" hero-src="{{service.hero.palm}}" hero-src-large="{{service.hero.large}}">
                 <section class="hero__content">
-                    <h2 class="hero__title">{{page.title}}</h2>
-                    <p class="hero__summary">{{page.description}}</p>
-                    <div class="hero__cta">
-                        <a href="/services" class="button">Book now</a>
-                    </div>
+                    <h2 class="hero__title">{{service.title}}</h2>
+                    <p class="hero__summary">
+                        {{{service.tagline}}}
+                    </p>
                 </section>
             </section>
             <div class="loader"></div>

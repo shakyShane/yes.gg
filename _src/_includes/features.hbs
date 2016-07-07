@@ -1,0 +1,38 @@
+<section class="wrapper upsell">
+    <div class="container">
+        <h1 class="page-title">What's included?</h1>
+        <div class="cards cards--feature-list" id="the-pod-features">
+            <div class="card">
+                <p class="card__title">{{feature.title}} - features:</p>
+                <ul class="card__feature-list">
+                    {{#each feature.features}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="card__price">
+                    <strong>Price: £{{feature.price.value}}.00</strong> ({{feature.price.content}})
+                </p>
+                <p class="card__title">{{feature.title}} - Optional Extras:</p>
+                <div class="card__extras">
+                    <table>
+                        <thead>
+                        <th>Extra</th>
+                        <th>Price</th>
+                        </thead>
+                        <tbody>
+                        {{#each feature.extras}}
+                            <tr>
+                                <td>{{this.content}}</td>
+                                <td>£{{this.price.value}}.00</td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card__cta">
+                    <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

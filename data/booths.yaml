@@ -4,13 +4,12 @@ the-pod:
   thumb: "/content/choice-01.jpg"
   hero:
     palm: "/content/photo-booths/the-pod/hero-01.jpg"
-    desk: "/content/photo-booths/the-pod/hero-01.jpg"
+    large: "/content/photo-booths/the-pod/hero-01.jpg"
   url: "/services/photo-booths/the-pod"
   tagline: >
     The latest in Party Entertainment, Photo booths are becoming a must-have for parties, events or any other occasion.
   desc: >
-    The latest in Party Entertainment, Photo booths are becoming a must-have for parties,
-    events or any other occasion. Available for weddings, birthday parties, corporate events
+    Available for weddings, birthday parties, corporate events
     and any other party or event. The Pod is ideal for you and your guests to have fun and
     make your event a memorable one.
   price:
@@ -46,6 +45,9 @@ the-cab:
   title: "The Cab"
   icon: "booths"
   thumb: "/content/choice-02.jpg"
+  hero:
+    palm: "/content/photo-booths/the-cab/hero-02.jpg"
+    large: "/content/photo-booths/the-cab/hero-02.jpg"
   url: "/services/photo-booths/the-cab"
   tagline: >
     Why not hire the Cab to capture the memories as well as providing lots of fun and laughter - ideal for <strong>outdoor events</strong>
@@ -66,6 +68,23 @@ the-cab:
     - USB of all images
     - Personalised message or logo
     - A friendly pod attendant to assist with the pod
+  price:
+    content: 4 hours, unlimited use
+    value: 525
+  extras:
+    memory-album:
+      content: Memory album takes up to 120 photos for your guests to leave their personalised messages
+      price:
+        content: ''
+        value: 80
+    prints:
+      content: Additional set of prints
+      price:
+        value: 60
+    hours:
+      content: Additional Hours
+      price:
+        value: 80
 
 mini-pod:
   title: "The Mini Pod"

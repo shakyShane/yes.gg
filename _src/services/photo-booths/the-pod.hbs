@@ -3,22 +3,7 @@ description: >
     The Pod, for adults
 ---
 
-<section class="wrapper hero-list">
-    <div class="container">
-        <h1 hidden>{{$$.page.title}}</h1>
-        <article class="hero hero--loading">
-            <section class="hero__img" hero-src="{{$$.booths.the-pod.hero.palm}}" hero-src-large="{{$$.booths.the-pod.hero.palm}}">
-                <section class="hero__content">
-                    <h2 class="hero__title">{{$$.booths.the-pod.title}}</h2>
-                    <p class="hero__summary">
-                        {{$$.booths.the-pod.desc}}
-                    </p>
-                </section>
-            </section>
-            <div class="loader"></div>
-        </article>
-    </div>
-</section>
+{{inc src="hero.hbs" service=$$.booths.the-pod}}
 
 <section class="wrapper detail">
     <div class="container">
@@ -35,42 +20,4 @@ description: >
     </div>
 </section>
 
-<section class="wrapper upsell">
-    <div class="container">
-        <h1 class="page-title">What's included?</h1>
-        <div class="cards cards--feature-list" id="the-pod-features">
-            <div class="card">
-                <p class="card__title">{{$$.booths.the-pod.title}} - features:</p>
-                <ul class="card__feature-list">
-                    {{#each $$.booths.the-pod.features}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                </ul>
-                <p class="card__price">
-                    <strong>Price: £{{$$.booths.the-pod.price.value}}.00</strong> ({{$$.booths.the-pod.price.content}})
-                </p>
-                <p class="card__title">{{$$.booths.the-pod.title}} - Optional Extras:</p>
-                <div class="card__extras">
-                    <table>
-                        <thead>
-                        <th>Extra</th>
-                        <th>Price</th>
-                        </thead>
-                        <tbody>
-                        {{#each $$.booths.the-pod.extras}}
-                        <tr>
-                            <td>{{this.content}}</td>
-                            <td>£{{this.price.value}}.00</td>
-                        </tr>
-                        {{/each}}
-                        </tbody>
-                    </table>
-                </div>
-                <div class="card__cta">
-                    <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+{{inc src="features.hbs" feature=$$.booths.the-pod}}

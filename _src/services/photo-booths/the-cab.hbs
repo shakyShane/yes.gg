@@ -3,9 +3,22 @@ description: >
     The Cab, can be driven directly into your event
 ---
 
-<div class="wrapper">
+{{inc src="hero.hbs" service=$$.booths.the-cab}}
+
+
+<section class="wrapper detail">
     <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>Content will follow...</p>
+        <div class="detail__img">
+            <img src="/content/photo-booths-01.jpg" alt="">
+        </div>
+        <div class="detail__content">
+            <h2>{{{$$.booths.the-cab.tagline}}}</h2>
+            <p class="lede">{{{$$.booths.the-cab.desc}}}</p>
+        </div>
+        <div class="detail__img detail__img--right">
+            <img src="/content/photo-booths-02.jpg" alt="">
+        </div>
     </div>
-</div>
+</section>
+
+{{inc src="features.hbs" feature=$$.booths.the-cab}}
