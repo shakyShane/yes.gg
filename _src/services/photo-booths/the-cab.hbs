@@ -8,15 +8,24 @@ description: >
 
 <section class="wrapper detail">
     <div class="container">
-        <div class="detail__img">
-            <img src="/content/photo-booths-01.jpg" alt="">
+
+        <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
+
+            <p class="gallery__hint">Click to zoom</p>
+
+            {{#each $$.booths.the-cab.gallery.images}}
+            <a class="gallery__link" href="{{this.file}}-large.jpg"
+                data-width="{{this.width}}" data-height="{{this.height}}">
+                <img src="{{this.file}}-thumb.jpg" alt="">
+                <figure></figure>
+            </a>
+            {{/each}}
+
         </div>
         <div class="detail__content">
-            <h2>{{{$$.booths.the-cab.tagline}}}</h2>
+            <h2>{{{$$.booths.the-cab.title}}}</h2>
             <p class="lede">{{{$$.booths.the-cab.desc}}}</p>
-        </div>
-        <div class="detail__img detail__img--right">
-            <img src="/content/photo-booths-02.jpg" alt="">
+            <p><strong>From: </strong>£{{$$.booths.the-cab.price.value}}.00</p>
         </div>
     </div>
 </section>

@@ -36,7 +36,7 @@
     }
     .card {
         text-align: left;
-        max-width: 320px;
+        //max-width: 320px;
         margin: 0 auto;
 
         @include media-query(min, $lap-start) {
@@ -174,10 +174,41 @@
     background: #fff2d6;
     font-size: 2.0rem;
     border-radius: 24px;
-    margin-bottom:$base-spacing*2;
-    //font-weight: $font-weight-bold;
+    margin-bottom:$base-spacing;
 }
 
 .card__extras {
     margin-bottom: $base-spacing*2;
+}
+
+.detail__gallery {
+    figure {
+        display: none;
+    }
+    @include media-query(min, $lap-start) {
+        width: 30%;
+    }
+}
+
+.gallery__hint {
+    font-size: 1.4rem;
+    color: $grey;
+    margin-bottom: $half-spacing;
+}
+.gallery__link {
+    font-size: 0;
+    display: inline-block;
+    max-width: 100px;
+    margin: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.detail__content {
+    @include media-query(min, $lap-start) {
+        width: 70%;
+        padding-left: $base-spacing;
+    }
 }

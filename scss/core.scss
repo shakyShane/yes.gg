@@ -24,6 +24,13 @@
 @import "theme/flickity";
 @import "theme/cards";
 
+$pswp__assets-path: '/photoswipe/default-skin/';
+
+@import "../node_modules/photoswipe/src/css/main";
+@import "../node_modules/photoswipe/src/css/default-skin/default-skin";
+
+
+
 // Homepage
 @import "theme/hero-list";
 @import "theme/detail";
