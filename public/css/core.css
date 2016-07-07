@@ -1352,6 +1352,14 @@ http://flickity.metafizzy.co
     .cards--feature-list .card {
       width: 620px; } }
 
+@media only screen and (min-width: 960px) {
+  .cards--feature-list--two-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .cards--feature-list--two-up .card {
+      width: 48%; } }
+
 .card {
   background: #FFF;
   padding: 24px;

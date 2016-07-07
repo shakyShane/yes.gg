@@ -50,6 +50,18 @@
     }
 }
 
+.cards--feature-list--two-up {
+
+    @include media-query(min, $desk-start) {
+
+        display: flex;
+
+        .card {
+            width: 48%;
+        }
+    }
+}
+
 // -----------------------
 // Card item
 // -----------------------

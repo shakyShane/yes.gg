@@ -90,29 +90,42 @@ mini-pod:
   title: "The Mini Pod"
   icon: "booths"
   thumb: "/content/choice-03.jpg"
+  hero:
+    palm: "/content/photo-booths/the-pod/hero-01.jpg"
+    large: "/content/photo-booths/the-pod/hero-01.jpg"
   url: "/services/photo-booths/mini-pod"
   tagline: >
     The Mini Pod is a high quality photo booth designed especially for young children.
   desc: >
     The Children's photo booth is the perfect entertainment for any childs party.
     The Mini Pod is a high quality photo booth designed especially for young children.
-  features:
+  items:
     4-10:
-      - For ages 4 to 10
-      - Up to 2 hours hire before 5.30pm
-      - USB of all images
-      - Personalised message on photo
-      - Box of Props (hats, wigs, glasses etc.)
-      - Online photo gallery
-      - A friendly attendant to assist with the pod
-      - Double prints with album
-      - Not Suitable for adults
+      title: Ages 4-10
+      features:
+        - For ages 4 to 10
+        - Up to 2 hours hire before 5.30pm
+        - USB of all images
+        - Personalised message on photo
+        - Box of Props (hats, wigs, glasses etc.)
+        - Online photo gallery
+        - A friendly attendant to assist with the pod
+        - Double prints with album
+        - Not Suitable for adults
+      price:
+        content: 'unlimited use'
+        value: 150
     11-16:
-      - For ages 11 to 16
-      - Up to 3 hours hire ending at 10pm
-      - USB of all images
-      - Personalised message on photo
-      - Box of Props (hats, wigs, glasses etc.)
-      - Online photo gallery
-      - A friendly attendant to assist with the pod
-      - Double prints with album
+      title: Ages 11-16
+      features:
+        - For ages 11 to 16
+        - Up to 3 hours hire ending at 10pm
+        - USB of all images
+        - Personalised message on photo
+        - Box of Props (hats, wigs, glasses etc.)
+        - Online photo gallery
+        - A friendly attendant to assist with the pod
+        - Double prints with album
+      price:
+        content: 'unlimited use'
+        value: 350
