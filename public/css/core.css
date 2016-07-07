@@ -454,6 +454,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.5;
   color: #000;
   min-height: 100vh; }
 
@@ -463,7 +464,7 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
-ul, p {
+ul, p, table {
   margin-bottom: 24px; }
 
 ul {
@@ -519,6 +520,26 @@ h3 {
     .container {
       padding-left: 24px;
       padding-right: 24px; } }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #D8D8D8; }
+
+thead tr th:last-child {
+  text-align: right; }
+
+th {
+  background: #FBC138;
+  border: 1px solid #FBC138; }
+
+th, td {
+  padding: 12px 24px; }
+
+.has-mouse tr:hover td {
+  background: rgba(251, 193, 56, 0.2); }
+
+tr td:last-child {
+  text-align: right; }
 
 h1, .h1,
 h2, .h2,
@@ -1313,6 +1334,24 @@ http://flickity.metafizzy.co
   margin-bottom: 0;
   box-shadow: 0 0 0 0; }
 
+@media only screen and (min-width: 960px) {
+  .cards--feature-list {
+    display: block; } }
+
+.cards--feature-list .card {
+  text-align: left;
+  max-width: 320px;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 640px) {
+    .cards--feature-list .card {
+      width: auto;
+      max-width: 620px; } }
+
+@media only screen and (min-width: 960px) {
+    .cards--feature-list .card {
+      width: 620px; } }
+
 .card {
   background: #FFF;
   padding: 24px;
@@ -1373,6 +1412,19 @@ http://flickity.metafizzy.co
 .card__author {
   color: #939296;
   font-size: 1.2rem; }
+
+.card__price {
+  padding-top: 0.5625em;
+  padding-bottom: 0.5625em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background: #fff2d6;
+  font-size: 2.0rem;
+  border-radius: 24px;
+  margin-bottom: 48px; }
+
+.card__extras {
+  margin-bottom: 48px; }
 
 .hero-list {
   padding: 0; }
@@ -1544,8 +1596,8 @@ http://flickity.metafizzy.co
     display: block;
     position: relative;
     top: 120px;
-    padding-left: 0;
-    padding-right: 0; }
+    padding-left: 12px;
+    padding-right: 12px; }
     .detail__img--right img {
       max-width: 345px; } }
 

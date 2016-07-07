@@ -15,6 +15,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: $font-weight;
+    line-height: 1.5;
     color: $black;
     min-height: 100vh;
 }
@@ -27,7 +28,7 @@ img {
     max-width: 100%;
 }
 
-ul, p {
+ul, p, table {
     margin-bottom: $base-spacing;
 }
 

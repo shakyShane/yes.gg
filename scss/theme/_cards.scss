@@ -29,6 +29,27 @@
     }
 }
 
+.cards--feature-list {
+    @include media-query(min, $desk-start) {
+        display: block;
+        //justify-content: space-between;
+    }
+    .card {
+        text-align: left;
+        max-width: 320px;
+        margin: 0 auto;
+
+        @include media-query(min, $lap-start) {
+            width: auto;
+            max-width: 620px;
+        }
+
+        @include media-query(min, $desk-start) {
+            width: 620px;
+        }
+    }
+}
+
 // -----------------------
 // Card item
 // -----------------------
@@ -128,4 +149,23 @@
 .card__author {
     color: #939296;
     font-size: 1.2rem;
+}
+
+// -----------------------
+// Yellow-bg price block
+// -----------------------
+.card__price {
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background: #fff2d6;
+    font-size: 2.0rem;
+    border-radius: 24px;
+    margin-bottom:$base-spacing*2;
+    //font-weight: $font-weight-bold;
+}
+
+.card__extras {
+    margin-bottom: $base-spacing*2;
 }

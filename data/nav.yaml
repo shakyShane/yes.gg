@@ -1,7 +1,9 @@
-- label: About
+about:
+  label: About
   url: /about
 
-- label: Services
+services:
+  label: Services
   url: /services
   items:
     - label: "Photo Booths"
@@ -33,16 +35,15 @@
       icon: "camera"
       url: "/services/camera-hire"
 
-- label: About Us
-  url: /about
-
-- label: Contact Us
+contact:
+  label: Contact Us
   url: /contact
   items:
     - label: <strong>Phone</strong> (01623 863132)
       url: 'call:01623 863132'
     - label: <strong>Email</strong> hello@yes.gg
       url: 'mailto:hello@yes.gg'
-- label: Book
+book:
+  label: Book
   url: /contact#book
   type: "cta"

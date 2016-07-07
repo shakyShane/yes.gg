@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid $grey-lt;
+    //border: 1px solid $grey-lt;
+    //border-top-left-radius: 8px;
+    //border-top-right-radius: 8px;
+}
+
+
+thead {
+    tr {
+        th:first-child {
+
+            //border-top-left-radius: 8px;
+        }
+        th:last-child {
+            text-align: right;
+            //border-top-right-radius: 8px;
+        }
+    }
+}
+
+th {
+    background: $yellow;
+    border: 1px solid $yellow;
+}
+
+th, td {
+    padding: $half-spacing $base-spacing;
+    //border-left: 1px solid $grey
+}
+
+tr {
+    .has-mouse & {
+        &:hover {
+            td {
+                background: rgba($yellow, .2);
+            }
+        }
+    }
+    td:last-child {
+        text-align: right;
+
+    }
+}

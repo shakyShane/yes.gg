@@ -25,7 +25,7 @@ export default function init () {
         const $elem = $(item);
         const src = $elem.attr(HeroAttributes.srcAttr);
         const large = $elem.attr(HeroAttributes.largeAttr);
-        return {
+        return {    
             $elem,
             src: src,
             large: large,
