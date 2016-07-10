@@ -2387,6 +2387,9 @@ a.pswp__share--download:hover {
   width: 100%;
   margin-bottom: 24px; }
 
+.detail__img img {
+    max-width: 360px; }
+
 @media only screen and (min-width: 960px) {
     .detail__img {
       width: auto;

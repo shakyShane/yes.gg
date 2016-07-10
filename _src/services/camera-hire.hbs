@@ -1,21 +1,32 @@
 ---
 description: >
-    Camera Hire for your events
+    Compact Camera Hire
+cta: true
+features: camera-hire-features
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
 ---
 
-<div class="wrapper">
-    <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>Content will follow...</p>
-    </div>
-</div>
+{{inc src="hero.hbs" service=$$.camera-hire}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.camera-hire.title}}
 
-<div class="wrapper breadcrumb">
+<section class="wrapper detail">
     <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/services">Services</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">Camera Hire</li>
-        </ul>
+        <div class="detail__img">
+            <img src="/content/camera-hire/JV200_FRONT_OPEN_S.png" alt="">
+        </div>
+        <div class="detail__content">
+            <h2>{{{$$.camera-hire.title}}}</h2>
+            <p class="lede">{{{$$.camera-hire.lede}}}</p>
+            <p>{{$$.camera-hire.desc}}</p>
+            <p>
+                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+            </p>
+        </div>
     </div>
-</div>
+</section>
+
+{{inc src="features.hbs" feature=$$.camera-hire id=page.features}}

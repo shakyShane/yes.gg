@@ -1,0 +1,26 @@
+title: "Compact Camera Hire"
+slug: "camera-hire"
+icon: "camera"
+hero:
+  palm: "/content/camera-hire/hero-01.jpg"
+  large: "/content/camera-hire/hero-01.jpg"
+url: "/services/camera-hire"
+tagline: >
+  Gone are the days of providing disposable cameras for your guests to capture the big day - do it the modern way and Hire Digital Cameras instead.
+lede: Why should I hire a digital camera instead of buying disposable Ones?
+desc: >
+    For £10.00 more per camera you will receive a far better quality
+    of photo, a choice of colour or black and white photos, you can
+    view your images at the time and delete any embarrassing ones
+    or poor quality photo, you get a digital copy of all the photos
+    ready for further printing or downloading and you get the
+    opportunity to take more than 24 photos.
+price:
+  content: each
+  value: 30
+features:
+    - 14 mega pixel compact digital camera
+    - SD memory card which can hold up to 160 photos
+    - 6 x 4 print of all photos taken
+    - a usb stick containing all the photos
+    - An online gallery on our website with free download

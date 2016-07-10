@@ -13,6 +13,7 @@
         <strong>Price: £{{feature.price.additional.value}}.00</strong> ({{feature.price.additional.content}})
     </p>
     {{/if}}
+    {{#if feature.extras}}
     <p class="card__title">{{feature.title}} - Optional Extras:</p>
     <div class="card__extras">
         <table>
@@ -30,6 +31,7 @@
             </tbody>
         </table>
     </div>
+    {{/if}}
     <div class="card__cta">
         <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
     </div>

@@ -28,6 +28,10 @@
     width: 100%;
     margin-bottom: $base-spacing;
 
+    img {
+        max-width: 360px;
+    }
+
     @include media-query(min, $desk-start) {
 
         width: auto;
