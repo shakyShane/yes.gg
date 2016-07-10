@@ -21,7 +21,6 @@ export default function () {
         evt.preventDefault();
         const index = $linkItems.indexOf(this);
         initGallery(items, index, this);
-        console.log(items);
     });
 }
 

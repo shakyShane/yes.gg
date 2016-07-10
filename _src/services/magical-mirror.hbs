@@ -30,6 +30,18 @@ breadcrumbs:
                 </a>
             {{/imgs}}
         </div>
+
+
+        <div class="detail__content">
+            <h2>{{{$$.magical-mirror.title}}}</h2>
+            <p class="lede">{{{$$.magical-mirror.lede}}}</p>
+            {{#each $$.magical-mirror.desc}}
+            <p>{{this}}</p>
+            {{/each}}
+            <p>
+                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+            </p>
+        </div>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "2bce3a886fb8fc04818d30a3b880ebc5150f78ff9fa7875bbd87b74db96d5065",
+    "hash": "bf2c90a5d5828f1bf7a5f0af4a70ceb83f84b9cb66cb6b77a84ce6bbbc1a066c",
     "tree": [
       {
         "path": "about",
@@ -49,7 +49,7 @@
       },
       {
         "path": "services",
-        "hash": "ad20d786299d3d0bc6969930ff641b3c53eeae37ea702d891367c9969d7455f9",
+        "hash": "003e73a6a31d1fa7e6a5cde31313b5087072aea5f8dc45b4e6bc3edcd9e9078e",
         "tree": [
           {
             "path": "services/camera-hire",
@@ -77,11 +77,11 @@
           },
           {
             "path": "services/magical-mirror",
-            "hash": "d7403e9d84c1e787ff322e3c8f930fb74076e57a4030f5ec231806459cb91dda",
+            "hash": "97badbeef76eb3fd1dd264af2edc810f8331e931eecbe43972e00df308045fb2",
             "tree": [
               {
                 "path": "services/magical-mirror/index.html",
-                "hash": "246a884e9add4acef6dfa19eecae9b76bef1bb930cd459a57fe0847b45df0722"
+                "hash": "327fe246d94215c68eb2fdcf5925306918ef32a1101ec8da03007cfa8ffcf998"
               }
             ]
           },
@@ -138,7 +138,7 @@
         ]
       }
     ],
-    "date": "July 10th 2016, 8:48:09 pm"
+    "date": "July 10th 2016, 9:04:05 pm"
   },
   "public/css": {
     "path": "public/css",
@@ -165,15 +165,15 @@
   },
   "public/js": {
     "path": "public/js",
-    "hash": "ce2c0e27eea5f5013f8fcc7403114b496133ea9ea0b6cef1f995416fbda0d595",
+    "hash": "36972b74363c154a24b1c9c023858b3e8244023680f545e3b78678db43837583",
     "tree": [
       {
         "path": "bundle.js",
-        "hash": "3c39862876d53f17e6ad8f74b8f3b59e733808e75f8f9f2b77b6276b6556afb6"
+        "hash": "5f0f2a61c6b80fd1a43b32c2b6b61cdd385d8023da3e178dab7314e4467a1687"
       },
       {
         "path": "bundle.js.map",
-        "hash": "ddb780dc3977158c0308d7902b6f69dcb23bfce4538396c8f61105a7e6faeb48"
+        "hash": "12e3d981d5d5e85f8a243c361e59cf6fc490f27fe60446ec06bb2404bcfdcc8b"
       },
       {
         "path": "bundle.min.js",
@@ -184,6 +184,6 @@
         "hash": "85bd37751d4174bd990a32c3076d41809d59e0d79290cf77416206d7194ed714"
       }
     ],
-    "date": "July 10th 2016, 2:11:46 pm"
+    "date": "July 10th 2016, 9:04:05 pm"
   }
 }
