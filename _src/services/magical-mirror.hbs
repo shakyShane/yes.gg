@@ -1,0 +1,36 @@
+---
+description: >
+    The Magic mirror is great Fun!
+cta: true
+features: magical-mirror-features
+gallery: magical-mirror-gallery
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+---
+
+
+{{inc src="hero.hbs" service=$$.magical-mirror}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.magical-mirror.title}}
+
+<section class="wrapper detail" id={{page.gallery}}>
+    <div class="container">
+
+        <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
+
+            <p class="gallery__hint">Click to zoom</p>
+
+            {{#imgs src="dir:public/content/magical-mirror/gallery" rel="public" limit=10}}
+                <a class="gallery__link" href="{{this.large.src}}"
+                   data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                    <img src="{{this.thumb.src}}" alt="">
+                    <figure></figure>
+                </a>
+            {{/imgs}}
+        </div>
+    </div>
+</section>
+
+{{inc src="features.hbs" feature=$$.magical-mirror id=page.features}}

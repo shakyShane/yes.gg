@@ -1,5 +1,5 @@
 <div class="card">
-    <p class="card__title">{{feature.title}} - features:</p>
+    <p class="card__title">{{feature.title}} - Features:</p>
     <ul class="card__feature-list">
         {{#each feature.features}}
             <li>{{this}}</li>
@@ -8,6 +8,11 @@
     <p class="card__price">
         <strong>Price: £{{feature.price.value}}.00</strong> ({{feature.price.content}})
     </p>
+    {{#if feature.price.additional}}
+    <p class="card__price">
+        <strong>Price: £{{feature.price.additional.value}}.00</strong> ({{feature.price.additional.content}})
+    </p>
+    {{/if}}
     <p class="card__title">{{feature.title}} - Optional Extras:</p>
     <div class="card__extras">
         <table>

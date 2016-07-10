@@ -1,3 +1,16 @@
+Commands
+
+Create thumbs
+
+```shell
+mogrify  -format jpg -path thumbs -thumbnail 150x150 *.jpg
+```
+
+rename files
+```shell
+rename -X -e '$_ = "$N-large"' *
+```
+
 <!--crossbow-docs-start-->
 ## Crossbow tasks
 
