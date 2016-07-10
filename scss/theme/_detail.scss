@@ -1,9 +1,14 @@
 .detail {
     position: relative;
     z-index: 2;
+
     > .container {
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
+
         @include media-query(min, $lap-start) {
             display: flex;
+            flex-wrap: wrap;
         }
     }
     
@@ -19,30 +24,20 @@
 
 .detail__img {
 
-    display: none;
     font-size: 0;
+    width: 100%;
+    margin-bottom: $base-spacing;
 
-    @include media-query(min, $lap-start) {
+    @include media-query(min, $desk-start) {
 
-        display: block;
-
+        width: auto;
         padding-left: $base-spacing*2;
         padding-right: $base-spacing*2;
-
-        img {
-            max-width: 230px;
-            @include box-shadow;
-        }
     }
 }
 
 .detail__img--right {
 
-    //outline: 1px solid red;
-
-    @include media-query(min, $lap-start) {
-        display: none;
-    }
 
     @include media-query(min, $desk-start) {
         display: block;

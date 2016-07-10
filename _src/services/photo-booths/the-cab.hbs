@@ -3,23 +3,20 @@ description: >
     The Cab, can be driven directly into your event
 cta: true
 features: the-cab-features
+gallery: the-cab-gallery
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+    - label: Photo Booths
+      url: /services/photo-booths
 ---
 
 {{inc src="hero.hbs" service=$$.booths.the-cab}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.booths.the-cab.title}}
 
-
-<div class="wrapper breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/services">Services</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/services/photo-booths">Photo Booths</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">The Cab</li>
-        </ul>
-    </div>
-</div>
-
-<section class="wrapper detail">
+<section class="wrapper detail" id="the-cab-gallery">
     <div class="container">
 
         <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
@@ -38,7 +35,9 @@ features: the-cab-features
             <h2>{{{$$.booths.the-cab.title}}}</h2>
             <p class="lede">{{{$$.booths.the-cab.desc}}}</p>
 
-            <p><strong>From: </strong>£{{$$.booths.the-cab.price.value}}.00</p>
+            <!--<p><strong>From: </strong>£{{$$.booths.the-cab.price.value}}.00</p>-->
+
+            <!--<p><a data-scroll href="#choose-your-booth" class="button button--alt">Features</a></p>-->
         </div>
     </div>
 </section>

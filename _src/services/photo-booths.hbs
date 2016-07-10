@@ -1,6 +1,9 @@
 ---
 description: >
     The latest in Party Entertainment, Photo booths are becoming a must-have for parties, events or any other occasion. Available for <strong>weddings</strong>, <strong>birthday parties</strong>, <strong>corporate events</strong> and any other party or event.
+cta: true
+features: 'choose-your-booth'
+gallery:  'photo-booths-gallery'
 ---
 
 <section class="wrapper hero-list">
@@ -10,6 +13,10 @@ description: >
                 <section class="hero__content">
                     <h1 class="hero__title">{{page.title}}</h1>
                     <p class="hero__summary">{{{page.description}}}</p>
+                    <div class="hero__cta">
+                        <a data-scroll href="#{{page.gallery}}" class="button button--trans">Gallery</a>
+                        <a data-scroll href="#{{page.features}}" class="button button--trans">Choose your Booth</a>
+                    </div>
                 </section>
             </section>
             <div class="loader"></div>
@@ -27,33 +34,42 @@ description: >
     </div>
 </div>
 
-<section class="wrapper detail">
+<section class="wrapper detail" id="{{page.gallery}}">
     <div class="container">
-        <div class="detail__img">
-            <img src="/content/photo-booths-01.jpg" alt="">
+
+        <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
+
+            <p class="gallery__hint">Click to zoom</p>
+            {{#imgs src="dir:public/content/photo-booths/the-pod/gallery" rel="public"}}
+            <a class="gallery__link" href="{{this.large.src}}"
+               data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                <img src="{{this.thumb.src}}" alt="">
+                <figure></figure>
+            </a>
+            {{/imgs}}
+            {{#imgs src="dir:public/content/photo-booths/the-cab/gallery" rel="public"}}
+            <a class="gallery__link" href="{{this.large.src}}"
+               data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                <img src="{{this.thumb.src}}" alt="">
+                <figure></figure>
+            </a>
+            {{/imgs}}
         </div>
+
         <div class="detail__content">
             <h2>Choose from three booths</h2>
-            <p class="lede">The following is included with all booths.</p>
+            <p class="lede">We currently have 3 different booths available for hire.</p>
             <ul>
-                <li>Takes up to five people</li>
-                <li>Price includes up to 4 hours unlimited pod use</li>
-                <li>Unlimited photos in colour or black and white</li>
-                <li>Choice of Background Colour</li>
-                <li>Box of props (hats, wigs, glasses, etc.)</li>
-                <li>Photos to Facebook</li>
-                <li>USB of all images</li>
-                <li>Personalised message or logo</li>
-                <li>A friendly pod attendant to assist with the pod</li>
+                <li><strong>The Pod: </strong>Ideal for most adult events</li>
+                <li><strong>The Cab: </strong>Perfect for any outdoor events</li>
+                <li><strong>The Mini Pod: </strong>Choose this for kids parties</li>
             </ul>
-        </div>
-        <div class="detail__img detail__img--right">
-            <img src="/content/photo-booths-02.jpg" alt="">
+            <p><a data-scroll href="#choose-your-booth" class="button button--alt">Choose your Booth</a></p>
         </div>
     </div>
 </section>
 
-<section class="wrapper upsell">
+<section class="wrapper upsell" id="choose-your-booth">
     <div class="container">
         <h1 class="page-title">Which Photo Booth is right for you?</h1>
         <div class="cards cards--full-bleed" id="photo-booths-choice">

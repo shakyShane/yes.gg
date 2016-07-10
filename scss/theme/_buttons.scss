@@ -58,6 +58,11 @@
     }
 }
 
+.button--alt {
+    border: 1px solid $yellow;
+    background: $white;
+}
+
 .button--trans {
     background: transparent;
     color: $white;

@@ -3,13 +3,21 @@ description: >
     Mini-pod, for kids parties
 cta: true
 features: mini-pod-features
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+    - label: Photo Booths
+      url: /services/photo-booths
 ---
 
 {{inc src="hero.hbs" service=$$.booths.mini-pod}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.booths.mini-pod.title}}
 
 <section class="wrapper detail">
     <div class="container">
-        <div class="detail__gallery">
+        <div class="detail__img">
             <img src="/content/choice-03.jpg" alt="">
         </div>
         <div class="detail__content">
@@ -33,10 +41,10 @@ features: mini-pod-features
                         <li>{{this}}</li>
                     {{/each}}
                 </ul>
-                <p class="card__price">
-                    <strong>Price: £{{$$.booths.mini-pod.items.4-10.price.value}}.00</strong>
-                </p>
-                <div class="card__cta">
+                <div class="card__cta card__cta--bottom">
+                    <p class="card__price">
+                        <strong>Price: £{{$$.booths.mini-pod.items.4-10.price.value}}.00</strong>
+                    </p>
                     <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
                 </div>
             </div>
@@ -47,10 +55,10 @@ features: mini-pod-features
                         <li>{{this}}</li>
                     {{/each}}
                 </ul>
-                <p class="card__price">
-                    <strong>Price: £{{$$.booths.mini-pod.items.11-16.price.value}}.00</strong>
-                </p>
-                <div class="card__cta">
+                <div class="card__cta card__cta--bottom">
+                    <p class="card__price">
+                        <strong>Price: £{{$$.booths.mini-pod.items.11-16.price.value}}.00</strong>
+                    </p>
                     <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
                 </div>
             </div>

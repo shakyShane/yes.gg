@@ -58,6 +58,12 @@
 
         .card {
             width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+
+            > * {
+                width: 100%;
+            }
         }
     }
 }
@@ -153,6 +159,10 @@
 // -----------------------
 .card__cta {
     margin-bottom: 0;
+}
+
+.card__cta--bottom {
+    //justify-content: flex-end;
 }
 
 // -----------------------

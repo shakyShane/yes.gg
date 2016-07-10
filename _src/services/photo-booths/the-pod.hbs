@@ -3,11 +3,20 @@ description: >
     The Pod, for adults
 cta: true
 features: the-pod-features
+gallery: 'the-pod-gallery'
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+    - label: Photo Booths
+      url: /services/photo-booths
 ---
 
 {{inc src="hero.hbs" service=$$.booths.the-pod}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.booths.the-pod.title}}
 
-<section class="wrapper detail">
+<section class="wrapper detail" id="{{page.gallery}}">
     <div class="container">
 
         <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">

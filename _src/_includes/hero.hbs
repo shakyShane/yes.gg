@@ -10,7 +10,10 @@
                     </p>
                     {{#if page.cta}}
                     <div class="hero__cta">
-                        <a href="#{{page.features}}" class="button">Features / Prices</a>
+                        {{#if page.gallery}}
+                        <a data-scroll href="#{{page.gallery}}" class="button button--trans">Gallery</a>
+                        {{/if}}
+                        <a data-scroll href="#{{page.features}}" class="button button--trans">Features / Prices</a>
                     </div>
                     {{/if}}
                 </div>

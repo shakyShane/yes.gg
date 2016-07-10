@@ -639,6 +639,10 @@ h6, .h6 {
       -webkit-transform: scale(0.9);
               transform: scale(0.9); }
 
+.button--alt {
+  border: 1px solid #FBC138;
+  background: #FFF; }
+
 .button--trans {
   background: transparent;
   color: #FFF;
@@ -1389,7 +1393,14 @@ http://flickity.metafizzy.co
     display: -ms-flexbox;
     display: flex; }
     .cards--feature-list--two-up .card {
-      width: 48%; } }
+      width: 48%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .cards--feature-list--two-up .card > * {
+        width: 100%; } }
 
 .card {
   background: #FFF;
@@ -2307,11 +2318,9 @@ a.pswp__share--download:hover {
   margin-bottom: 24px; }
 
 .hero__cta {
-  width: 150px;
   margin: 0 auto; }
 
 .hero__cta .button {
-    width: 100%;
     margin-bottom: 12px; }
 
 @media only screen and (min-width: 640px) {
@@ -2326,11 +2335,17 @@ a.pswp__share--download:hover {
   position: relative;
   z-index: 2; }
 
+.detail > .container {
+    padding-left: 24px;
+    padding-right: 24px; }
+
 @media only screen and (min-width: 640px) {
-    .detail > .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      .detail > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 @media only screen and (min-width: 640px) {
     .detail {
@@ -2343,21 +2358,15 @@ a.pswp__share--download:hover {
           flex: 1; }
 
 .detail__img {
-  display: none;
-  font-size: 0; }
+  font-size: 0;
+  width: 100%;
+  margin-bottom: 24px; }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 960px) {
     .detail__img {
-      display: block;
+      width: auto;
       padding-left: 48px;
-      padding-right: 48px; }
-      .detail__img img {
-        max-width: 230px;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); } }
-
-@media only screen and (min-width: 640px) {
-  .detail__img--right {
-    display: none; } }
+      padding-right: 48px; } }
 
 @media only screen and (min-width: 960px) {
   .detail__img--right {
