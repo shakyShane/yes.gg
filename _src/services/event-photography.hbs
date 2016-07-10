@@ -1,20 +1,72 @@
 ---
 description: >
     Professional Photography for any event!
+cta: true
+features: event-photography-features
+gallery: event-photography-gallery
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
 ---
 
-<div class="wrapper">
+
+{{inc src="hero.hbs" service=$$.event-photography}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.event-photography.title}}
+
+<section class="wrapper detail" id={{page.gallery}}>
     <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>Content will follow...</p>
+
+        <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
+            <p class="gallery__hint">Click to zoom</p>
+            {{#imgs src="dir:public/content/event-photography/gallery" rel="public" limit=10}}
+                <a class="gallery__link" href="{{this.large.src}}"
+                   data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                    <img src="{{this.thumb.src}}" alt="">
+                    <figure></figure>
+                </a>
+            {{/imgs}}
+
+        </div>
+
+        <div class="detail__content">
+            <h2>{{{$$.event-photography.title}}}</h2>
+            <p class="lede">{{{$$.event-photography.desc}}}</p>
+            {{#each  $$.event-photography.features}}
+            <p>{{{this}}}</p>
+            {{/each}}
+
+            <div class="card card--inset" id={{page.features}}>
+                <p class="card__price">
+                    {{$$.event-photography.price.content}}: <strong>£{{$$.event-photography.price.value}}.00</strong>
+                </p>
+                <p class="card__price">
+                    {{$$.event-photography.price.additional.content}}: <strong>£{{$$.event-photography.price.additional.value}}.00</strong>
+                </p>
+                <br>
+                <p class="card__title">{{$$.event-photography.title}} - Optional Extras:</p>
+                <div class="card__extras">
+                    <table>
+                        <thead>
+                        <th>Extra</th>
+                        <th style="text-align: center">Price</th>
+                        </thead>
+                        <tbody>
+                        {{#each $$.event-photography.extras}}
+                            <tr>
+                                <td>{{this.content}}</td>
+                                <td><a href="{{$$.nav.contact.url}}" class="button button--alt">Contact</a></td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card__cta">
+                    <a href="{{$$.nav.book.url}}" class="button">Book Now</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="wrapper breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/services">Services</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">Event Photography</li>
-        </ul>
-    </div>
-</div>
+
+</section>

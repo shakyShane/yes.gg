@@ -30,13 +30,14 @@
 }
 
 .cards--feature-list {
+
     @include media-query(min, $desk-start) {
         display: block;
         //justify-content: space-between;
     }
+
     .card {
         text-align: left;
-        //max-width: 320px;
         margin: 0 auto;
 
         @include media-query(min, $lap-start) {
@@ -118,6 +119,13 @@
     }
 }
 
+.card--inset {
+    width: auto;
+    box-shadow: 0 0 0 0;
+    text-align: left;
+    padding: 0;
+}
+
 // ------------------------
 // Full-bleed image variant
 // ------------------------
@@ -192,10 +200,12 @@
 }
 
 .detail__gallery {
+    text-align: center;
     figure {
         display: none;
     }
     @include media-query(min, $lap-start) {
+        text-align: left;
         width: 30%;
     }
 }
@@ -205,11 +215,32 @@
     color: $grey;
     margin-bottom: $half-spacing;
 }
+
 .gallery__link {
     font-size: 0;
     display: inline-block;
-    max-width: 100px;
+    //max-width: 100px;
+    width: 100px;
+    height: 65px;
+    overflow: hidden;
     margin: 0;
+    display: none;
+
+    &:nth-child(-n+11) {
+        display: inline-block;
+    }
+
+    @include media-query(min, $lap-start) {
+        &:nth-child(-n+20) {
+            display: inline-block;
+        }
+    }
+
+    @include media-query(min, $desk-start) {
+        &:nth-child(-n+60) {
+            display: inline-block;
+        }
+    }
 
     img {
         width: 100%;

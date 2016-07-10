@@ -1,0 +1,44 @@
+title: "Event Photography"
+icon: "booths"
+thumb: "/content/choice-01.jpg"
+suited: "Ideal for most events"
+hero:
+  palm: "/content/event-photography/hero-02.jpg"
+  large: "/content/event-photography/hero-02.jpg"
+url: "/services/photo-booths/the-pod"
+tagline: >
+  We offer a professional corporate event photography service capturing your event as it unfolds naturally.
+desc: >
+  We cover all types of events from corporate, charity balls, birthdays, christenings, proms and weddings.
+  Our aim is to capture special moments so you can treasure them forever.
+price:
+  content: First Hour
+  value: 100
+  additional:
+    content: Additional Hours
+    value: 80
+features:
+  - At your event we can provide a mixture of photos from candid, group, fun and traditional portraits.  We can offer a variety of backdrops, including black with LED lights, green screen, white light box, coloured studio backdrops or branded backdrops.
+  - Photos can be viewed and purchased from our website via a private gallery within 48 hours of the event.
+  - We can offer our services for FREE for Charity Balls and Proms (providing we are the only photographer at the event).
+  - Looking for something different we can offer paparrazi style photographers - Paparazzi photographers arrive at your event with large lenses and raincoats brandishing press badges.  They look so real, your guests will believe they are the real deal.  They pap party goers as they enter the venue and later descend upon the party goers taking pictures of the guests as they mingle and party across the dance floor.
+  - A great entertainment option that will leave your guests talking about your event for ages afterwards.
+
+extras:
+  backdrops:
+    content: Backdrops
+    price:
+      content: ''
+      value: 0
+  photos:
+    content: Purchase photos in various sizes
+    price:
+      value: 0
+  photo-mount:
+    content: Give your guests a momento of the occasion - purchase a photo in a mount for them
+    price:
+      value: 0
+  paparazzi:
+    content: Paparazzi photographers - red carpet and barriers
+    price:
+      value: 0

@@ -58,7 +58,7 @@ tasks:
     description: Copy files from local to remote server
     tasks:
       - >
-        @sh rsync -ra
+        @sh rsync -rav
         public public-html docker-compose.yaml nginx.conf manifest.json
         $AUTH:~/yes.gg --delete
 
