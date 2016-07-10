@@ -863,7 +863,9 @@ h6, .h6 {
 .site-footer {
   background: #000;
   color: #FFF;
-  background: #000 url(/img/footer-bg.svg) no-repeat -100px 0; }
+  background: #000 url(/img/footer-bg.svg) no-repeat -100px 0;
+  position: relative;
+  z-index: 1; }
 
 @media only screen and (min-width: 640px) {
     .site-footer {
@@ -883,6 +885,71 @@ h6, .h6 {
   text-align: center;
   color: #939296;
   margin-bottom: 0; }
+
+.contact {
+  background: #000;
+  color: #FFF;
+  background: #000 url(/img/footer-bg.svg) no-repeat -100px 0; }
+
+@media only screen and (min-width: 640px) {
+    .contact {
+      background: #000 url(/img/footer-bg.svg) no-repeat;
+      background-position: calc(50% - 100px) 12px;
+      padding-top: 72px; } }
+
+.contact h1 {
+    color: #FFF; }
+
+.contact > .container {
+    padding-left: 24px;
+    padding-right: 24px; }
+
+@media only screen and (min-width: 640px) {
+      .contact > .container {
+        max-width: 600px;
+        margin: 0 auto; } }
+
+.contact__items {
+  list-style: none;
+  margin-left: 0; }
+
+@media only screen and (min-width: 640px) {
+    .contact__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .contact__items > * {
+        width: 50%; } }
+
+.contact__item {
+  margin-bottom: 24px;
+  color: #FFF; }
+
+.contact__item a {
+    color: #FFF; }
+
+.contact__item > strong {
+    margin-bottom: 6px;
+    display: block; }
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.contact-form__input {
+  margin-bottom: 24px; }
+
+.contact-form__input label {
+    display: block;
+    font-weight: bold;
+    padding: 12px 0; }
+
+.contact-form__input .input--text {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px; }
 
 .site-contact {
   opacity: 0;
@@ -2438,6 +2505,7 @@ a.pswp__share--download:hover {
   margin-bottom: 24px; }
 
 .detail__img img {
+    width: 100%;
     max-width: 360px; }
 
 @media only screen and (min-width: 960px) {

@@ -1,23 +1,35 @@
-<div class="wrapper" id="contact">
+<div class="wrapper contact" id="contact">
     <div class="container">
-        <h1>Contact</h1>
-        <p>This section will Show the usual contact information + message form</p>
-    </div>
-</div>
-<div class="wrapper" id="book">
-    <div class="container">
-        <h1>Book</h1>
-        <p>This section will allow users to select multiple services which will be added to the contact
-        email.</p>
-    </div>
-</div>
-
-<div class="wrapper breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">Contact</li>
+        <h1>Speak to us about your event.</h1>
+        <ul class="contact__items">
+            {{#each $$.site.contact}}
+            <li class="contact__item"><strong>{{this.title}}</strong>{{this.value}}</li>
+            {{/each}}
         </ul>
     </div>
 </div>
+
+<section class="wrapper upsell" id="contact-form">
+    <div class="container">
+        <h1 class="page-title">Send us a message</h1>
+        <form action="" class="contact-form">
+            <div class="contact-form__input">
+                <label for="name" class="label">Name</label>
+                <input type="text" name="name" id="name" class="input input--text">
+            </div>
+            <div class="contact-form__input">
+                <label for="email" class="label">Email</label>
+                <input type="text" name="email" id="email" class="input input--text">
+            </div>
+            <div class="contact-form__input">
+                <label for="phone" class="label">Phone</label>
+                <input type="text" name="phone" id="phone" class="input input--text">
+            </div>
+            <div class="contact-form__input">
+                <label for="message" class="label">Message</label>
+                <textarea type="text" name="message" id="message" class="input input--text" rows="5" cols="20"></textarea>
+            </div>
+        </form>
+    </div>
+</section>
 

@@ -2,6 +2,8 @@
     background: $black;
     color: $white;
     background: $black url(/img/footer-bg.svg) no-repeat -100px 0;
+    position: relative;
+    z-index: 1;
 
     @include media-query(min, $lap-start) {
         background: $black url(/img/footer-bg.svg) no-repeat;

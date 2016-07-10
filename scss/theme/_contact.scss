@@ -1,0 +1,81 @@
+.contact {
+    background: $black;
+    color: $white;
+    background: $black url(/img/footer-bg.svg) no-repeat -100px 0;
+
+    @include media-query(min, $lap-start) {
+        background: $black url(/img/footer-bg.svg) no-repeat;
+        background-position: calc(50% - 100px) $half-spacing;
+        padding-top: $base-spacing*3;
+    }
+
+    h1 {
+        color: $white;
+    }
+
+    > .container {
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
+        @include media-query(min, $lap-start) {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.contact__items {
+    @include list-reset;
+    
+    @include media-query(min, $lap-start) {
+        display: flex;
+        flex-wrap: wrap;
+        > * {
+            width: 50%;
+        }
+    }
+}
+
+.contact__item {
+    margin-bottom: $base-spacing;
+    color: $white;
+    a {
+        color: $white;
+    }
+    > strong {
+        margin-bottom:$half-spacing/2;
+        display: block;
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    @include media-query(min, $lap-start) {
+        //display: flex;
+        //flex-wrap: wrap;
+        //justify-content: space-between;
+        //> * {
+        //    width: 48%;
+        //}
+    }
+}
+
+.contact-form__input {
+    margin-bottom: $base-spacing;
+
+    label {
+        display: block;
+        font-weight: bold;
+        padding: $half-spacing 0;
+    }
+    .input--text {
+        width: 100%;
+        padding-left: $half-spacing;
+        padding-right: $half-spacing;
+    }
+
+    @include media-query(min, $lap-start) {
+        
+    }
+}

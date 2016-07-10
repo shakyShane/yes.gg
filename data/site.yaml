@@ -2,5 +2,18 @@ title: Your Event Solutions
 description: Some Awesome Title
 
 contact:
-  phone: 01623 863132
-  email: hello@yes.gg
+  T:
+    title: Telephone
+    value: 01481 720007
+  M:
+    title: Mobile
+    value: 07781 104851
+  E:
+    title: Email
+    value: hello@yes.gg
+  W:
+    title: Website
+    value: www.yes.gg
+  A:
+    title: Address
+    value: 31 Mill Street, St Peter Port, Guernsey. GY1 1HG
