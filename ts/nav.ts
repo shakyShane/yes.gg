@@ -41,10 +41,14 @@ export default function () {
             }
         });
 
+        if (state.hasMouse && state.aboveLap) {
+            return;
+        }
+
         if (skip) {
             return;
         }
-        
+
         evt.preventDefault();
 
         /**

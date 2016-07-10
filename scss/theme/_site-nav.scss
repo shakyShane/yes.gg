@@ -153,15 +153,22 @@
 .subnav__items {
     @include list-reset;
     margin-bottom: 0;
-    .subnav__item {
-        &:last-child {
-            .subnav__link {
-                border-bottom: 0;
-            }
-        }
+}
+
+.subnav__item--last {
+    .subnav__link {
+        border-bottom: 0;
     }
 }
 
+.subnav__item--viewall {
+
+    font-weight: bold;
+
+    .subnav__link {
+        border-bottom: 0;
+    }
+}
 
 .subnav__link {
     @include link-styles;
