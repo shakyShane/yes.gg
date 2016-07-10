@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "c31efa553547349f529108a6dcdf86bb29f495b025b41b511a81e2409d5f21aa",
+    "hash": "81363e1d9b906f62dd744c1239f359d0245e61547da756bbcf52629e5e938d0f",
     "tree": [
       {
         "path": "about",
@@ -49,7 +49,7 @@
       },
       {
         "path": "services",
-        "hash": "21a52ec3bb68a14f29583cde6dc36b1ff7002a9fa32ba3c2757f3674846b535e",
+        "hash": "891eb8438c1b4479445641572718766f0443a5d1a1933d96706c1d591fda5efc",
         "tree": [
           {
             "path": "services/camera-hire",
@@ -87,7 +87,7 @@
           },
           {
             "path": "services/photo-booths",
-            "hash": "cd81651d40fbe5f0d6eb66404debdbfa66a6b95f536afa0a252127a2c35d7746",
+            "hash": "c50db26db468a41f266390ca567574126b28cef3d9a7707d20111521934f7360",
             "tree": [
               {
                 "path": "services/photo-booths/index.html",
@@ -95,31 +95,31 @@
               },
               {
                 "path": "services/photo-booths/mini-pod",
-                "hash": "9eec4579ee527296da05ce9cbcbe1856e2db7a5ea51680bcc854d214bcd6622f",
+                "hash": "da837f052b07b20d8ff8be1202df25a5cf2eaa1d62c68fba0fe0474574abe1f3",
                 "tree": [
                   {
                     "path": "services/photo-booths/mini-pod/index.html",
-                    "hash": "a9033fe036000526fd74d5e98e7f53f8e4d369b849385a1f13bc5f91a2dcd38c"
+                    "hash": "b87b3d97e5acea14a50da7ce31044a39db7de9daf59e425b8a1fc286346a0491"
                   }
                 ]
               },
               {
                 "path": "services/photo-booths/the-cab",
-                "hash": "360de0737fa45a771e34c25720a7061bdbb5ef93441a0903a7c7e85d1a3b32c1",
+                "hash": "def6cc1feaeab89bd6d3f8638e343a406ac5c75b04b7afa250ac4ddbf034cad4",
                 "tree": [
                   {
                     "path": "services/photo-booths/the-cab/index.html",
-                    "hash": "f629a5f0e1623a69ba1e87dde9401fc0ee195d9bf8ac64cad879f3269664cdd6"
+                    "hash": "3b5a34a9ab232611bf7015a7ce5677178909a412f4c52179e1125a5f1b0fe769"
                   }
                 ]
               },
               {
                 "path": "services/photo-booths/the-pod",
-                "hash": "da62515a1ed09ea741bd79fae82419c1970c998ea1a77779e4b98ac55ab530bc",
+                "hash": "2118047ed84106f7dec38ab764a96ce9bd7602231e0f46d4c2c2f58932f9862f",
                 "tree": [
                   {
                     "path": "services/photo-booths/the-pod/index.html",
-                    "hash": "e73b485373e67b533eb0c990a15a433f88ab8e38bf783995872e065d0bfb8184"
+                    "hash": "486888366394cf0fcb812fd0635e9e30094e8cedb7da383da160e33aab62ebb9"
                   }
                 ]
               }
@@ -138,7 +138,7 @@
         ]
       }
     ],
-    "date": "July 10th 2016, 12:27:30 pm"
+    "date": "July 10th 2016, 1:20:28 pm"
   },
   "public/css": {
     "path": "public/css",

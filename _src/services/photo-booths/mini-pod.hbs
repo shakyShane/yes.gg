@@ -1,26 +1,26 @@
 ---
 description: >
     Mini-pod, for kids parties
+cta: true
+features: mini-pod-features
 ---
 
 {{inc src="hero.hbs" service=$$.booths.mini-pod}}
 
 <section class="wrapper detail">
     <div class="container">
-        <div class="detail__img">
-            <img src="/content/photo-booths-01.jpg" alt="">
+        <div class="detail__gallery">
+            <img src="/content/choice-03.jpg" alt="">
         </div>
         <div class="detail__content">
-            <h2>{{{$$.booths.mini-pod.tagline}}}</h2>
+            <h2>{{{$$.booths.mini-pod.title}}}</h2>
             <p class="lede">{{{$$.booths.mini-pod.desc}}}</p>
-        </div>
-        <div class="detail__img detail__img--right">
-            <img src="/content/photo-booths-02.jpg" alt="">
+            <p><strong>From: </strong>£{{$$.booths.mini-pod.items.4-10.price.value}}.00</p>
         </div>
     </div>
 </section>
 
-<section class="wrapper upsell">
+<section class="wrapper upsell" id="mini-pod-features">
     <div class="container">
 
         <h1 class="page-title">2 Childrens Booths available</h1>
