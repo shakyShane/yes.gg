@@ -1,0 +1,46 @@
+title: "The Wall"
+slug: "the-wall"
+icon: "mirror"
+hero:
+  palm: "/content/the-wall/gallery/8-large.jpg"
+  large: "/content/the-wall/gallery/8-large.jpg"
+url: "/services/the-wall"
+tagline: >
+  The Digital Graffiti Wall is a unique and exciting product that allows the interactive creation of virtual graffiti on a digital wall.
+lede: The Magical Mirror is a fully animated mirror that not only takes your photo and prints it but also interacts with you verbally and on screen.  The full-length mirror is a sleek design and is very user-friendly.
+desc:
+  - The Digital Graffiti Wall creates a unique user experience live at your event, guest use digital spray cans to interact with your product/brand on the digital graffiti wall and then share their completed artwork to facebook or email.
+  - The Digital Graffiti Wall provides a huge visible screen for you and your guests to get creative on.
+  - >
+    <ul>
+      <li>Customise stamps and stencils</li>
+      <li>Full digital branding</li>
+      <li>Custom overlay</li>
+      <li>Shares directly to Twitter/Email/Facebook</li>
+      <li>Instant photo print</li>
+    </ul>
+  - >
+    <strong>Bespoke personalisation</strong>: For those requiring a slightly more personalised pixel wall our in house team can create produce customised on wall/screen graphics, and print overlays to match your brand or message. Obviously there is a charge for this service but with wall personalisation starting at just £50 its offers great value for money with huge impact.
+price:
+  content: 4 hours
+  value: 750
+
+features:
+  - Prop box - Packed full of hats, wigs, masks and silliness
+  - Up to 4 hours running time - This is full operational time, we set up and pack away in our time
+  - Unlimited wall visits - Your guests can visit as many times as they want for the duration of the hire
+  - Experienced wall attendant - On site to facilitate for the duration of the hire
+  - Delivery - Our team deliver, set up and remove the wall after the event
+  - USB stick of all images
+  - >
+    Our social media share points can be added to our graffiti walls as an additional
+    extra allowing guests to share their artwork & photos straight from the wall using
+    our iPad based media share points. (Subject to availability of mobile mifi or venue wifi)
+
+extras:
+  hours:
+    content: >
+      Bespoke personalisation
+    price:
+      content: 'Starting at'
+      value: 50

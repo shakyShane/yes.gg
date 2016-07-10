@@ -1,21 +1,47 @@
 ---
 description: >
-    The Wall is great fun!
+    The Wall is great Fun!
+cta: true
+features: the-wall-features
+gallery: the-wall-gallery
+breadcrumbs:
+  - label: Home
+    url: /
+  - label: Services
+    url: /services
 ---
 
-<div class="wrapper">
-    <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>Content will follow...</p>
-    </div>
-</div>
 
-<div class="wrapper breadcrumb">
+{{inc src="hero.hbs" service=$$.the-wall}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.the-wall.title}}
+
+<section class="wrapper detail" id={{page.gallery}}>
     <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/services">Services</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">The Wall</li>
-        </ul>
+
+        <div id="demo-test-gallery" class="detail__gallery gallery" data-pswp-uid="1">
+
+            <p class="gallery__hint">Click to zoom</p>
+
+            {{#imgs src="dir:public/content/the-wall/gallery" rel="public" limit=10}}
+                <a class="gallery__link" href="{{this.large.src}}"
+                   data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                    <img src="{{this.thumb.src}}" alt="">
+                    <figure></figure>
+                </a>
+            {{/imgs}}
+        </div>
+
+        <div class="detail__content">
+            <h2>{{{$$.the-wall.title}}}</h2>
+            <p class="lede">{{{$$.the-wall.lede}}}</p>
+            {{#each $$.the-wall.desc}}
+                <p>{{{this}}}</p>
+            {{/each}}
+            <p>
+                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+            </p>
+        </div>
     </div>
-</div>
+</section>
+
+{{inc src="features.hbs" feature=$$.the-wall id=page.features}}

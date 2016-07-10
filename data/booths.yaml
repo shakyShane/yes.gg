@@ -66,9 +66,9 @@ the-cab:
   url: "/services/photo-booths/the-cab"
   tagline: >
     Why not hire the Cab to capture the memories as well as providing lots of fun and laughter - ideal for <strong>outdoor events</strong>
-  desc: >
-    Are you after a great value party idea that's exciting and different for your guests to remember your party by?
-    Then why not hire the Cab to capture the memories as well as providing lots of fun and laughter. Available for weddings, birthday parties, corporate events and any other party or event. The Cab is ideal for you and your guests to have fun and make your event a memorable one.
+  lede: Are you after a great value party idea that's exciting and different for your guests to remember your party by?
+  desc:
+    - Then why not hire the Cab to capture the memories as well as providing lots of fun and laughter. Available for weddings, birthday parties, corporate events and any other party or event. The Cab is ideal for you and your guests to have fun and make your event a memorable one.
   features:
     - Ideal for Outdoor Events!
     - Can be driven straight into your Marquee

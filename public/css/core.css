@@ -523,7 +523,8 @@ h3 {
 
 table {
   border-collapse: collapse;
-  border: 1px solid #D8D8D8; }
+  border: 1px solid #D8D8D8;
+  width: 100%; }
 
 thead tr th:last-child {
   text-align: right; }

@@ -33,11 +33,13 @@ breadcrumbs:
 
         <div class="detail__content">
             <h2>{{{$$.booths.the-cab.title}}}</h2>
-            <p class="lede">{{{$$.booths.the-cab.desc}}}</p>
-
-            <!--<p><strong>From: </strong>£{{$$.booths.the-cab.price.value}}.00</p>-->
-
-            <!--<p><a data-scroll href="#choose-your-booth" class="button button--alt">Features</a></p>-->
+            <p class="lede">{{{$$.booths.the-cab.lede}}}</p>
+            {{#each $$.booths.the-cab.desc}}
+                <p>{{this}}</p>
+            {{/each}}
+            <p>
+                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+            </p>
         </div>
     </div>
 </section>
