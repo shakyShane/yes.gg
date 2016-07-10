@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "ffbe5ae8ef2dccf2073fe29be5cfce623ab540200b5288ba2d1841a2b1fdb817",
+    "hash": "c31efa553547349f529108a6dcdf86bb29f495b025b41b511a81e2409d5f21aa",
     "tree": [
       {
         "path": "about",
@@ -49,7 +49,7 @@
       },
       {
         "path": "services",
-        "hash": "a35ae5e4960da8105fb41a375a1812e7f762f57352b98ae9a2ad7866a14dfa6d",
+        "hash": "21a52ec3bb68a14f29583cde6dc36b1ff7002a9fa32ba3c2757f3674846b535e",
         "tree": [
           {
             "path": "services/camera-hire",
@@ -87,7 +87,7 @@
           },
           {
             "path": "services/photo-booths",
-            "hash": "ea3f4f0da63ef7b93a0dcefb371bcc287b9f91aafd3fe6a17f3fd2b75b8efdb1",
+            "hash": "cd81651d40fbe5f0d6eb66404debdbfa66a6b95f536afa0a252127a2c35d7746",
             "tree": [
               {
                 "path": "services/photo-booths/index.html",
@@ -105,11 +105,11 @@
               },
               {
                 "path": "services/photo-booths/the-cab",
-                "hash": "a61e07ee13143ccced5a38031cac9350082238a20ceaf759fb6e4f2a9b7b662e",
+                "hash": "360de0737fa45a771e34c25720a7061bdbb5ef93441a0903a7c7e85d1a3b32c1",
                 "tree": [
                   {
                     "path": "services/photo-booths/the-cab/index.html",
-                    "hash": "4f2f896c39736dc30874349db21cd6e93d1068a54d19239ac2e1833165507cfb"
+                    "hash": "f629a5f0e1623a69ba1e87dde9401fc0ee195d9bf8ac64cad879f3269664cdd6"
                   }
                 ]
               },
@@ -138,7 +138,7 @@
         ]
       }
     ],
-    "date": "July 7th 2016, 10:39:13 pm"
+    "date": "July 10th 2016, 12:27:30 pm"
   },
   "public/css": {
     "path": "public/css",
