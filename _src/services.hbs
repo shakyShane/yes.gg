@@ -1,15 +1,50 @@
-<div class="wrapper">
+---
+description: >
+    We offer a wide range of <strong>high-quality services</strong> that will ensure your event is one to be remembered!
+breadcrumbs:
+    - label: Home
+      url: /
+features: yes-services
+---
+
+
+<section class="wrapper hero-list">
     <div class="container">
-        <h1>{{page.title}}</h1>
-        <p>This page will give an overview of all available services</p>
+        <article class="hero hero--loading">
+            <section class="hero__img" hero-src="/content/photo-booths/the-pod/hero-01.jpg" hero-src-large="/content/photo-booths/the-pod/hero-01.jpg">
+                <section class="hero__content">
+                    <h1 class="hero__title">{{page.title}}</h1>
+                    <p class="hero__summary">{{{page.description}}}</p>
+                    <div class="hero__cta">
+                        <a data-scroll href="#{{page.features}}" class="button button--trans">Our Services</a>
+                    </div>
+                </section>
+            </section>
+            <div class="loader"></div>
+        </article>
+    </div>
+</section>
+
+<div class="wrapper" id="yes-services">
+    <div class="container">
+        <h1 hidden>Choose from the many services we provide</h1>
+        <br>
+        <section class="icon-list">
+            <div class="icon-list__items">
+                {{#each $$.services}}
+                <a href="{{this.url}}" class="icon-list__item">
+                    <span class="icon-list__icon">{{inc src="icon.hbs" icon=this.icon}}</span>
+                    <span class="icon-list__content">
+                        <span class="icon-list__title">{{this.title}}</span>
+                        <span class="icon-list__tagline">{{this.tagline}}</span>
+                        <span class="icon-list__cta">
+                            <span class="button button--alt">More Info</span>
+                        </span>
+                    </span>
+                </a>
+                {{/each}}
+            </div>
+        </section>
     </div>
 </div>
 
-<div class="wrapper breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">Services</li>
-        </ul>
-    </div>
-</div>
