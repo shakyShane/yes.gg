@@ -69,10 +69,12 @@
         font-weight: bold;
         padding: $half-spacing 0;
     }
+
     .input--text {
         width: 100%;
         padding-left: $half-spacing;
         padding-right: $half-spacing;
+        border: 1px solid $yellow;
     }
 
     @include media-query(min, $lap-start) {
