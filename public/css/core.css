@@ -636,10 +636,6 @@ h6, .h6 {
     transition: transform .1s ease-in-out, opacity .2s ease-out;
     transition: transform .1s ease-in-out, opacity .2s ease-out, -webkit-transform .1s ease-in-out; }
 
-.has-mouse .button:active {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9); }
-
 .button--alt {
   border: 1px solid #FBC138;
   background: #FFF; }
@@ -949,7 +945,8 @@ h6, .h6 {
 .contact-form__input .input--text {
     width: 100%;
     padding-left: 12px;
-    padding-right: 12px; }
+    padding-right: 12px;
+    border: 1px solid #FBC138; }
 
 .site-contact {
   opacity: 0;
@@ -1643,6 +1640,68 @@ http://flickity.metafizzy.co
 
 .icon-list__cta {
   display: block; }
+
+.services {
+  margin-bottom: 24px; }
+
+.service .button:focus {
+  outline: 0; }
+
+.service__button {
+  -webkit-appearance: none;
+  border: 0;
+  background: #FFF;
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 36px; }
+
+.has-mouse .service__button:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05); }
+
+.service__button:focus {
+    outline: 0; }
+
+.service--selected .service__button:before {
+    background: #FBC138;
+    box-shadow: 0 0 3px 0 inset white; }
+
+.service__button:before {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    margin-right: 12px;
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #D8D8D8; }
+
+.service__price {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: auto; }
+
+.service__select[disabled] {
+  opacity: .1; }
+
+.service__remove {
+  display: none; }
+
+.service__remove:active {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
+.service--selected .service__remove {
+    display: inline-block; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 

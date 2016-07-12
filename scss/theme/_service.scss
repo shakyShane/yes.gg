@@ -1,0 +1,91 @@
+.services {
+    margin-bottom: $base-spacing;
+}
+.summary  {}
+
+.service {
+    .button {
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.service--selected {
+    //outline: 1px solid red;
+}
+
+
+.service__button {
+
+    -webkit-appearance: none;
+    border: 0;
+    background: $white;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: $base-spacing*1.5;
+
+    .has-mouse & {
+        &:hover {
+            cursor: pointer;
+            background: rgba($black, .05);
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    .service--selected & {
+        &:before {
+            background: $yellow;
+            box-shadow: 0 0 3px 0 inset white;
+        }
+    }
+
+
+    &:before {
+
+        display: inline-block;
+        position: absolute;
+        left: $half-spacing;
+        top: 10px;
+        margin-right: $half-spacing;
+        content: ' ';
+        width: $half-spacing;
+        height: $half-spacing;
+        border: 1px solid $grey-lt;
+    }
+}
+
+.service__price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.service__title {}
+.service__actions {}
+
+.service__select {
+    &[disabled] {
+        opacity: .1;
+    }
+}
+
+.service__remove {
+
+    display: none;
+
+    &:active {
+        transform: scale(1);
+    }
+
+    .service--selected & {
+        display: inline-block;
+    }
+}

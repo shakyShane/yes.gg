@@ -20,7 +20,7 @@ function runBs(opts, ctx, done) {
     /**
      * Require ./webpack.config.js and make a bundler from it
      */
-    var webpackConfig = require('../webpack-prod.config');
+    var webpackConfig = require('../webpack.config');
     var bundler = webpack(webpackConfig);
 
     /**

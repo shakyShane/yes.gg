@@ -6,13 +6,16 @@ import heros from './heros';
 import buttons from './buttons';
 import testimonials from './testimonials';
 import zoomer from './zoomer';
-import book from './book';
+
 
 const scroll = require('smooth-scroll');
 
 scroll.init();
 
-book();
+if (document.body.classList.contains('page-contact')) {
+    const book = require('./book').default;
+    book();
+}
 
 nav();
 overlays();
