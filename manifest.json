@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "0a780bbf791d7cf3cfa593b48b6761fe5630f928867aa397857ca7db3050ba4e",
+    "hash": "2d6fe269c7fb835212cc58817c73b13c97ee74d531163bd7ef640fd5b935dcc4",
     "tree": [
       {
         "path": "about",
@@ -49,7 +49,7 @@
       },
       {
         "path": "services",
-        "hash": "26d08a6557ed70428c0a297363a4fc9cd253780bf666c20d27686de605fe1ad0",
+        "hash": "e0876046e5a741cbc1ee4a3eee39604f65d9f9e46f62ae838960df8cc9c6d357",
         "tree": [
           {
             "path": "services/camera-hire",
@@ -74,16 +74,6 @@
           {
             "path": "services/index.html",
             "hash": "638a7c4bdb05f8f8539e1f04218d3bb72c52e98b34810a01c86fae9c2a7b1a96"
-          },
-          {
-            "path": "services/magic-mirror",
-            "hash": "a2d9845d9bfea5216bfa781962605c68edefdf7e1ae75094eb9da6ee5f889f95",
-            "tree": [
-              {
-                "path": "services/magic-mirror/index.html",
-                "hash": "ffc60c249c90a5cb8604b6cedd44e3feab9fd895cc0985931dfec8f6ff00cf5d"
-              }
-            ]
           },
           {
             "path": "services/magical-mirror",
@@ -148,7 +138,7 @@
         ]
       }
     ],
-    "date": "July 13th 2016, 7:34:33 am"
+    "date": "July 13th 2016, 7:43:09 am"
   },
   "public/css": {
     "path": "public/css",
@@ -175,7 +165,7 @@
   },
   "public/js": {
     "path": "public/js",
-    "hash": "5985018981ee34f8f2fb3ea343c8f65128a525d4c3ddc5ae654d8d157f77b5b1",
+    "hash": "a362f6aaec6f59dbcc110a4d0761507a8bd398f0d22f6b759e8a014e21f7010b",
     "tree": [
       {
         "path": "1-4b8938a5cc437edfb8a4.js.map",
@@ -186,30 +176,14 @@
         "hash": "6be4fbaff1be71a15f7782635b0fe0e52afd91f0c9ae4dc5799ed3b7ed7d5649"
       },
       {
-        "path": "1.1.js",
-        "hash": "a319729ac9390d4fde666e600e145744fed219a4fe13d5ef2a6988cdcc7f5d5c"
-      },
-      {
-        "path": "1.js.map",
-        "hash": "2bff3e51c75ae918415dc1019f27d3dd9eea567785f6ddaa6e568151e80c5a98"
-      },
-      {
         "path": "bundle-4b8938a5cc437edfb8a4.js",
         "hash": "46fbccabe4dfbb17e035972102163279f8f86339c944cff0ab77187591f8651e"
       },
       {
         "path": "bundle-4b8938a5cc437edfb8a4.js.map",
         "hash": "bad8c03aecf235829b560c41fef2d33a960e1f2c3b3d8671bdaf5182f7fef323"
-      },
-      {
-        "path": "bundle.js",
-        "hash": "1a87a85123441b6cddcc83f552c1861f602aa511a4146dc451eb948831b145aa"
-      },
-      {
-        "path": "bundle.js.map",
-        "hash": "452bb7c105b9cd272f2377f7bca4780eb3d67bc8e95c23a1380ec162086ca37b"
       }
     ],
-    "date": "July 13th 2016, 7:34:33 am"
+    "date": "July 13th 2016, 7:43:09 am"
   }
 }

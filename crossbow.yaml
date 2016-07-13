@@ -4,31 +4,43 @@ watch:
       - docker
       - bs --init
     "_src:data:public/img/*":
-      - templates
+      - crossbow
       - bs --reload
     scss:
       - crossbow-sass --production
 
 tasks:
 
-  webpack:
-    - '@npm webpack --config webpack-prod.config.js'
-
   build-all:
-    description: Create Production Assets
+    description: Wipe compiled files & re-create HTML/JS/CSS
     tasks:
+      - clean
       - build-js
       - build-css
       - icons
-      - templates
+      - build-html
       - _merkle
-
-  build-js:
-    - '@npm webpack --config webpack-prod.config.js'
 
   build-css:
     - crossbow-sass
     - crossbow-sass --production
+
+  build-js:
+    - webpack
+
+  deploy:
+    description: Build-all assets & rsync to server
+    tasks:
+      - build-all
+      - rsync
+      - docker-remote
+      - open
+
+  webpack:
+    - '@npm webpack --config webpack-prod.config.js'
+
+  build-html:
+    - crossbow --production
 
   _merkle:
     - merkle --dir public-html
@@ -40,19 +52,6 @@ tasks:
     tasks:
       - '@sh docker-compose -f docker-compose-dev.yaml up -d'
       - '@sh docker ps'
-
-  templates:
-    description: Compile HTML Templates from `_src` directory
-    tasks:
-      - crossbow
-
-  deploy:
-    description: Build-all assets & rsync to server
-    tasks:
-      - build-all
-      - rsync
-      - docker-remote
-      - open
 
   rsync:
     description: Copy files from local to remote server
@@ -68,6 +67,15 @@ tasks:
   open:
     description: Open the live site for previewing
     input: '@sh open http://$DO_IP'
+
+  clean:
+    description: Wipe built assets (html/js/css)
+    tasks: >
+      @sh rm -rf
+      public-html/**
+      public/js/**
+      public/css/core.min.css
+      public/css/core.min.css.map
 
 env:
   AUTH: root@178.62.100.243
