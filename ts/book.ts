@@ -1,3 +1,4 @@
+import {ServiceGroups, ServiceGroup} from "./data";
 const choo      = require('choo');
 const html      = require('choo/html');
 const container = document.querySelector('#app-container');
@@ -15,7 +16,7 @@ export interface AppState {
 }
 
 export interface ServiceState {
-    services: Array<Service>
+    services: ServiceGroups
     selected: Array<number>
 }
 
@@ -25,11 +26,21 @@ export interface Price {
     additional: Price
 }
 
+export interface ServiceExtra {
+    content: string
+    price: Price
+}
+
+export interface ServiceExtras {
+    [name: string]: ServiceExtra
+}
+
 export interface Service {
     title: string
     price: Price
     selected: boolean
     id: number
+    extras: ServiceExtras
 }
 
 export default function () {
@@ -56,20 +67,35 @@ export default function () {
         }
     });
 
+    function getServices(services: ServiceGroups): Service[] {
+        return Object.keys(services).reduce(function (acc, key: string) {
+            const current: ServiceGroup = services[key];
+            return acc.concat(current.items);
+        }, []);
+    }
+
+    function createGroup (serviceGroup: ServiceGroup, selected: number[], send: SendFn) {
+        return html`
+        <div class="">
+            <h1>${serviceGroup.title}</h1>
+            ${serviceGroup.items.map(item => createSelectableService(item, selected, send))}
+        </div>
+`;
+    }
+
     const mainView: MainView = (state, prev, send) => {
 
-        const service  = state.service;
-        const selected = service.services.filter(x => (service.selected.indexOf(x.id) > -1));
-        const total    = selected.reduce((acc, item) => acc + item.price.value, 0);
+        const ns                = state.service;
+        const flattenedServices = getServices(ns.services);
+        const selected          = flattenedServices.filter(x => (ns.selected.indexOf(x.id) > -1));
+        const total             = selected.reduce((acc, item) => acc + item.price.value, 0);
 
         return html`
       <main class="wrapper service-select ${selected.length ? 'service-select--active' : ''}">
         <div class="container">
             <div class="services">
                 <h2>Select which Services you're interested in:</h2>
-                <div>
-                    ${service.services.map(item => createSelectableService(item, service.selected, send))}
-                </div>
+                ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, send))}
             </div>
             <div class="summary">
                 <p>You've Selected: ${selected.length} service${selected.length === 1 ? '': 's'}</p>
@@ -94,6 +120,9 @@ export default function () {
     container.appendChild(tree);
 }
 
+function createExtras(service: Service, send: ServiceSend) {
+
+}
 /**
  * Create Selected Service
  * @param service
@@ -111,14 +140,17 @@ function createSelectedService (service: Service, send: ServiceSend) {
  * @returns {any}
  */
 function createSelectableService(service: Service, selected: number[], send: ServiceSend) {
-    console.log(service);
     const isSelected = selected.indexOf(service.id) > -1;
+    const hasExtras  = service.extras;
+
+
     return html`
     <div class="service ${isSelected ? 'service--selected' : ''}">
         <button class="service__button"
             type="button"
-            onclick=${(e) => send(isSelected ? 'service:remove' : 'service:select', service.id)}
-        >${service.title} <span class="service__price">£${service.price.value.toFixed(2)}</span></button>
+            onclick=${(e) => send(isSelected ? 'service:remove' : 'service:select', service.id)}>
+            ${service.title} <span class="service__price">£${service.price.value.toFixed(2)}</span>
+        </button>
     </div>
 `
 }
