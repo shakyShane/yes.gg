@@ -1,0 +1,57 @@
+title: "The Cab"
+icon: "booths"
+thumb: "/content/choice-02.jpg"
+suited: Perfect for any outdoor events
+hero:
+  palm: "/content/photo-booths/the-cab/hero-02.jpg"
+  large: "/content/photo-booths/the-cab/hero-02.jpg"
+gallery:
+  base: /content/photo-booths/the-cab/gallery
+  images:
+    - file: '/content/photo-booths/the-cab/gallery/01'
+      width: 2000
+      height: 1333
+    - file: '/content/photo-booths/the-cab/gallery/02'
+      width: 2000
+      height: 1500
+    - file: '/content/photo-booths/the-cab/gallery/03'
+      width: 2000
+      height: 1333
+
+url: "/services/photo-booths/the-cab"
+tagline: >
+  Why not hire the Cab to capture the memories as well as providing lots of fun and laughter - ideal for <strong>outdoor events</strong>
+lede: Are you after a great value party idea that's exciting and different for your guests to remember your party by?
+desc:
+  - Then why not hire the Cab to capture the memories as well as providing lots of fun and laughter. Available for weddings, birthday parties, corporate events and any other party or event. The Cab is ideal for you and your guests to have fun and make your event a memorable one.
+features:
+  - Ideal for Outdoor Events!
+  - Can be driven straight into your Marquee
+  - Have the iconic London Cab at your Event
+  - Takes up to five people
+  - Up to 4 hours unlimited pod use
+  - Unlimited photos in colour or black and white
+  - Choice of Background Colour
+  - Box of props (hats, wigs, glasses, etc.)
+  - Upload photos to Facebook
+  - Online photo gallery (with free download)
+  - USB of all images
+  - Personalised message or logo
+  - A friendly pod attendant to assist with the pod
+price:
+  content: 4 hours, unlimited use
+  value: 525
+extras:
+  memory-album:
+    content: Memory album takes up to 120 photos for your guests to leave their personalised messages
+    price:
+      content: ''
+      value: 80
+  prints:
+    content: Additional set of prints
+    price:
+      value: 60
+  hours:
+    content: Additional Hours
+    price:
+      value: 80

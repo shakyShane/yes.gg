@@ -1,7 +1,7 @@
 const choo      = require('choo');
 const html      = require('choo/html');
 const container = document.querySelector('#app-container');
-const data      = require('json!yaml!../data/booths.yaml');
+import getData from './data';
 
 type ServiceAction = "service:select" | "service:remove";
 type SendFn        = (action: string, params?: any) => void;
@@ -19,9 +19,15 @@ export interface ServiceState {
     selected: Array<number>
 }
 
+export interface Price {
+    value: number
+    content: string
+    additional: Price
+}
+
 export interface Service {
     title: string
-    price: number
+    price: Price
     selected: boolean
     id: number
 }
@@ -34,34 +40,7 @@ export default function () {
         namespace: 'service',
         state: <ServiceState>{
             selected: [],
-            services: [
-                {
-                    title: "Photo Booths: The Pod",
-                    price: 525,
-                    id: 1
-                },
-                {
-                    title: "Photo Booths: The Mini Pod",
-                    price: 325,
-                    id: 2
-                },
-                {
-                    title: "Photo Booths: The Cab",
-                    price: 525,
-                    id: 3
-                },
-                {
-                    title: "The Wall",
-                    price: 725,
-                    id: 4
-                },
-                {
-                    title: "Compact Camera Hire",
-                    price: 725,
-                    id: 5
-                },
-
-            ]
+            services: getData()
         },
         reducers: {
             select: (id: number, state: ServiceState) => {
@@ -81,7 +60,7 @@ export default function () {
 
         const service  = state.service;
         const selected = service.services.filter(x => (service.selected.indexOf(x.id) > -1));
-        const total    = selected.reduce((acc, item) => acc + item.price, 0);
+        const total    = selected.reduce((acc, item) => acc + item.price.value, 0);
 
         return html`
       <main class="wrapper service-select ${selected.length ? 'service-select--active' : ''}">
@@ -132,13 +111,14 @@ function createSelectedService (service: Service, send: ServiceSend) {
  * @returns {any}
  */
 function createSelectableService(service: Service, selected: number[], send: ServiceSend) {
+    console.log(service);
     const isSelected = selected.indexOf(service.id) > -1;
     return html`
     <div class="service ${isSelected ? 'service--selected' : ''}">
         <button class="service__button"
             type="button"
             onclick=${(e) => send(isSelected ? 'service:remove' : 'service:select', service.id)}
-        >${service.title} <span class="service__price">£${service.price.toFixed(2)}</span></button>
+        >${service.title} <span class="service__price">£${service.price.value.toFixed(2)}</span></button>
     </div>
 `
 }

@@ -4,6 +4,8 @@ var crossbow = require('crossbow');
 module.exports = function (opts) {
     if (opts.production) {
         opts.data.env = 'production';
+    } else {
+        opts.data.env = 'dev';
     }
     return vfs.src(opts.input)
         .pipe(crossbow.stream({

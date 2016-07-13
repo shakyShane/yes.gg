@@ -13,8 +13,8 @@ breadcrumbs:
       url: /services/photo-booths
 ---
 
-{{inc src="hero.hbs" service=$$.booths.the-cab}}
-{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.booths.the-cab.title}}
+{{inc src="hero.hbs" service=$$.booths-the-cab}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.booths-the-cab.title}}
 
 <section class="wrapper detail" id={{page.gallery}}>
     <div class="container">
@@ -32,9 +32,9 @@ breadcrumbs:
         </div>
 
         <div class="detail__content">
-            <h2>{{{$$.booths.the-cab.title}}}</h2>
-            <p class="lede">{{{$$.booths.the-cab.lede}}}</p>
-            {{#each $$.booths.the-cab.desc}}
+            <h2>{{{$$.booths-the-cab.title}}}</h2>
+            <p class="lede">{{{$$.booths-the-cab.lede}}}</p>
+            {{#each $$.booths-the-cab.desc}}
                 <p>{{this}}</p>
             {{/each}}
             <p>
@@ -44,4 +44,4 @@ breadcrumbs:
     </div>
 </section>
 
-{{inc src="features.hbs" feature=$$.booths.the-cab id=page.features}}
+{{inc src="features.hbs" feature=$$.booths-the-cab id=page.features}}
