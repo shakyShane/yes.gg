@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: __dirname + '/public/js',
         filename: '[name].js',
+        publicPath: '/js',
         sourceMapFilename: '[name].js.map'
     },
     devtool: 'sourcemap',

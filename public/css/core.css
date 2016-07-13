@@ -1672,7 +1672,7 @@ http://flickity.metafizzy.co
 
 .service--selected .service__button:before {
     background: #FBC138;
-    box-shadow: 0 0 3px 0 inset white; }
+    box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
 
 .service__button:before {
     display: inline-block;

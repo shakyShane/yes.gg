@@ -7,14 +7,15 @@ import buttons from './buttons';
 import testimonials from './testimonials';
 import zoomer from './zoomer';
 
-
 const scroll = require('smooth-scroll');
 
 scroll.init();
 
 if (document.body.classList.contains('page-contact')) {
-    const book = require('./book').default;
-    book();
+    require.ensure([], function () {
+        const book = require('./book').default;
+        book();
+    });
 }
 
 nav();

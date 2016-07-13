@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const http = require('http');
+var Manifest = require('./tasks/assets.js');
 
 module.exports = {
     entry: {
@@ -7,8 +8,9 @@ module.exports = {
     },
     output: {
         path: __dirname + '/public/js',
-        filename: '[name].js',
-        sourceMapFilename: '[name].js.map'
+        filename: '[name]-[hash].js',
+        publicPath: 'js/',
+        sourceMapFilename: '[name]-[hash].js.map'
     },
     devtool: 'sourcemap',
     plugins: [
@@ -19,6 +21,10 @@ module.exports = {
             mangle: {
                 except: ['$']
             }
+        }),
+        new Manifest({
+            output: "assets.json",
+            prefix: "/js/"
         })
     ],
     resolve: {

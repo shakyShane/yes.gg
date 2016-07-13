@@ -43,7 +43,10 @@
     .service--selected & {
         &:before {
             background: $yellow;
-            box-shadow: 0 0 3px 0 inset white;
+            box-shadow:
+                    0 0 1px 0 inset white,
+                    1px 1px 0 0 inset white,
+                    -1px -1px 0 0 inset white;
         }
     }
 

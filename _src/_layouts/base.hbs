@@ -22,6 +22,10 @@
     {{content}}
 </main>
 {{inc src="photoswipe.hbs"}}
-<script src="/js/bundle.js?hash={{hash src="public/js/bundle.js"}}"></script>
+{{#if_eq env 'dev'}}
+<script src="/js/bundle.js"></script>
+{{else}}
+<script src="{{$assets.bundle}}"></script>
+{{/if_eq}}
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </body>

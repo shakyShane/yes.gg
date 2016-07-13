@@ -1,6 +1,7 @@
 const choo      = require('choo');
 const html      = require('choo/html');
 const container = document.querySelector('#app-container');
+const data      = require('json!yaml!../data/booths.yaml');
 
 type ServiceAction = "service:select" | "service:remove";
 type SendFn        = (action: string, params?: any) => void;

@@ -17,10 +17,10 @@ tasks:
   build-all:
     description: Create Production Assets
     tasks:
-      - templates
       - build-js
       - build-css
       - icons
+      - templates
       - _merkle
 
   build-js:
@@ -75,18 +75,23 @@ env:
   DO_USER: root
 
 options:
+
   crossbow:
+
     config:
       base: '_src'
       prettyUrls: true
       defaultLayout: 'default.hbs'
+
     input:
       - _src/*.hbs
       - _src/services/*.hbs
       - _src/services/photo-booths/*.hbs
     output: 'public-html'
+
     data:
       $$: "all:data"
+      $assets: "file:assets.json"
 
   bs:
     proxy: 0.0.0.0:8080

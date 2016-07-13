@@ -4,7 +4,8 @@
         "target": "es5",
         "noImplicitAny": false,
         "sourceMap": false,
-        "outDir": "public/js"
+        "outDir": "public/js",
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules",
