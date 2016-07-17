@@ -19,8 +19,7 @@
     margin-bottom: -2px;
 }
 
-// http://jxnblk.com/formula/?fontFamily=-apple-system%2C%20sans-serif&scale=16&scale=24&scale=20&scale=14&scale=12&lineHeight=1.5&pad=0.5625&baselineShift=0&border=0&borderRadius=4&proportionalBorderRadius=false
-.button {
+@mixin button {
     /* Calculated properties */
     line-height: 1.5;
     padding-top: 0.5625em;
@@ -53,9 +52,14 @@
         //    transform: scale(1.1);
         //}
         &:active {
-             //transform: scale(0.9);
+            //transform: scale(0.9);
         }
     }
+}
+
+// http://jxnblk.com/formula/?fontFamily=-apple-system%2C%20sans-serif&scale=16&scale=24&scale=20&scale=14&scale=12&lineHeight=1.5&pad=0.5625&baselineShift=0&border=0&borderRadius=4&proportionalBorderRadius=false
+.button {
+    @include button;
 }
 
 .button--alt {

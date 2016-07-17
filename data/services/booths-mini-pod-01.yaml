@@ -25,3 +25,4 @@ features:
 price:
   content: 'unlimited use'
   value: 150
+  type: toggle

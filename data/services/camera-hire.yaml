@@ -18,6 +18,7 @@ desc: >
 price:
   content: each
   value: 30
+  type: qty
 features:
     - 14 mega pixel compact digital camera
     - SD memory card which can hold up to 160 photos

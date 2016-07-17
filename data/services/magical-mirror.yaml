@@ -15,6 +15,10 @@ desc:
 price:
   content: 3 hours
   value: 450
+  type: alt
+  alt:
+    content: 4 hours
+    value: 525
   additional:
     content: 4 hours
     value: 525
@@ -35,11 +39,14 @@ extras:
     price:
       content: '(per hour)'
       value: 80
+      type: qty
   - title: Album
     content: Album with extra set of prints
     price:
       value: 80
+      type: toggle
   - title: Prints
     content: Extra set of prints
     price:
       value: 60
+      type: qty

@@ -14,6 +14,11 @@ desc: >
 price:
   content: First Hour
   value: 100
+  type: alt
+  alt:
+    content: Additional Hours
+    value: 80
+    type: qty
   additional:
     content: Additional Hours
     value: 80

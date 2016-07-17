@@ -24,6 +24,7 @@ desc:
 price:
   content: 4 hours
   value: 750
+  type: toggle
 
 features:
   - Prop box - Packed full of hats, wigs, masks and silliness
@@ -44,3 +45,4 @@ extras:
     price:
       content: 'Starting at'
       value: 50
+      type: from

@@ -16,6 +16,7 @@ desc: >
 price:
   content: 4 hours, unlimited use
   value: 525
+  type: toggle
 features:
   - Takes up to five people
   - Price includes up to 4 hours unlimited pod use
@@ -32,11 +33,14 @@ extras:
     price:
       content: ''
       value: 80
+      type: toggle
   - title: Additional set of prints
     content: Additional set of prints
     price:
       value: 60
+      type: qty
   - title: Additional Hours
     content: Additional Hours
     price:
       value: 80
+      type: qty
