@@ -35,15 +35,19 @@ extras:
     price:
       content: ''
       value: 0
+      type: info
   - title: Purchase photos in various sizes
     content: Purchase photos in various sizes
     price:
       value: 0
+      type: info
   - title: Photo Mount
     content: Give your guests a momento of the occasion - purchase a photo in a mount for them
     price:
       value: 0
+      type: info
   - title: Paparazzi
     content: Paparazzi photographers - red carpet and barriers
     price:
       value: 0
+      type: info

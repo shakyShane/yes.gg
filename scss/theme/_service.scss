@@ -18,14 +18,9 @@
     }
 }
 
-.summary  {
-    @include media-query(min, $lap-start) {
-        width: 30%;
-    }
-}
-
-.service {
+.service__group {
     background: $white;
+    padding: $half-spacing 0;
     .button {
         &:focus {
             outline: 0;
@@ -33,6 +28,12 @@
     }
 }
 
+
+.service__title {
+    margin-bottom: $half-spacing;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 
 .service--selected {
     //outline: 1px solid red;
@@ -102,7 +103,6 @@
     margin-left: auto;
 }
 
-.service__title {}
 .service__actions {}
 
 .service__select {
@@ -156,11 +156,20 @@
     display: flex;
     align-items: center;
     margin-bottom: $half-spacing/2;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.extras__item--type-qty {
+    display: block;
+    > div {
+
+    }
 }
 
 .extras__title {
     margin-bottom: $half-spacing;
-
 }
 
 .extras__item-button {
@@ -186,6 +195,30 @@
     }
 }
 
+.extras__item-qty {
+    display: none;
+    padding: $half-spacing;
+
+    .extras__item--selected & {
+        display: block;
+    }
+}
+
+.qty__subtotal {
+    width: auto;
+    display: inline-block;
+    padding: 0 $half-spacing;
+}
+.qty__text {
+    width: auto;
+    display: inline-block;
+    padding: 0 $half-spacing;
+}
+.qty__button {
+    cursor: pointer;
+    width: 30px;
+}
+
 .extras__item-price {
     color: $grey;
     margin-left: $half-spacing/2;
@@ -196,4 +229,28 @@
 
 .booking-form {}
 .booking-form__inputs {}
-.booking-form__summary {}
+.booking-form__summary {
+    height: 30px;
+    position: relative;
+}
+
+.summary  {  }
+.summary__total  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    margin-bottom: 0;
+    z-index: 1;
+    background: $white;
+    .scrolled & {
+        position: fixed;
+        padding: $half-spacing $base-spacing;
+        width: 100%;
+        height: auto;
+        @include box-shadow;
+    }
+}
+.summary__count  {
+    color: $grey;
+}

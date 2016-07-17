@@ -6,6 +6,7 @@ import heros from './heros';
 import buttons from './buttons';
 import testimonials from './testimonials';
 import zoomer from './zoomer';
+import scrolled from './scrolled';
 
 const scroll = require('smooth-scroll');
 
@@ -20,8 +21,8 @@ if (document.body.classList.contains('page-contact')) {
 
 nav();
 overlays();
+scrolled();
 heros();
 buttons();
 testimonials();
-
 zoomer();

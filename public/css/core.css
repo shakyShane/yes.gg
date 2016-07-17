@@ -1641,11 +1641,38 @@ http://flickity.metafizzy.co
 .icon-list__cta {
   display: block; }
 
-.services {
-  margin-bottom: 24px; }
+.service-select {
+  padding-top: 0;
+  padding-bottom: 0; }
 
-.service .button:focus {
-  outline: 0; }
+@media only screen and (min-width: 640px) {
+    .service-select > .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.services {
+  margin-bottom: 24px;
+  max-width: 600px; }
+
+@media only screen and (min-width: 640px) {
+    .services {
+      width: 70%; } }
+
+.service__group {
+  background: #FFF;
+  padding: 12px 0; }
+
+.service__group .button:focus {
+    outline: 0; }
+
+.service__title {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+.service--selected {
+  background: #f2f2f2; }
 
 .service__button {
   -webkit-appearance: none;
@@ -1661,7 +1688,10 @@ http://flickity.metafizzy.co
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding-left: 36px; }
+  padding-left: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px; }
 
 .has-mouse .service__button:hover {
     cursor: pointer;
@@ -1670,20 +1700,23 @@ http://flickity.metafizzy.co
 .service__button:focus {
     outline: 0; }
 
-.service--selected .service__button:before {
-    background: #FBC138;
-    box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
-
 .service__button:before {
     display: inline-block;
     position: absolute;
-    left: 12px;
-    top: 10px;
+    left: 18px;
+    top: 20px;
     margin-right: 12px;
     content: ' ';
     width: 12px;
     height: 12px;
     border: 1px solid #D8D8D8; }
+
+.service--selected .service__button {
+    background: rgba(0, 0, 0, 0.05); }
+
+.service--selected .service__button:before {
+      background: #FBC138;
+      box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
 
 .service__price {
   font-weight: bold;
@@ -1702,6 +1735,144 @@ http://flickity.metafizzy.co
 
 .service--selected .service__remove {
     display: inline-block; }
+
+.service__help {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #939296;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-left: 12px;
+  font-size: 1.2rem;
+  color: #939296; }
+
+.extras {
+  padding: 12px;
+  display: none; }
+
+.service--selected.service--has-extras .extras {
+    display: block; }
+
+.extras__items {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0; }
+
+.extras__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px; }
+
+.extras__item:last-child {
+    margin-bottom: 0; }
+
+.extras__item--type-qty {
+  display: block; }
+
+.extras__title {
+  margin-bottom: 12px; }
+
+.extras__item-button {
+  -webkit-appearance: none;
+  border: 0;
+  background: #FFF;
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  font-size: 1.6rem; }
+
+.has-mouse .extras__item-button:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05); }
+
+.extras__item-button:focus {
+    outline: 0; }
+
+.extras__item-button:before {
+    display: inline-block;
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    margin-right: 12px;
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #D8D8D8; }
+
+.extras__item-button:before {
+    top: 17px; }
+
+.extras__item--selected .extras__item-button {
+    background: rgba(0, 0, 0, 0.05); }
+
+.extras__item--selected .extras__item-button:before {
+      background: #FBC138;
+      box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
+
+.extras__item-qty {
+  display: none;
+  padding: 12px; }
+
+.extras__item--selected .extras__item-qty {
+    display: block; }
+
+.qty__subtotal {
+  width: auto;
+  display: inline-block;
+  padding: 0 12px; }
+
+.qty__text {
+  width: auto;
+  display: inline-block;
+  padding: 0 12px; }
+
+.qty__button {
+  cursor: pointer;
+  width: 30px; }
+
+.extras__item-price {
+  color: #939296;
+  margin-left: 6px; }
+
+.booking-form__summary {
+  height: 30px;
+  position: relative; }
+
+.summary__total {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  margin-bottom: 0;
+  z-index: 1;
+  background: #FFF; }
+
+.scrolled .summary__total {
+    position: fixed;
+    padding: 12px 24px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.summary__count {
+  color: #939296; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
