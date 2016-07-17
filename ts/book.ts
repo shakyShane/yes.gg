@@ -91,19 +91,19 @@ export default function () {
         const total             = selected.reduce((acc, item) => acc + item.price.value, 0);
 
         return html`
-      <main class="wrapper service-select ${selected.length ? 'service-select--active' : ''}">
-        <div class="container">
-            <div class="services">
-                <h2>Select which Services you're interested in:</h2>
-                ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, send))}
-            </div>
-            <div class="summary">
-                <p>You've Selected: ${selected.length} service${selected.length === 1 ? '': 's'}</p>
-                <p>The price would be <strong>£${total.toFixed(2)}</strong></p>
-                <ul hidden>${selected.map(item => createSelectedService(item, send))}</ul>
-            </div>
-        </div>  
-      </main>
+        <main class="wrapper service-select ${selected.length ? 'service-select--active' : ''}">
+            <div class="container">
+                <div class="services">
+                    <h2>Select which Services you're interested in:</h2>
+                    ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, send))}
+                </div>
+                <div class="summary">
+                    <p>You've Selected: ${selected.length} service${selected.length === 1 ? '': 's'}</p>
+                    <p>The price would be <strong>£${total.toFixed(2)}</strong></p>
+                    <ul hidden>${selected.map(item => createSelectedService(item, send))}</ul>
+                </div>
+            </div>  
+        </main>
     `;
     }
 
@@ -140,10 +140,10 @@ function createSelectedService (service: Service, send: ServiceSend) {
  * @returns {any}
  */
 function createSelectableService(service: Service, selected: number[], send: ServiceSend) {
+
     const isSelected = selected.indexOf(service.id) > -1;
-    const hasExtras  = service.extras;
-
-
+    const hasExtras  = Object.keys(service.extras).length > 0;
+    // console.log(service.extras);
     return html`
     <div class="service ${isSelected ? 'service--selected' : ''}">
         <button class="service__button"
@@ -151,6 +151,7 @@ function createSelectableService(service: Service, selected: number[], send: Ser
             onclick=${(e) => send(isSelected ? 'service:remove' : 'service:select', service.id)}>
             ${service.title} <span class="service__price">£${service.price.value.toFixed(2)}</span>
         </button>
+        <p>Extras: ${hasExtras}</p>
     </div>
 `
 }

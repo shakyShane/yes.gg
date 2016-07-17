@@ -38,7 +38,7 @@ features:
     our iPad based media share points. (Subject to availability of mobile mifi or venue wifi)
 
 extras:
-  hours:
+  - title: "Personalisation"
     content: >
       Bespoke personalisation
     price:

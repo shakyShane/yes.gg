@@ -43,16 +43,16 @@ price:
   content: 4 hours, unlimited use
   value: 525
 extras:
-  memory-album:
+  - title: "Memory Album"
     content: Memory album takes up to 120 photos for your guests to leave their personalised messages
     price:
       content: ''
       value: 80
-  prints:
+  - title: Additional set of prints
     content: Additional set of prints
     price:
       value: 60
-  hours:
+  - title: Additional Hours
     content: Additional Hours
     price:
       value: 80

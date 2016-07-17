@@ -25,7 +25,9 @@ export default function getData(): ServiceGroups {
                 yaml('booths-the-cab.yaml'),
                 yaml('booths-mini-pod-01.yaml'),
                 yaml('booths-mini-pod-02.yaml')
-            ].map(applyId)
+            ]
+                .map(applyId)
+                .map(stubExtras)
         },
         "other": {
             title: "Other Services",
@@ -34,9 +36,16 @@ export default function getData(): ServiceGroups {
                 yaml('camera-hire.yaml'),
                 yaml('magical-mirror.yaml'),
                 yaml('the-wall.yaml')
-            ].map(applyId)
+            ]
+                .map(applyId)
+                .map(stubExtras)
         }
     };
 
     return out;
+}
+
+function stubExtras (item) {
+    if (!item.extras) item.extras = [];
+    return item;
 }

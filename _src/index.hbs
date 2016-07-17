@@ -27,7 +27,7 @@ description: >
 <section class="wrapper quick-nav">
     <div class="container">
         <div class="quick-nav__items">
-            {{#each $$.services}}
+            {{#each $$.quick-nav}}
             <a href="{{this.url}}" class="quick-nav__item">
                 <span class="quick-nav__item__icon quick-nav__item__icon--{{this.icon}}">{{inc src="icon.hbs" icon=this.icon}}</span>
                 <span class="quick-nav__item__title">{{this.title}}</span>

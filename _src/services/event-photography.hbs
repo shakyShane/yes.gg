@@ -12,8 +12,8 @@ breadcrumbs:
 ---
 
 
-{{inc src="hero.hbs" service=$$.event-photography}}
-{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.event-photography.title}}
+{{inc src="hero.hbs" service=$$.services.event-photography}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.event-photography.title}}
 
 <section class="wrapper detail" id={{page.gallery}}>
     <div class="container">
@@ -31,21 +31,21 @@ breadcrumbs:
         </div>
 
         <div class="detail__content">
-            <h2>{{{$$.event-photography.title}}}</h2>
-            <p class="lede">{{{$$.event-photography.desc}}}</p>
-            {{#each  $$.event-photography.features}}
+            <h2>{{{$$.services.event-photography.title}}}</h2>
+            <p class="lede">{{{$$.services.event-photography.desc}}}</p>
+            {{#each  $$.services.event-photography.features}}
             <p>{{{this}}}</p>
             {{/each}}
 
             <div class="card card--inset" id={{page.features}}>
                 <p class="card__price">
-                    {{$$.event-photography.price.content}}: <strong>£{{$$.event-photography.price.value}}.00</strong>
+                    {{$$.services.event-photography.price.content}}: <strong>£{{$$.services.event-photography.price.value}}.00</strong>
                 </p>
                 <p class="card__price">
-                    {{$$.event-photography.price.additional.content}}: <strong>£{{$$.event-photography.price.additional.value}}.00</strong>
+                    {{$$.services.event-photography.price.additional.content}}: <strong>£{{$$.services.event-photography.price.additional.value}}.00</strong>
                 </p>
                 <br>
-                <p class="card__title">{{$$.event-photography.title}} - Optional Extras:</p>
+                <p class="card__title">{{$$.services.event-photography.title}} - Optional Extras:</p>
                 <div class="card__extras">
                     <table>
                         <thead>
@@ -53,7 +53,7 @@ breadcrumbs:
                         <th style="text-align: center">Price</th>
                         </thead>
                         <tbody>
-                        {{#each $$.event-photography.extras}}
+                        {{#each $$.services.event-photography.extras}}
                             <tr>
                                 <td>{{this.content}}</td>
                                 <td><a href="{{$$.nav.contact.url}}" class="button button--alt">Contact</a></td>

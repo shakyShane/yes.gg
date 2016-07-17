@@ -10,8 +10,8 @@ breadcrumbs:
       url: /services
 ---
 
-{{inc src="hero.hbs" service=$$.camera-hire}}
-{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.camera-hire.title}}
+{{inc src="hero.hbs" service=$$.services.camera-hire}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.camera-hire.title}}
 
 <section class="wrapper detail">
     <div class="container">
@@ -19,9 +19,9 @@ breadcrumbs:
             <img src="/content/camera-hire/JV200_FRONT_OPEN_S.png" alt="">
         </div>
         <div class="detail__content">
-            <h2>{{{$$.camera-hire.title}}}</h2>
-            <p class="lede">{{{$$.camera-hire.lede}}}</p>
-            <p>{{$$.camera-hire.desc}}</p>
+            <h2>{{{$$.services.camera-hire.title}}}</h2>
+            <p class="lede">{{{$$.services.camera-hire.lede}}}</p>
+            <p>{{$$.services.camera-hire.desc}}</p>
             <p>
                 <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
             </p>
@@ -29,4 +29,4 @@ breadcrumbs:
     </div>
 </section>
 
-{{inc src="features.hbs" feature=$$.camera-hire id=page.features}}
+{{inc src="features.hbs" feature=$$.services.camera-hire id=page.features}}

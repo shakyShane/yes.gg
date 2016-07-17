@@ -25,20 +25,20 @@ features:
   - A great entertainment option that will leave your guests talking about your event for ages afterwards.
 
 extras:
-  backdrops:
+  - title: Backdrops
     content: Backdrops
     price:
       content: ''
       value: 0
-  photos:
+  - title: Purchase photos in various sizes
     content: Purchase photos in various sizes
     price:
       value: 0
-  photo-mount:
+  - title: Photo Mount
     content: Give your guests a momento of the occasion - purchase a photo in a mount for them
     price:
       value: 0
-  paparazzi:
+  - title: Paparazzi
     content: Paparazzi photographers - red carpet and barriers
     price:
       value: 0

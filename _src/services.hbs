@@ -31,7 +31,7 @@ features: yes-services
         <br>
         <section class="icon-list">
             <div class="icon-list__items">
-                {{#each $$.services}}
+                {{#each $$.quick-nav}}
                 <a href="{{this.url}}" class="icon-list__item">
                     <span class="icon-list__icon">{{inc src="icon.hbs" icon=this.icon}}</span>
                     <span class="icon-list__content">

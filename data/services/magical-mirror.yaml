@@ -30,16 +30,16 @@ features:
     from the wall using our iPad based media share points. (Subject to availability of mobile mifi or venue wifi)
 
 extras:
-  hours:
+  - title: Hours
     content: Additional hours
     price:
       content: '(per hour)'
       value: 80
-  album:
+  - title: Album
     content: Album with extra set of prints
     price:
       value: 80
-  prints:
+  - title: Prints
     content: Extra set of prints
     price:
       value: 60

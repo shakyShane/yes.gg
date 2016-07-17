@@ -12,8 +12,8 @@ breadcrumbs:
 ---
 
 
-{{inc src="hero.hbs" service=$$.the-wall}}
-{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.the-wall.title}}
+{{inc src="hero.hbs" service=$$.services.the-wall}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.the-wall.title}}
 
 <section class="wrapper detail" id={{page.gallery}}>
     <div class="container">
@@ -32,9 +32,9 @@ breadcrumbs:
         </div>
 
         <div class="detail__content">
-            <h2>{{{$$.the-wall.title}}}</h2>
-            <p class="lede">{{{$$.the-wall.lede}}}</p>
-            {{#each $$.the-wall.desc}}
+            <h2>{{{$$.services.the-wall.title}}}</h2>
+            <p class="lede">{{{$$.services.the-wall.lede}}}</p>
+            {{#each $$.services.the-wall.desc}}
                 <p>{{{this}}}</p>
             {{/each}}
             <p>
@@ -44,4 +44,4 @@ breadcrumbs:
     </div>
 </section>
 
-{{inc src="features.hbs" feature=$$.the-wall id=page.features}}
+{{inc src="features.hbs" feature=$$.services.the-wall id=page.features}}
