@@ -14,14 +14,7 @@ desc: >
 price:
   content: First Hour
   value: 100
-  type: alt
-  alt:
-    content: Additional Hours
-    value: 80
-    type: qty
-  additional:
-    content: Additional Hours
-    value: 80
+  type: toggle
 features:
   - At your event we can provide a mixture of photos from candid, group, fun and traditional portraits.  We can offer a variety of backdrops, including black with LED lights, green screen, white light box, coloured studio backdrops or branded backdrops.
   - Photos can be viewed and purchased from our website via a private gallery within 48 hours of the event.
@@ -30,6 +23,13 @@ features:
   - A great entertainment option that will leave your guests talking about your event for ages afterwards.
 
 extras:
+  - title: Additional Hours
+    content: Additional Hours
+    price:
+      value: 80
+      type: qty
+
+other-extras:
   - title: Backdrops
     content: Backdrops
     price:

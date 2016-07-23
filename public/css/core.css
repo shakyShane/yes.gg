@@ -1671,16 +1671,13 @@ http://flickity.metafizzy.co
   font-size: 1.6rem;
   font-weight: bold; }
 
-.service--selected {
-  background: #f2f2f2; }
-
 .service__button {
   -webkit-appearance: none;
   border: 0;
   background: #FFF;
   width: 100%;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1784,7 +1781,7 @@ http://flickity.metafizzy.co
   background: #FFF;
   width: 100%;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

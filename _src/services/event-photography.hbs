@@ -42,21 +42,22 @@ breadcrumbs:
                     {{$$.services.event-photography.price.content}}: <strong>£{{$$.services.event-photography.price.value}}.00</strong>
                 </p>
                 <p class="card__price">
-                    {{$$.services.event-photography.price.additional.content}}: <strong>£{{$$.services.event-photography.price.additional.value}}.00</strong>
+                    {{$$.services.event-photography.extras.0.price.content}}: <strong>£{{$$.services.event-photography.extras.0.price.value}}.00</strong>
                 </p>
                 <br>
                 <p class="card__title">{{$$.services.event-photography.title}} - Optional Extras:</p>
+                <p>Please contact us for information about the following items</p>
                 <div class="card__extras">
                     <table>
                         <thead>
                         <th>Extra</th>
-                        <th style="text-align: center">Price</th>
+                        <th style="text-align: center"></th>
                         </thead>
                         <tbody>
-                        {{#each $$.services.event-photography.extras}}
+                        {{#each $$.services.event-photography.other-extras}}
                             <tr>
                                 <td>{{this.content}}</td>
-                                <td><a href="{{$$.nav.contact.url}}" class="button button--alt">Contact</a></td>
+                                <td></td>
                             </tr>
                         {{/each}}
                         </tbody>

@@ -12,6 +12,8 @@ export default function createSelectableService(service: Service, selected: stri
     const extras     = service.extras;
     const hasExtras  = extras.length;
 
+    console.log(service.price.type, service.title);
+
     return html`
     <div class="service ${isSelected ? 'service--selected' : ''} ${hasExtras ? 'service--has-extras' : ''}">
         <button class="service__button"

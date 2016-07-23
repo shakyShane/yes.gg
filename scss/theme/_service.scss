@@ -37,7 +37,7 @@
 
 .service--selected {
     //outline: 1px solid red;
-    background: lighten($grey-lt, 10%);
+    //background: lighten($grey-lt, 10%);
 }
 
 @mixin item-button {
@@ -46,7 +46,7 @@
     background: $white;
     width: 100%;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     position: relative;
