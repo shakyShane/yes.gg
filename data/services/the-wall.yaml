@@ -45,4 +45,4 @@ extras:
     price:
       content: 'Starting at'
       value: 50
-      type: from
+      type: toggle

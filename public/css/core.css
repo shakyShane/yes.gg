@@ -591,7 +591,7 @@ h6, .h6 {
   line-height: 1.5;
   padding-top: 0.5625em;
   padding-bottom: 0.5625em;
-  border-width: 0;
+  border: 1px solid #D8D8D8;
   box-sizing: border-box;
   margin: 0;
   vertical-align: baseline;
@@ -931,8 +931,13 @@ h6, .h6 {
     display: block; }
 
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto; }
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 0; }
+
+@media only screen and (min-width: 640px) {
+    .contact-form {
+      margin-bottom: 48px; } }
 
 .contact-form__input {
   margin-bottom: 24px; }
@@ -948,39 +953,191 @@ h6, .h6 {
     padding-right: 12px;
     border: 1px solid #FBC138; }
 
+.label {
+  width: 100%;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold; }
+
+.input {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-shadow: 0 0 0 0;
+  border-radius: 0; }
+
+.field {
+  margin-bottom: 18px; }
+
+.booking-form {
+  padding-top: 0; }
+
 .booking-form > .container {
-  padding-left: 0;
-  padding-right: 0; }
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 800px; }
+
+.booking-form > .container:before, .booking-form > .container:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */ }
+
+.booking-form > .container:after {
+      clear: both; }
+
+.booking-form > .container > section:before, .booking-form > .container > section:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */ }
+
+.booking-form > .container > section:after {
+      clear: both; }
 
 .booking-form__summary {
   height: 30px;
   position: relative;
   padding-left: 12px;
-  padding-right: 12px; }
+  padding-right: 12px;
+  text-align: center; }
+
+.scrolled .booking-form__summary {
+    height: 0; }
+
+@media only screen and (min-width: 960px) {
+    .booking-form__summary {
+      width: 280px;
+      float: right;
+      padding-left: 0;
+      padding-right: 0;
+      height: auto;
+      margin-top: 48px; }
+      .scrolled .booking-form__summary {
+        height: auto !important;
+        width: 280px; } }
+
+.booking-form__summary--palm {
+  height: auto; }
+
+.scrolled .booking-form__summary--palm {
+    height: auto; }
+
+@media only screen and (min-width: 960px) {
+    .booking-form__summary--palm {
+      display: none; } }
+
+.booking-form__submit {
+  display: none;
+  padding: 24px 0; }
+
+@media only screen and (min-width: 960px) {
+    .booking-form__submit {
+      display: block; } }
+
+.booking-form__submit .button {
+    width: 100%; }
 
 .booking-form__inputs {
   padding-left: 12px;
   padding-right: 12px; }
 
-.summary__total {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  margin-bottom: 0;
-  z-index: 1;
-  background: #FFF;
-  padding-left: 12px; }
+@media only screen and (min-width: 960px) {
+    .booking-form__inputs {
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      width: 476px; } }
 
-.scrolled .summary__total {
-    position: fixed;
-    padding: 12px 12px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+.form-actions {
+  padding-top: 0; }
+
+.form-actions .button {
+    width: 100%; }
+
+@media only screen and (min-width: 960px) {
+    .form-actions {
+      display: none; } }
+
+@media only screen and (min-width: 960px) {
+  .summary {
+    border: 1px solid #FBC138;
+    border-radius: 4px; } }
+
+.summary__total {
+  width: 100%; }
+
+@media only screen and (max-width: 959px) {
+    .summary__total {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30px;
+      margin-bottom: 0;
+      z-index: 1;
+      background: #FFF;
+      padding-left: 12px; }
+      .scrolled .summary__total {
+        position: fixed;
+        padding: 12px 12px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); } }
+
+@media only screen and (min-width: 960px) {
+    .summary__total {
+      padding-top: 12px;
+      background: #FBC138;
+      padding: 12px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      text-align: left;
+      font-size: 2rem; }
+      .summary__total > strong {
+        float: right; } }
 
 .summary__count {
   color: #939296; }
+
+.summary__items {
+  list-style: none;
+  margin-left: 0;
+  text-align: left;
+  display: none; }
+
+@media only screen and (min-width: 960px) {
+    .summary__items {
+      display: block; } }
+
+.summary__item {
+  margin-left: 24px;
+  margin-right: 24px;
+  border-bottom: 1px solid #FBC138;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: bold; }
+
+.summary__item:last-child {
+    border-bottom: 0; }
+
+.summary__extra {
+  display: block;
+  padding-left: 12px;
+  font-weight: normal; }
+
+.summary__extra:before {
+    content: " - "; }
+
+.summary__help {
+  display: none;
+  padding: 0 12px; }
+
+@media only screen and (min-width: 960px) {
+    .summary__help {
+      display: block; } }
+
+.summary__help--palm {
+  display: block; }
 
 .site-contact {
   opacity: 0;
@@ -1687,15 +1844,18 @@ http://flickity.metafizzy.co
 
 .services {
   margin-bottom: 24px;
-  max-width: 600px; }
-
-@media only screen and (min-width: 640px) {
-    .services {
-      width: 70%; } }
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .service {
   margin-left: -12px;
   margin-right: -12px; }
+
+@media only screen and (min-width: 960px) {
+    .service {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .service__group {
   background: #FFF;
@@ -1831,7 +1991,8 @@ http://flickity.metafizzy.co
   padding-right: 25%;
   padding-left: 48px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  width: 100%; }
 
 .extras__item-button:before {
     display: inline-block;
@@ -1880,6 +2041,21 @@ http://flickity.metafizzy.co
   position: absolute;
   top: 0;
   right: 24px; }
+
+.validate-form.invalid .error-msg {
+  display: block; }
+
+.error-msg {
+  display: none;
+  text-align: center;
+  color: red;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 24px; }
+
+.invalid input:required:invalid {
+  border: 1px solid red; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 

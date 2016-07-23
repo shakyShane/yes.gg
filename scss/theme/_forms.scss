@@ -1,0 +1,18 @@
+.label {
+    width: 100%;
+    display: block;
+    margin-bottom: $half-spacing/2;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding-left: $half-spacing;
+    padding-right: $half-spacing;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+}
+
+.field {
+    margin-bottom: $half-spacing*1.5;
+}

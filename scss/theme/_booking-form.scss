@@ -2,20 +2,89 @@
 // Booking form wrapper
 //----------------------
 .booking-form {
+
+    padding-top: 0;
+
     > .container {
         padding-left: 0;
         padding-right: 0;
+        @include clearfix;
+        max-width: 800px;
+        > section {
+            @include clearfix;
+        }
     }
 }
 
 .booking-form__summary {
+
     height: 30px;
     position: relative;
     padding-left: $half-spacing;
     padding-right: $half-spacing;
+    text-align: center;
+
+    .scrolled & {
+        height: 0;
+    }
+
+    @include media-query(min, $desk-start) {
+        width: 280px;
+        float: right;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+        margin-top: $base-spacing*2;
+
+        .scrolled & {
+            height: auto!important;
+            width: 280px;
+        }
+    }
+}
+
+.booking-form__summary--palm { 
+    height: auto;
+    .scrolled & {
+        height: auto;
+    }
+    @include media-query(min, $desk-start) {
+        display: none;
+    }
+}
+
+.booking-form__submit {
+    display: none;
+    @include media-query(min, $desk-start) {
+        display: block;
+    }
+    padding: $base-spacing 0;
+    .button {
+        width: 100%;
+    }
 }
 
 .booking-form__inputs {
     padding-left: $half-spacing;
     padding-right: $half-spacing;
+    @include media-query(min, $desk-start) {
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        width: 476px;
+    }
+}
+
+
+.form-actions {
+
+    padding-top: 0;
+
+    .button {
+        width: 100%;
+    }
+
+    @include media-query(min, $desk-start) {
+        display: none;
+    }
 }

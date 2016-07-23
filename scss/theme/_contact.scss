@@ -49,9 +49,12 @@
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 0;
+
     @include media-query(min, $lap-start) {
+        margin-bottom: $base-spacing*2;
         //display: flex;
         //flex-wrap: wrap;
         //justify-content: space-between;

@@ -1,17 +1,48 @@
-<!-- <div class="wrapper contact" id="contact">
-    <div class="container">
-        <h1>Speak to us about your event.</h1>
-        <ul class="contact__items">
-            {{#each $$.site.contact}}
-            <li class="contact__item"><strong>{{this.title}}</strong>{{this.value}}</li>
-            {{/each}}
-        </ul>
-    </div>
-</div> -->
 
-<section class="wrapper booking-form" id="contact-form">
-    <div class="container" id="app-container">
-
+<form action="/contact" method="POST" class="validate-form">
+    <input type="hidden" name="_next" value="/thanks" />
+    <input type="hidden" name="_subject" value="Submission from the yes.gg website!" />
+    <input type="text"   name="_gotcha" style="display:none" />
+    <div class="wrapper contact-form">
+        <div class="container">
+            <div class="field">
+                <label class="label" for="name">Full Name</label>
+                <input class="input" type="text" id="name" name="Name:" required>
+            </div>
+            <div class="field">
+                <label class="label" for="email">Email Address:</label>
+                <input class="input" type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="field">
+                <label class="label" for="phone">Telephone Number:</label>
+                <input class="input" type="text" id="phone" name="Telephone:">
+            </div>
+            <div class="field">
+                <label class="label" for="date">When's your event?</label>
+                <input class="input" type="date" name="date" id="date" size="40">
+            </div>
+            <div class="field">
+                <label class="label" for="message">Message:</label>
+                <textarea class="input" name="Message:" id="message" cols="30" rows="5"></textarea>
+            </div>
+        </div>
     </div>
-</section>
+
+    <section class="wrapper booking-form" id="contact-form">
+        <div class="container" id="app-container">
+
+        </div>
+    </section>
+
+
+    <div class="wrapper form-actions">
+        <div class="container">
+            <p class="error-msg">There are some problems with the form, please check above</p>
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </div>
+
+
+
+</form>
 

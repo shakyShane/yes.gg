@@ -130,3 +130,14 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    &:after {
+        clear: both;
+    }
+}

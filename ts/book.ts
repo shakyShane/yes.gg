@@ -100,7 +100,11 @@ export default function () {
     const app = choo();
     const namedServices = getData();
     const servicesCollection = getServices(namedServices);
-    const extrasCollection = servicesCollection.reduce((acc, item) => acc.concat(item.extras), []);
+
+    const extrasCollection = servicesCollection.reduce((acc, item) => {
+        return acc.concat(item.extras);
+    }, []);
+
     const extras: SelectedExtra[] = extrasCollection.map(x => {
         return {
             id: x.id,
@@ -206,14 +210,40 @@ export default function () {
 
         return html`
         <section>
-            <div class="booking-form__summary summary">
-                <p class="summary__total">Total: <strong>£${total.toFixed(2)}</strong> 
-                <span class="summary__count">${selected.length} service${selected.length === 1 ? '': 's'}</span>
-                </p>
+            <div class="booking-form__summary">
+                <div class="summary">
+                    <p class="summary__total">Total: <strong>£${total.toFixed(2)}</strong></p>
+                    ${!selected.length ? html`<p class="summary__help">Select the services you're interested in (optional)</p>` : ''}
+                    <ul class="summary__items">
+                        ${selected.map(service => {
+                            return html`<li class="summary__item">
+                                ${service.title}
+                                ${getExtras(service, ns.selectedExtras, ns.extras).map(extra => {
+                                    return html`<span class="summary__extra">${extra.raw.title} (${extra.qty})</span>`
+                                })}
+                            </li>`
+                        })}
+                    </ul>
+                </div>
+                <div class="booking-form__submit">
+                    <button class="button" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="booking-form__summary booking-form__summary--palm">
+                <p class="summary__help summary__help--palm">Select the services you're interested in (optional)</p>
             </div>
             <div class="booking-form__inputs services">
                 ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, state, send))}
             </div>
+            ${selected.map(service => {
+                return html`<div class="fields">
+                      <input name=${service.title} type="hidden" value="Selected" />
+                      ${getExtras(service, ns.selectedExtras, ns.extras).map(extra => {
+                            return html`<input name="${extra.title}" type="hidden" value=${extra.value} />`      
+                        })}
+                </div>`
+            })}
+            ${selected.length ? html`<input name="Total:" type="hidden" value=${total} />` : ''}
         </section>
     `;
     }
@@ -229,4 +259,19 @@ export default function () {
     const tree = app.start({href: false});
 
     container.appendChild(tree);
+}
+
+function getExtras (service, selectedExtras, extras) {
+    const serviceExtras = service.extras;
+    return serviceExtras.filter(x => {
+        return selectedExtras.indexOf(x.id) > -1;
+    }).map(extra => {
+        const qty = extras.filter(x => x.id === extra.id)[0].qty;
+        return {
+            raw: extra,
+            qty,
+            title: `${service.title} - ${extra.title}`,
+            value: `Quantity: ${qty}`
+        }
+    })
 }
