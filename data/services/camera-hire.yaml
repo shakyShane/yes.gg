@@ -18,10 +18,17 @@ desc: >
 price:
   content: each
   value: 30
-  type: qty
+  type: toggle
 features:
     - 14 mega pixel compact digital camera
     - SD memory card which can hold up to 160 photos
     - 6 x 4 print of all photos taken
     - a usb stick containing all the photos
     - An online gallery on our website with free download
+extras:
+  - title: Additional Cameras
+    content: Additional Camera
+    price:
+      content: 'Each'
+      value: 30
+      type: qty

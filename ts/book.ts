@@ -6,7 +6,12 @@ import getData from './data';
 import createSelectableService from "./components/service";
 
 export type PriceTypes    = "qty" | "toggle";
-export type ServiceAction = "service:select" | "service:remove" | "service:extra.inc" | "service:extra.dec" | "service:extra.select" | "service:extra.remove";
+export type ServiceAction =
+    "service:select"       | "service:remove"      |
+    "service:qty.inc"      | "service:qty.dec"     |
+    "service:extra.inc"    | "service:extra.dec"   |
+    "service:extra.select" | "service:extra.remove";
+
 export type SendFn        = (action: string, params?: any) => void;
 export type ServiceSend   = (action: ServiceAction, id: string) => void;
 export type MainView      = (state: AppState, prev: any, send: SendFn) => Function;

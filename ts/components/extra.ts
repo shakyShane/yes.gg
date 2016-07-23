@@ -45,7 +45,6 @@ function qtyExtra(extra, current: SelectedExtra, action, send) {
         <button type="button" class="qty__button qty__button--inc" onclick=${e => send('service:extra.inc', extra.id)}>+</button>
         <span class="qty__text">${current.qty}</span>
         <button type="button" class="qty__button qty__button--dec" onclick=${e => send('service:extra.dec', extra.id)}>-</button>
-        <span class="qty__subtotal">£${current.subtotal.toFixed(2)}</span>
     </div>
 </div>
 `

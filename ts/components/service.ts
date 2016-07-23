@@ -12,8 +12,6 @@ export default function createSelectableService(service: Service, selected: stri
     const extras     = service.extras;
     const hasExtras  = extras.length;
 
-    console.log(service.price.type, service.title);
-
     return html`
     <div class="service ${isSelected ? 'service--selected' : ''} ${hasExtras ? 'service--has-extras' : ''}">
         <button class="service__button"
@@ -24,7 +22,7 @@ export default function createSelectableService(service: Service, selected: stri
         </button>
         <div class="extras">
             <p class="extras__title">
-                Would you like any additional Extras?
+                Extras:
             </p>
             <ul class="extras__items" ${!hasExtras ? 'hidden' : ''}>
                 ${extras.map(extra => createSelectableExtra(extra, state, send))}

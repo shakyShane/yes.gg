@@ -26,6 +26,7 @@ extras:
   - title: Additional Hours
     content: Additional Hours
     price:
+      content: Additional Hours
       value: 80
       type: qty
 
