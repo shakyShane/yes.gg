@@ -1,48 +1,72 @@
-
-<form action="/contact" method="POST" class="validate-form">
-    <input type="hidden" name="_next" value="/thanks" />
-    <input type="hidden" name="_subject" value="Submission from the yes.gg website!" />
-    <input type="text"   name="_gotcha" style="display:none" />
-    <div class="wrapper contact-form">
-        <div class="container">
-            <div class="field">
-                <label class="label" for="name">Full Name</label>
-                <input class="input" type="text" id="name" name="Name:" required>
-            </div>
-            <div class="field">
-                <label class="label" for="email">Email Address:</label>
-                <input class="input" type="email" id="email" name="_replyto" required>
-            </div>
-            <div class="field">
-                <label class="label" for="phone">Telephone Number:</label>
-                <input class="input" type="text" id="phone" name="Telephone:">
-            </div>
-            <div class="field">
-                <label class="label" for="date">When's your event?</label>
-                <input class="input" type="date" name="date" id="date" size="40">
-            </div>
-            <div class="field">
-                <label class="label" for="message">Message:</label>
-                <textarea class="input" name="Message:" id="message" cols="30" rows="5"></textarea>
-            </div>
-        </div>
+<div class="wrapper contact" id="contact">
+    <div class="container">
+        <h1>Speak to us about your event.</h1>
+        <ul class="contact__items">
+            {{#each $$.site.contact}}
+                <li class="contact__item"><strong>{{this.icon}}{{this.title}}</strong>{{this.value}}</li>
+            {{/each}}
+        </ul>
     </div>
+</div>
 
-    <section class="wrapper booking-form" id="contact-form">
-        <div class="container" id="app-container">
+<!--<div class="wrapper banner">-->
+    <!--<div class="container">-->
+        <!--<p class="banner__text">Or send us a message online...</p>-->
+    <!--</div>-->
+<!--</div>-->
 
-        </div>
-    </section>
+<div class="wrapper forms upsell">
+    <div class="container">
+
+        <h2 class="card-title">Send us a message online:</h2>
+
+        <form action="/" method="POST" class="validate-form">
+
+            <input type="hidden" name="_next" value="/thanks" />
+            <input type="hidden" name="_subject" value="Submission from the yes.gg website!" />
+            <input type="text"   name="_gotcha" style="display:none" />
+
+            <div class="contact-form">
+                <div class="field">
+                    <label class="label" for="name">Full Name</label>
+                    <input class="input input--text" type="text" id="name" name="Name:" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Email Address:</label>
+                    <input class="input input--text" type="email" id="email" name="_replyto" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="phone">Telephone Number:</label>
+                    <input class="input input--text" type="text" id="phone" name="Telephone:">
+                </div>
+                <div class="field">
+                    <label class="label" for="date">When's your event?</label>
+                    <input class="input" type="date" name="date" id="date" size="40">
+                </div>
+            </div>
+
+            <div class="booking-form" id="contact-form">
+                <div id="app-container">
+
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="field">
+                    <label class="label" for="message">Additional information?</label>
+                    <textarea class="input input--text" name="Message:" id="message" cols="30" rows="5"></textarea>
+                </div>
+            </div>
 
 
-    <div class="wrapper form-actions">
-        <div class="container">
-            <p class="error-msg">There are some problems with the form, please check above</p>
-            <button class="button" type="submit">Submit</button>
-        </div>
+            <div class="form-actions">
+                <p class="error-msg">There are some problems with the form, please check above</p>
+                <p class="form-actions__help"></p>
+                <button class="button" type="submit">Submit</button>
+            </div>
+
+        </form>
     </div>
+</div>
 
-
-
-</form>
 

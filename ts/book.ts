@@ -179,7 +179,6 @@ export default function () {
     function createGroup (serviceGroup: ServiceGroup, selected: string[], state, send: SendFn) {
         return html`
         <div class="service__group">
-            <p class="service__title">${serviceGroup.title}</p>
             ${serviceGroup.items.map(item => createSelectableService(item, selected, state, send))}
         </div>
 `;
@@ -210,6 +209,10 @@ export default function () {
 
         return html`
         <section>
+            <div class="booking-form__inputs services">
+                <label for="" class="label">Which services are you interested in? <span>(optional)</span></label>
+                ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, state, send))}
+            </div>
             <div class="booking-form__summary">
                 <div class="summary">
                     <p class="summary__total">Total: <strong>£${total.toFixed(2)}</strong></p>
@@ -225,18 +228,9 @@ export default function () {
                         })}
                     </ul>
                 </div>
-                <div class="booking-form__submit">
-                    <button class="button" type="submit">Submit</button>
-                </div>
-            </div>
-            <div class="booking-form__summary booking-form__summary--palm">
-                <p class="summary__help summary__help--palm">Select the services you're interested in (optional)</p>
-            </div>
-            <div class="booking-form__inputs services">
-                ${Object.keys(ns.services).map(x => createGroup(ns.services[x], ns.selected, state, send))}
             </div>
             ${selected.map(service => {
-                return html`<div class="fields">
+                return html`<div>
                       <input name=${service.title} type="hidden" value="Selected" />
                       ${getExtras(service, ns.selectedExtras, ns.extras).map(extra => {
                             return html`<input name="${extra.title}" type="hidden" value=${extra.value} />`      

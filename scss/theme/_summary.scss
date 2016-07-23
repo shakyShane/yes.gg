@@ -1,91 +1,44 @@
-.summary  {
+.summary {}
 
-    @include media-query(min, $desk-start) {
-        border: 1px solid $yellow;
-        border-radius: 4px;
-    }
-}
-
-.summary__total  {
-
-    width: 100%;
-
-    @include media-query(max, $desk-start) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 30px;
-        margin-bottom: 0;
-        z-index: 1;
-        background: $white;
-        padding-left: $half-spacing;
-
-        .scrolled & {
-            position: fixed;
-            padding: $half-spacing $half-spacing;
-            width: 100%;
-            height: auto;
-            @include box-shadow;
-        }
-    }
-    
-    @include media-query(min, $desk-start) {
-        padding-top: $half-spacing;
-        background: $yellow;
-        padding: $half-spacing;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        text-align: left;
-        font-size: 2rem;
-
-        > strong {
-            float: right;
-        }
-    }
-}
-.summary__count  {
-    color: $grey;
+.summary__total {}
+.summary__count {
+    //color: $grey;
 }
 
 .summary__items {
-    @include list-reset;
-    text-align: left;
     display: none;
-    @include media-query(min, $desk-start) {
-        display: block;
-    }
 }
 
 .summary__item {
-    margin-left: $base-spacing;
-    margin-right: $base-spacing;
-    border-bottom: 1px solid $yellow;
-    padding-top: $half-spacing;
-    padding-bottom: $half-spacing;
-    font-weight: bold;
+    //margin-left: $base-spacing;
+    //margin-right: $base-spacing;
+    //border-bottom: 1px solid $yellow;
+    //padding-top: $half-spacing;
+    //padding-bottom: $half-spacing;
+    //font-weight: bold;
 
-    &:last-child {
-        border-bottom: 0;
-    }
+    //&:last-child {
+    //    border-bottom: 0;
+    //}
 }
 
 .summary__extra {
-    display: block;
-    padding-left: $half-spacing;
-    font-weight: normal;
-    &:before {
-        content: " - ";
-    }
+    //display: block;
+    //padding-left: $half-spacing;
+    //font-weight: normal;
+    //&:before {
+    //    content: " - ";
+    //}
 }
 
 .summary__help {
     display: none;
-    padding: 0 $half-spacing;
-    @include media-query(min, $desk-start) {
-        display: block;
-    }
+    //padding: 0 $half-spacing;
+    //@include media-query(min, $desk-start) {
+    //    display: block;
+    //}
 }
 
 .summary__help--palm {
-    display: block;
+    //display: block;
 }

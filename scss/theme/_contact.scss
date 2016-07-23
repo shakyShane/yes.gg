@@ -1,4 +1,5 @@
 .contact {
+
     background: $black;
     color: $white;
     background: $black url(/img/footer-bg.svg) no-repeat -100px 0;
@@ -17,7 +18,7 @@
         padding-left: $base-spacing;
         padding-right: $base-spacing;
         @include media-query(min, $lap-start) {
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
         }
     }
@@ -45,42 +46,5 @@
     > strong {
         margin-bottom:$half-spacing/2;
         display: block;
-    }
-}
-
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 0;
-
-    @include media-query(min, $lap-start) {
-        margin-bottom: $base-spacing*2;
-        //display: flex;
-        //flex-wrap: wrap;
-        //justify-content: space-between;
-        //> * {
-        //    width: 48%;
-        //}
-    }
-}
-
-.contact-form__input {
-    margin-bottom: $base-spacing;
-
-    label {
-        display: block;
-        font-weight: bold;
-        padding: $half-spacing 0;
-    }
-
-    .input--text {
-        width: 100%;
-        padding-left: $half-spacing;
-        padding-right: $half-spacing;
-        border: 1px solid $yellow;
-    }
-
-    @include media-query(min, $lap-start) {
-        
     }
 }
