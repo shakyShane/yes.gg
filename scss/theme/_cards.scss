@@ -257,9 +257,8 @@
 .card-title {
     padding: 0;
     margin: -$base-spacing;
-    margin-bottom: $half-spacing;
+    margin-bottom: 0;
     padding: $base-spacing;
-    border-bottom: 1px solid lighten($grey-lt, 5%);
     font-weight: normal;
     //outline: 1px solid red;
 }

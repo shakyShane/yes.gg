@@ -69,14 +69,14 @@ layout: 'base.hbs'
                                 <li class="subnav__item"><a href="/services/event-photography" class="subnav__link">Event Photography</a></li>
                                 <li class="subnav__item"><a href="/services/the-wall" class="subnav__link">The Wall</a></li>
                                 <li class="subnav__item"><a href="/services/magical-mirror" class="subnav__link">Magical Mirror</a></li>
-                                <li class="subnav__item subnav__item--last"><a href="/services/camera-hire" class="subnav__link">Compact Camera Hire</a></li>
+                                <li class="subnav__item"><a href="/services/camera-hire" class="subnav__link">Compact Camera Hire</a></li>
                                 <li class="subnav__item subnav__item--viewall"><a href="/services" class="subnav__link subnav__link--before">View All Services</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
                 <li class="site-nav__item site-nav__item--cta not-palm">
-                    <a href="/contact#book" class="nav-link" ui-please-wait>Book Now</a>
+                    <a href="/contact" class="nav-link" ui-please-wait>Book Now</a>
                 </li>
             </ul>
 
@@ -99,7 +99,10 @@ layout: 'base.hbs'
                     <a href="mailto:{{$$.site.contact.E.value}}" class="subnav__link"><strong>Email:</strong> {{$$.site.contact.E.value}}</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="/contact" class="nav-link"><strong>Online:</strong> Click here</a>
+                    <a href="/contact" class="nav-link"><strong>Online:</strong> Send a message</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="/contact" class="nav-link"><strong>View all contact information</strong></a>
                 </li>
             </ul>
         </div>
@@ -119,7 +122,7 @@ layout: 'base.hbs'
         <ul class="footer-nav">
             <li class="footer-nav__item"><a href="/about" class="footer-nav__link">About</a></li>
             <li class="footer-nav__item"><a href="/contact" class="footer-nav__link">Contact</a></li>
-            <li class="footer-nav__item"><a href="/contact#book" class="footer-nav__link">Book</a></li>
+            <li class="footer-nav__item"><a href="/contact" class="footer-nav__link">Book</a></li>
         </ul>
 
         <ul class="footer-nav">
@@ -136,7 +139,7 @@ layout: 'base.hbs'
                 <a href="tel:{{$$.site.contact.T.value}}" class="footer-nav__link footer-nav__link--icon">{{inc src="icon.hbs" icon="phone"}} {{$$.site.contact.T.value}}</a>
             </li>
             <li class="footer-nav__item">
-                <a href="mailto:{{$$.site.contact.E.value}}" class="footer-nav__link footer-nav__link--icon">{{inc src="icon.hbs" icon="email"}} {{$$.site.contact.E.value}}</a>
+                <a href="/contact" class="footer-nav__link footer-nav__link--icon">{{inc src="icon.hbs" icon="email"}} All Contact Info</a>
             </li>
         </ul>
 

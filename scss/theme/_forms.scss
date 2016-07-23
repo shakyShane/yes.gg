@@ -5,7 +5,7 @@
         background: $white;
         padding: $base-spacing;
         max-width: 500px;
-        @include box-shadow-even;
+        box-shadow: 0 0 10px rgba($black, .5);
     }
 }
 

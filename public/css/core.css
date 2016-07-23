@@ -884,7 +884,7 @@ h6, .h6 {
 
 @media only screen and (min-width: 640px) {
       .contact > .container {
-        max-width: 500px;
+        max-width: 600px;
         margin: 0 auto; } }
 
 .contact__items {
@@ -973,7 +973,7 @@ h6, .h6 {
     background: #FFF;
     padding: 24px;
     max-width: 500px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .validate-form {
   padding-top: 24px; }
@@ -1737,53 +1737,80 @@ http://flickity.metafizzy.co
 .card-title {
   padding: 0;
   margin: -24px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   padding: 24px;
-  border-bottom: 1px solid #e5e5e5;
   font-weight: normal; }
 
-.icon-list {
-  max-width: 600px;
+.service-list {
+  color: #000;
+  max-width: 900px;
   margin: 0 auto; }
 
-.icon-list__item {
+.service-list__items .service-list__item:first-child {
+  padding-top: 0; }
+
+.service-list__item {
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-decoration: none;
   color: #000;
-  -webkit-transition: -webkit-transform .05s;
-  transition: -webkit-transform .05s;
-  transition: transform .05s;
-  transition: transform .05s, -webkit-transform .05s;
-  padding: 24px;
-  padding-left: 0; }
+  border-bottom: 1px solid #D8D8D8;
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
-.has-mouse .icon-list__item:hover {
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); }
+.service-list__item:before, .service-list__item:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
 
-.icon-list__title {
-  font-weight: bold;
-  font-size: 2.4rem;
+.service-list__item:after {
+    clear: both; }
+
+@media only screen and (min-width: 640px) {
+    .service-list__item {
+      border-bottom: 0; } }
+
+.has-mouse .service-list__item:hover .service-list__img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+.service-list__img {
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+  transition: -webkit-transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  display: block;
+  width: 48%;
+  float: left;
+  font-size: 0; }
+
+.service-list__content {
+  width: 48%;
+  float: right; }
+
+.service-list__title {
+  display: block;
+  font-weight: bold; }
+
+@media only screen and (min-width: 640px) {
+    .service-list__title {
+      font-size: 3rem; } }
+
+.service-list__tagline {
+  font-size: 1.4rem;
   display: block; }
 
-.icon-list__tagline {
-  display: block;
-  margin-bottom: 12px; }
+@media only screen and (min-width: 640px) {
+    .service-list__tagline {
+      font-size: 1.6rem; } }
 
-.icon-list__icon {
-  display: block;
-  padding: 0 24px; }
+.service-list__cta {
+  display: none; }
 
-.icon-list__icon .svg-icon {
-    color: #FBC138;
-    font-size: 3.0rem;
-    position: relative;
-    top: 6px; }
-
-.icon-list__cta {
-  display: block; }
+@media only screen and (min-width: 640px) {
+    .service-list__cta {
+      display: block;
+      padding: 12px 0; } }
 
 .services .label {
   margin-bottom: 12px; }
@@ -2829,7 +2856,8 @@ a.pswp__share--download:hover {
   font-weight: 600; }
 
 .footer-nav__link--icon {
-  font-size: 2.2rem; }
+  font-size: 2.0rem;
+  white-space: nowrap; }
 
 .footer-nav__link--icon .svg-icon {
     margin-right: 6px;

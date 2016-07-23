@@ -18,16 +18,15 @@
         padding-left: $base-spacing;
         padding-right: $base-spacing;
         @include media-query(min, $lap-start) {
-            max-width: 500px;
+            max-width: 600px;
             margin: 0 auto;
         }
     }
 }
 
-
 .contact__items {
     @include list-reset;
-    
+
     @include media-query(min, $lap-start) {
         display: flex;
         flex-wrap: wrap;
@@ -46,5 +45,11 @@
     > strong {
         margin-bottom:$half-spacing/2;
         display: block;
+    }
+    &:nth-child(2n) {
+        @include media-query(min, $lap-start) {
+            //padding-left: $base-spacing*4;
+        }
+        //outline: 1px solid red;
     }
 }

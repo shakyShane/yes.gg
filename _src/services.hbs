@@ -29,15 +29,17 @@ features: yes-services
     <div class="container">
         <h1 hidden>Choose from the many services we provide</h1>
         <br>
-        <section class="icon-list">
-            <div class="icon-list__items">
+        <section class="service-list">
+            <div class="service-list__items">
                 {{#each $$.quick-nav}}
-                <a href="{{this.url}}" class="icon-list__item">
-                    <span class="icon-list__icon">{{inc src="icon.hbs" icon=this.icon}}</span>
-                    <span class="icon-list__content">
-                        <span class="icon-list__title">{{this.title}}</span>
-                        <span class="icon-list__tagline">{{this.tagline}}</span>
-                        <span class="icon-list__cta">
+                <a href="{{this.url}}" class="service-list__item">
+                    <span class="service-list__img">
+                        <img src="{{this.thumb}}" alt="">
+                    </span>
+                    <span class="service-list__content">
+                        <span class="service-list__title">{{this.title}}</span>
+                        <span class="service-list__tagline">{{this.tagline}}</span>
+                        <span class="service-list__cta">
                             <span class="button button--alt">More Info</span>
                         </span>
                     </span>
@@ -47,4 +49,3 @@ features: yes-services
         </section>
     </div>
 </div>
-
