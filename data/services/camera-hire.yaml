@@ -27,7 +27,7 @@ features:
     - An online gallery on our website with free download
 extras:
   - title: Additional Cameras
-    content: Additional Camera
+    content: Additional Cameras
     price:
       content: 'Each'
       value: 30

@@ -1,0 +1,21 @@
+//----------------------
+// Booking form wrapper
+//----------------------
+.booking-form {
+    > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.booking-form__summary {
+    height: 30px;
+    position: relative;
+    padding-left: $half-spacing;
+    padding-right: $half-spacing;
+}
+
+.booking-form__inputs {
+    padding-left: $half-spacing;
+    padding-right: $half-spacing;
+}

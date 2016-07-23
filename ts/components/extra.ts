@@ -35,12 +35,12 @@ export default function createSelectableExtra(extra: ServiceExtra, state: any, s
 function qtyExtra(extra, current: SelectedExtra, action, send) {
     return html`
 <div>
-    <button type="button"
-            class="extras__item-button" 
-            onclick=${(e) => send(action, extra.id)}>
-            ${extra.content}
-            <span class="extras__item-price">£${extra.price.value.toFixed(2)}</span>
-    </button>
+    <div 
+        class="extras__item-button" 
+        onclick=${(e) => send(action, extra.id)}>
+        ${extra.content}
+        <span class="extras__item-price">£${extra.price.value.toFixed(2)}</span>
+    </div>
     <div class="extras__item-qty qty">
         <button type="button" class="qty__button qty__button--inc" onclick=${e => send('service:extra.inc', extra.id)}>+</button>
         <span class="qty__text">${current.qty}</span>
@@ -59,12 +59,12 @@ function qtyExtra(extra, current: SelectedExtra, action, send) {
  */
 function toggleExtra(extra, action, send) {
     return html`
-<button type="button"
-        class="extras__item-button" 
-        onclick=${(e) => send(action, extra.id)}>
-        ${extra.content}
-        <span class="extras__item-price">£${extra.price.value.toFixed(2)}</span>
-</button>`
+<div 
+    class="extras__item-button" 
+    onclick=${(e) => send(action, extra.id)}>
+    ${extra.content}
+    <span class="extras__item-price">£${extra.price.value.toFixed(2)}</span>
+</div>`
 }
 
 /**

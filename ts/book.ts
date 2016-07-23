@@ -205,7 +205,7 @@ export default function () {
         const total = serviceTotal + extrasTotal;
 
         return html`
-        <section class="booking-form">
+        <section>
             <div class="booking-form__summary summary">
                 <p class="summary__total">Total: <strong>£${total.toFixed(2)}</strong> 
                 <span class="summary__count">${selected.length} service${selected.length === 1 ? '': 's'}</span>

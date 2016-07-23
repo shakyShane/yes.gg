@@ -1,0 +1,22 @@
+.summary  {}
+.summary__total  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //left: $half-spacing;
+    height: 30px;
+    margin-bottom: 0;
+    z-index: 1;
+    background: $white;
+    padding-left: $half-spacing;
+    .scrolled & {
+        position: fixed;
+        padding: $half-spacing $half-spacing;
+        width: 100%;
+        height: auto;
+        @include box-shadow;
+    }
+}
+.summary__count  {
+    color: $grey;
+}

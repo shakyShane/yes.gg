@@ -948,6 +948,40 @@ h6, .h6 {
     padding-right: 12px;
     border: 1px solid #FBC138; }
 
+.booking-form > .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.booking-form__summary {
+  height: 30px;
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.booking-form__inputs {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.summary__total {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  margin-bottom: 0;
+  z-index: 1;
+  background: #FFF;
+  padding-left: 12px; }
+
+.scrolled .summary__total {
+    position: fixed;
+    padding: 12px 12px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.summary__count {
+  color: #939296; }
+
 .site-contact {
   opacity: 0;
   visibility: hidden;
@@ -1659,6 +1693,10 @@ http://flickity.metafizzy.co
     .services {
       width: 70%; } }
 
+.service {
+  margin-left: -12px;
+  margin-right: -12px; }
+
 .service__group {
   background: #FFF;
   padding: 12px 0; }
@@ -1685,10 +1723,11 @@ http://flickity.metafizzy.co
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding-left: 48px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-right: 24px; }
+  padding-right: 24px;
+  padding-left: 48px;
+  border-top: 1px solid #f2f2f2; }
 
 .has-mouse .service__button:hover {
     cursor: pointer;
@@ -1701,7 +1740,7 @@ http://flickity.metafizzy.co
     display: inline-block;
     position: absolute;
     left: 18px;
-    top: 20px;
+    top: 18px;
     margin-right: 12px;
     content: ' ';
     width: 12px;
@@ -1709,6 +1748,7 @@ http://flickity.metafizzy.co
     border: 1px solid #D8D8D8; }
 
 .service--selected .service__button {
+    border-top: 1px solid #e5e5e5;
     background: rgba(0, 0, 0, 0.05); }
 
 .service--selected .service__button:before {
@@ -1746,8 +1786,10 @@ http://flickity.metafizzy.co
   color: #939296; }
 
 .extras {
-  padding: 12px;
-  display: none; }
+  display: none;
+  border-top: 1px solid #D8D8D8;
+  box-shadow: 0px 0px 7px #D8D8D8 inset;
+  padding-bottom: 12px; }
 
 .service--selected.service--has-extras .extras {
     display: block; }
@@ -1764,7 +1806,8 @@ http://flickity.metafizzy.co
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  padding-left: 12px; }
 
 .extras__item:last-child {
     margin-bottom: 0; }
@@ -1773,59 +1816,42 @@ http://flickity.metafizzy.co
   display: block; }
 
 .extras__title {
-  margin-bottom: 12px; }
+  margin-bottom: 0;
+  padding: 12px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4E4E4E; }
 
 .extras__item-button {
-  -webkit-appearance: none;
-  border: 0;
-  background: #FFF;
-  width: 100%;
-  text-align: left;
+  cursor: pointer;
+  background: transparent;
   font-size: 1.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
+  padding-right: 25%;
   padding-left: 48px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-  font-size: 1.6rem; }
-
-.has-mouse .extras__item-button:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.05); }
-
-.extras__item-button:focus {
-    outline: 0; }
+  padding-top: 6px;
+  padding-bottom: 6px; }
 
 .extras__item-button:before {
     display: inline-block;
     position: absolute;
     left: 18px;
-    top: 20px;
     margin-right: 12px;
     content: ' ';
     width: 12px;
     height: 12px;
-    border: 1px solid #D8D8D8; }
-
-.extras__item-button:before {
-    top: 17px; }
-
-.extras__item--selected .extras__item-button {
-    background: rgba(0, 0, 0, 0.05); }
+    border: 1px solid #D8D8D8;
+    top: 12px; }
 
 .extras__item--selected .extras__item-button:before {
-      background: #FBC138;
-      box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
+    background: #FBC138;
+    box-shadow: 0 0 1px 0 inset white, 1px 1px 0 0 inset white, -1px -1px 0 0 inset white; }
 
 .extras__item-qty {
   display: none;
-  padding: 12px; }
+  padding: 12px;
+  padding-left: 48px; }
 
 .extras__item--selected .extras__item-qty {
     display: block; }
@@ -1842,34 +1868,18 @@ http://flickity.metafizzy.co
 
 .qty__button {
   cursor: pointer;
-  width: 30px; }
+  width: 30px;
+  height: 30px;
+  border: 1px solid #D8D8D8;
+  background: #FFF;
+  padding: 0; }
 
 .extras__item-price {
   color: #939296;
-  margin-left: 6px; }
-
-.booking-form__summary {
-  height: 30px;
-  position: relative; }
-
-.summary__total {
+  margin-left: 6px;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 30px;
-  margin-bottom: 0;
-  z-index: 1;
-  background: #FFF; }
-
-.scrolled .summary__total {
-    position: fixed;
-    padding: 12px 24px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
-
-.summary__count {
-  color: #939296; }
+  right: 24px; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
