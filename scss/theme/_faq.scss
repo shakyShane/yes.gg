@@ -1,0 +1,18 @@
+.faq {
+    > .container {
+        max-width: 620px;
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
+    }
+    .section-title {
+        margin-bottom: $base-spacing;
+    }
+}
+
+.faq__question {
+    margin-bottom: $half-spacing;
+}
+
+.faq__answer {
+    margin-bottom: $base-spacing*2;
+}

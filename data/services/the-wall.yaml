@@ -46,3 +46,17 @@ extras:
       content: 'Starting at'
       value: 50
       type: toggle
+
+faq:
+  - q: Dimensions
+    a: 2100mm high x 1750mm deep x 3000mm wide
+  - q: Capacity
+    a: 1 person drawing, photos can accommodate larger group shots
+  - q: Power requirements
+    a: Regular 13amp socket, 900w of power
+  - q: Set up time
+    a: Approx 25-30 mins
+  - q: Photos per hour
+    a: 30 photos, normal drawing capacity 20 pieces of artwork per hour
+  - q: Print time
+    a: 18 seconds

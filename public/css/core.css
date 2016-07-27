@@ -1909,6 +1909,20 @@ http://flickity.metafizzy.co
 .invalid input:required:invalid {
   border: 1px solid red; }
 
+.faq > .container {
+  max-width: 620px;
+  padding-left: 24px;
+  padding-right: 24px; }
+
+.faq .section-title {
+  margin-bottom: 24px; }
+
+.faq__question {
+  margin-bottom: 12px; }
+
+.faq__answer {
+  margin-bottom: 48px; }
+
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
 /*

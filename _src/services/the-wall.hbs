@@ -3,7 +3,8 @@ description: >
     The Wall is great Fun!
 cta: true
 features: the-wall-features
-gallery: the-wall-gallery
+gallery:  the-wall-gallery
+faq:      the-wall-faq
 breadcrumbs:
   - label: Home
     url: /
@@ -45,3 +46,4 @@ breadcrumbs:
 </section>
 
 {{inc src="features.hbs" feature=$$.services.the-wall id=page.features}}
+{{inc src="faq.hbs" faq=$$.services.the-wall.faq}}

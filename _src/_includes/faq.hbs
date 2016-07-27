@@ -1,0 +1,12 @@
+<div class="wrapper faq" id="{{page.faq}}">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        {{#each faq}}
+            <p class="faq__question"><strong>{{this.q}}</strong></p>
+            <p class="faq__answer">{{this.a}}</p>
+        {{/each}}
+        <p>
+            <a href="{{$$.nav.book.url}}" class="button">Book now</a>
+        </p>
+    </div>
+</div>
