@@ -1634,7 +1634,13 @@ http://flickity.metafizzy.co
 
 .card__logo {
   margin-bottom: 24px;
-  height: 43px; }
+  color: blue; }
+
+.card__logo svg {
+    fill: blue; }
+
+.card__logo img {
+    max-height: 100px; }
 
 .cards--full-bleed .card {
   padding: 24px;

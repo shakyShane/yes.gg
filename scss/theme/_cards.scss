@@ -104,7 +104,15 @@
 // --------------------------
 .card__logo {
     margin-bottom: $base-spacing;
-    height: 43px;
+    //height: 43px;
+    //max-height: 20px;
+    color: blue;
+    svg {
+        fill: blue;
+    }
+    img {
+        max-height: 100px;
+    }
 }
 
 .cards--full-bleed {

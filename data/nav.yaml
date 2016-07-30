@@ -45,5 +45,5 @@ contact:
       url: 'mailto:hello@yes.gg'
 book:
   label: Book
-  url: /contact#book
+  url: /contact
   type: "cta"

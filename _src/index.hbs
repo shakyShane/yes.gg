@@ -63,30 +63,16 @@ description: >
             What our customers are saying about us...
         </h1>
         <div class="cards cards--carousel" id="testimonial-cards">
+            {{#each $$.testimonials}}
             <div class="card">
                 <div class="card__logo">
-                    <img src="/content/barclays.png" alt="">
+                    <img src="{{this.image}}" alt="">
                 </div>
-                <p class="card__title">Fantastic Event</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
-                <p class="card__author">&mdash; Dorothy Armstrong, CEO</p>
+                <p class="card__title">{{this.title}}</p>
+                <p class="card__summary">{{this.summary}}</p>
+                <p class="card__author">&mdash; {{this.author}}</p>
             </div>
-            <div class="card">
-                <div class="card__logo">
-                    <img src="/content/hsbc.png" alt="">
-                </div>
-                <p class="card__title">True professionals in all aspects of the day</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
-                <p class="card__author">&mdash; Daniel James, Marketing Manager</p>
-            </div>
-            <div class="card">
-                <div class="card__logo">
-                    <img src="/content/deloitte.png" alt="">
-                </div>
-                <p class="card__title">Will use again!</p>
-                <p class="card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequatur consequuntur delectus</p>
-                <p class="card__author">&mdash; Dorothy Armstrong, CEO</p>
-            </div>
+            {{/each}}
         </div>
     </div>
 </section>
