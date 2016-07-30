@@ -29,6 +29,19 @@
     }
 }
 
+/* enable Flickity by default */
+#testimonial-cards:after {
+    content: 'flickity';
+    display: none; /* hide :after */
+}
+
+@media screen and ( min-width: $desk-start ) {
+    /* disable Flickity for large devices */
+    #testimonial-cards:after {
+        content: '';
+    }
+}
+
 .cards--feature-list {
 
     @include media-query(min, $desk-start) {

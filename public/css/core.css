@@ -1578,6 +1578,18 @@ http://flickity.metafizzy.co
   margin-bottom: 0;
   box-shadow: 0 0 0 0; }
 
+/* enable Flickity by default */
+
+#testimonial-cards:after {
+  content: 'flickity';
+  display: none;
+  /* hide :after */ }
+
+@media screen and (min-width: 960px) {
+  /* disable Flickity for large devices */
+  #testimonial-cards:after {
+    content: ''; } }
+
 @media only screen and (min-width: 960px) {
   .cards--feature-list {
     display: block; } }

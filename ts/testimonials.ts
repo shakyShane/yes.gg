@@ -5,10 +5,6 @@ const items = document.getElementById(selector);
 
 export default function () {
 
-    if (state.aboveLap || !items) {
-        return;
-    }
-
     const Flickity = require('./vendor/flickity');
     const flickity = new Flickity(items, {
         // wrapAround: true,
@@ -21,6 +17,7 @@ export default function () {
         // setGallerySize: false,
         // pageDots: false,
         // lazyLoad: 1,
+        watchCSS: true,
         touchVerticalScroll: false,
         dragThreshold: 10
     });
