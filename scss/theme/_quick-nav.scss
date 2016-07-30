@@ -33,7 +33,7 @@
     align-items: center;
     border-bottom: 1px solid lighten($black, 10%);
     transition: transform .05s;
-    outline: 1px dotted rgba(green, .2);
+    //outline: 1px dotted rgba(green, .2);
     
     @include media-query(min, $lap-start) {
         display: block;

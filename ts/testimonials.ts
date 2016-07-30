@@ -5,6 +5,10 @@ const items = document.getElementById(selector);
 
 export default function () {
 
+    if (!items) {
+        return;
+    }
+
     const Flickity = require('./vendor/flickity');
     const flickity = new Flickity(items, {
         // wrapAround: true,

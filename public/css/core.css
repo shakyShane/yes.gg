@@ -1318,8 +1318,7 @@ h6, .h6 {
   -webkit-transition: -webkit-transform .05s;
   transition: -webkit-transform .05s;
   transition: transform .05s;
-  transition: transform .05s, -webkit-transform .05s;
-  outline: 1px dotted rgba(0, 128, 0, 0.2); }
+  transition: transform .05s, -webkit-transform .05s; }
 
 @media only screen and (min-width: 640px) {
     .quick-nav__item {
@@ -1718,6 +1717,9 @@ http://flickity.metafizzy.co
     .detail__gallery {
       text-align: left;
       width: 30%; } }
+
+.gallery__header {
+  margin-bottom: 12px; }
 
 .gallery__hint {
   font-size: 1.4rem;

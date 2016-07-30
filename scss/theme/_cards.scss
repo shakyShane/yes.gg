@@ -231,6 +231,11 @@
     }
 }
 
+.gallery {}
+.gallery__header {
+    margin-bottom: $half-spacing;
+}
+
 .gallery__hint {
     font-size: 1.4rem;
     color: $grey;
