@@ -15,7 +15,7 @@
     "bs-latency": "1.0.0",
     "choo": "^3.0.2",
     "crossbow": "^0.7.1",
-    "crossbow-cli": "3.1.0",
+    "crossbow-cli": "3.2.1",
     "crossbow-sass": "4.0.3",
     "easy-svg": "1.0.5",
     "flickity": "1.2.1",
