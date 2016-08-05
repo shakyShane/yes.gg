@@ -28,6 +28,14 @@ tasks:
   build-js:
     - webpack
 
+  deploy-light:
+    description: Only build HTML and deploy static assets
+    tasks:
+      - build-html
+      - _merkle
+      - docker-remote
+      - open
+
   deploy:
     description: Build-all assets & rsync to server
     tasks:
