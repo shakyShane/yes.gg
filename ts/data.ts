@@ -36,6 +36,7 @@ export default function getData(): ServiceGroups {
             title: "Photo Booths",
             items: [
                 yaml('booths-the-pod.yaml'),
+                yaml('booths-selfie-pod.yaml'),
                 yaml('booths-the-cab.yaml'),
                 yaml('booths-mini-pod-01.yaml'),
                 yaml('booths-mini-pod-02.yaml'),
