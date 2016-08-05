@@ -20,6 +20,17 @@ export interface ServiceGroups {
 }
 
 export default function getData(): ServiceGroups {
+
+    // Fun props has 3 separate prices
+    // so we turn them into individual elements
+    const props = yaml('fun-props.yaml');
+    const items = props.prices.map(function (item) {
+        return {
+            title: `${props.title} - ${item.content}`,
+            price: item
+        };
+    });
+
     const out = <ServiceGroups>{
         "photoBooths": {
             title: "Photo Booths",
@@ -27,7 +38,7 @@ export default function getData(): ServiceGroups {
                 yaml('booths-the-pod.yaml'),
                 yaml('booths-the-cab.yaml'),
                 yaml('booths-mini-pod-01.yaml'),
-                yaml('booths-mini-pod-02.yaml')
+                yaml('booths-mini-pod-02.yaml'),
             ]
                 .map(applyId)
                 .map(applyIdsToExtras)
@@ -38,7 +49,8 @@ export default function getData(): ServiceGroups {
                 yaml('event-photography.yaml'),
                 yaml('camera-hire.yaml'),
                 yaml('magical-mirror.yaml'),
-                yaml('the-wall.yaml')
+                yaml('the-wall.yaml'),
+                ...items
             ]
                 .map(applyId)
                 .map(applyIdsToExtras)

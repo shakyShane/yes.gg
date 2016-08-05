@@ -2,16 +2,24 @@ title: "Fun Props"
 slug: "fun-props"
 icon: "mirror"
 url: "/services/the-wall"
+
 tagline: >
   The Digital Graffiti Wall is a unique and exciting product that allows the interactive creation of virtual graffiti on a digital wall.
 lede: We have an array of fun props to hire for your wedding, party or special occasion to keep your guests entertained.
+
 desc:
   - These props will make a great focal point for your event by providing a great photo opportunity for your guests. Custom peep through boards available contact us for details.
 
-price:
-  content: 4 hours
-  value: 750
-  type: toggle
+prices:
+  - content: Frames
+    value: 75
+    type: toggle
+  - content: Peep-Through Boards
+    value: 75
+    type: toggle
+  - content: Childrens Peep-through board
+    value: 50
+    type: toggle
 
 features:
   - title: Frames
