@@ -1,6 +1,5 @@
 title: Your Event Solutions
 description: Some Awesome Title
-
 contact:
   T:
     title: Telephone
@@ -17,3 +16,10 @@ contact:
   A:
     title: Address
     value: 31 Mill Street, St Peter Port, Guernsey. GY1 1HG
+social:
+  facebook:
+    link:
+  instagram:
+    link:
+  snapchat:
+    link:

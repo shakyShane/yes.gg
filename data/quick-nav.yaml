@@ -23,3 +23,8 @@
   thumb: /content/camera-hire/service-thumb.jpg
   url: "/services/camera-hire"
   tagline: Gone are the days of providing disposable cameras for your guests to capture the big day - do it the modern way and Hire Digital Cameras instead.
+- title: Fun Props
+  icon: "mustache"
+  thumb: /content/fun-props/service-thumb.png
+  url: "/services/fun-props"
+  tagline: We have an array of fun props to hire for your wedding, party or special occasion to keep your guests entertained.

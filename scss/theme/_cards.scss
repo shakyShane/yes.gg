@@ -194,6 +194,17 @@
     //justify-content: flex-end;
 }
 
+.card__cta--inline {
+    @include clearfix;
+    > * {
+        float: left;
+        width: 48%;
+        &:last-child {
+            float: right
+        }
+    }
+}
+
 // -----------------------
 // Author name block
 // -----------------------
@@ -216,6 +227,17 @@
     margin-bottom:$base-spacing;
 }
 
+
+.card__separator {
+    height: 1px;
+    background: lighten($grey-lt, 10%);
+    margin: $base-spacing*2 0;
+}
+
+.card__separator--last-true {
+    display: none;
+}
+
 .card__extras {
     margin-bottom: $base-spacing*2;
 }
@@ -232,6 +254,10 @@
 }
 
 .gallery {}
+.gallery--inline {
+    margin-bottom: $base-spacing;
+}
+
 .gallery__header {
     margin-bottom: $half-spacing;
 }

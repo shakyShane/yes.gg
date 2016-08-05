@@ -1,0 +1,65 @@
+---
+description: >
+    Fun Props
+cta: true
+prices: fun-props-prices
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+---
+
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.fun-props.title}}
+
+<section class="wrapper detail">
+    <div class="container">
+        <div class="detail__img">
+            <img src="/content/fun-props/service-thumb.png" alt="">
+        </div>
+        <div class="detail__content">
+            <h2>{{{$$.services.fun-props.title}}}</h2>
+            <p class="lede">{{{$$.services.fun-props.lede}}}</p>
+            <p>{{$$.services.fun-props.desc}}</p>
+            <p>
+                <a data-scroll href="#{{page.prices}}" class="button button--alt">Prices</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper upsell" id="{{id}}">
+    <div class="container">
+        <h1 class="page-title">Fun Props - Prices</h1>
+
+        <div class="cards cards--feature-list" id="fun-props-prices">
+
+            <div class="card">
+
+                {{#each $$.services.fun-props.features}}
+                <p class="card__title">{{this.title}}</p>
+                <p class="card__subtitle"><strong>£{{this.price.value}}.00</strong> {{this.price.content}}</p>
+
+                <div class="gallery gallery--inline" data-pswp-uid="1">
+                    {{#imgs src=this.gallery rel="public" limit=10}}
+                    <a class="gallery__link" href="{{this.large.src}}"
+                       data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                        <img src="{{this.thumb.src}}" alt="">
+                        <figure></figure>
+                    </a>
+                    {{/imgs}}
+                </div>
+
+                <div class="card__cta">
+                    <a href="/contact" class="button">Book Now</a>
+                </div>
+
+                <div class="card__separator card__separator--last-{{@last}}">&nbsp;</div>
+
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+
+

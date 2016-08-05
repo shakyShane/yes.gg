@@ -70,6 +70,7 @@ layout: 'base.hbs'
                                 <li class="subnav__item"><a href="/services/the-wall" class="subnav__link">The Wall</a></li>
                                 <li class="subnav__item"><a href="/services/magical-mirror" class="subnav__link">Magical Mirror</a></li>
                                 <li class="subnav__item"><a href="/services/camera-hire" class="subnav__link">Compact Camera Hire</a></li>
+                                <li class="subnav__item"><a href="/services/fun-props" class="subnav__link">Fun Props</a></li>
                                 <li class="subnav__item subnav__item--viewall"><a href="/services" class="subnav__link subnav__link--before">View All Services</a></li>
                             </ul>
                         </div>
@@ -147,8 +148,9 @@ layout: 'base.hbs'
         </ul>
 
         <div class="footer-nav footer-nav--social social">
-            <a href="{{$$.site.social.twitter}}" class="social__link social__link--twitter">{{inc src="icon.hbs" icon="twitter"}}</a>
-            <a href="{{$$.site.social.facebook}}" class="social__link social__link--facebook">{{inc src="icon.hbs" icon="facebook"}}</a>
+            <a href="{{$$.site.social.facebook.link}}" class="social__link social__link--facebook">{{inc src="icon.hbs" icon="facebook"}}</a>
+            <a href="{{$$.site.social.instagram.link}}" class="social__link social__link--instagram">{{inc src="icon.hbs" icon="instagram"}}</a>
+            <a href="{{$$.site.social.snapchat.link}}" class="social__link social__link--snapchat">{{inc src="icon.hbs" icon="snapchat"}}</a>
         </div>
 
     </div>

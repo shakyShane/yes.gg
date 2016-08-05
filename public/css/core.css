@@ -1690,6 +1690,22 @@ http://flickity.metafizzy.co
 .card__cta {
   margin-bottom: 0; }
 
+.card__cta--inline:before, .card__cta--inline:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.card__cta--inline:after {
+  clear: both; }
+
+.card__cta--inline > * {
+  float: left;
+  width: 48%; }
+
+.card__cta--inline > *:last-child {
+    float: right; }
+
 .card__author {
   color: #939296;
   font-size: 1.2rem; }
@@ -1704,6 +1720,14 @@ http://flickity.metafizzy.co
   border-radius: 24px;
   margin-bottom: 24px; }
 
+.card__separator {
+  height: 1px;
+  background: #f2f2f2;
+  margin: 48px 0; }
+
+.card__separator--last-true {
+  display: none; }
+
 .card__extras {
   margin-bottom: 48px; }
 
@@ -1717,6 +1741,9 @@ http://flickity.metafizzy.co
     .detail__gallery {
       text-align: left;
       width: 30%; } }
+
+.gallery--inline {
+  margin-bottom: 24px; }
 
 .gallery__header {
   margin-bottom: 12px; }
