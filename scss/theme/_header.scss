@@ -1,12 +1,26 @@
 .site-header {
     position: relative;
-    max-width: $page-width;
     margin: 0 auto;
-    
+    background: $black;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    > .container {
+        max-width: $page-width;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     @include media-query(min, $lap-start) {
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: $half-spacing;
+        //display: flex;
+        //align-items: flex-end;
+        //height: 120px;
+        padding-top: $base-spacing;
+        padding-bottom: $base-spacing;
+        > .container {
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
@@ -25,10 +39,7 @@
 .logo {
     display: block;
     color: $black;
-    height: 95px;
     max-width: 200px;
-    position: relative;
-    top: -5px;
 
     svg {
         width: 100%;
@@ -36,12 +47,11 @@
     
     @include media-query(min, $lap-start) {
         max-width: none;
-        width: 200px;
-        top: 0;
+        width: 300px;
     }
 
     @include media-query(min, $desk-start) {
-        width: 250px;
+        //max-width: none;
     }
 }
 
@@ -58,6 +68,9 @@
 
 .controls {
     display: flex;
+    //@include media-query(min, $lap-start) {
+    //    float: right;
+    //}
 }
 
 .controls__skip-links {
@@ -69,9 +82,10 @@
 }
 
 .skip {
+
     display: block;
     width: 75px;
-    height: 95px;
+    height: 106px;
     position: relative;
     color: $black;
 

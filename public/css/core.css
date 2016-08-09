@@ -717,18 +717,27 @@ h6, .h6 {
 
 .site-header {
   position: relative;
-  max-width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #000;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.site-header > .container {
+    max-width: 1160px;
+    padding-left: 0;
+    padding-right: 0; }
 
 @media only screen and (min-width: 640px) {
     .site-header {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      margin-bottom: 12px; } }
+      padding-top: 24px;
+      padding-bottom: 24px; }
+      .site-header > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 
 .header-wrapper {
   padding-top: 0;
@@ -742,10 +751,7 @@ h6, .h6 {
 .logo {
   display: block;
   color: #000;
-  height: 95px;
-  max-width: 200px;
-  position: relative;
-  top: -5px; }
+  max-width: 200px; }
 
 .logo svg {
     width: 100%; }
@@ -753,12 +759,7 @@ h6, .h6 {
 @media only screen and (min-width: 640px) {
     .logo {
       max-width: none;
-      width: 200px;
-      top: 0; } }
-
-@media only screen and (min-width: 960px) {
-    .logo {
-      width: 250px; } }
+      width: 300px; } }
 
 .logo__your {
   display: none; }
@@ -787,7 +788,7 @@ h6, .h6 {
 .skip {
   display: block;
   width: 75px;
-  height: 95px;
+  height: 106px;
   position: relative;
   color: #000; }
 
@@ -1123,7 +1124,7 @@ h6, .h6 {
       position: relative;
       opacity: 1;
       visibility: visible;
-      background: #FFF;
+      background: #000;
       margin-left: 0; } }
 
 .site-nav__items {
@@ -1159,13 +1160,13 @@ h6, .h6 {
       width: 0;
       top: 21.6px;
       right: 12px;
-      border-top: 5px solid #000;
+      border-top: 5px solid #FFF;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent; }
 
 .site-nav__item--with-children.active .nav-link:after {
     border-top: 5px solid transparent;
-    border-bottom: 5px solid #000;
+    border-bottom: 5px solid #FFF;
     top: 15.6px; }
 
 .nav-link {
@@ -1180,6 +1181,7 @@ h6, .h6 {
 
 @media only screen and (min-width: 640px) {
     .nav-link {
+      color: #FFF;
       border-bottom: 0;
       padding-left: 12px;
       padding-right: 12px;
@@ -1192,7 +1194,8 @@ h6, .h6 {
     background: #FBC138;
     border-radius: 100px;
     padding-right: 1.5em;
-    padding-left: 1.5em; }
+    padding-left: 1.5em;
+    color: #000; }
 
 .site-nav__item--cta .nav-link:active {
       -webkit-transform: scale(0.9);
