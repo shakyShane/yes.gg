@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "aea2fcfc99c8aa883d26320c0485444eb17536a75489c34e0bf9d3cd6fc542d1",
+    "hash": "88655d882e8404cfa5cdeeb2b1d279b6528896433d74b92ed362f1b09b60d5d8",
     "tree": [
       {
         "path": "about",
@@ -49,7 +49,7 @@
       },
       {
         "path": "services",
-        "hash": "9a2948a5e85410d15445fca205de8a291a22914e26cc5b4a98e11b0fa6c0da8b",
+        "hash": "0bae2e2761616a2e2cfab0b9268188be22f62262ef60ac84af7683a02d69ccb9",
         "tree": [
           {
             "path": "services/camera-hire",
@@ -97,11 +97,11 @@
           },
           {
             "path": "services/photo-booths",
-            "hash": "7fc7372b744c3746eeff43be920863ac3a5a1e8c0ed6d55fdd18d4b21262ef67",
+            "hash": "8fae951e4a5a3be958ddca8069a3b9a8873ba4b9bbb92264d745910157c54552",
             "tree": [
               {
                 "path": "services/photo-booths/index.html",
-                "hash": "97cfe39dd50c3b4590019ad1748cd8dffb56432ca77a828cdff37a87d18a1fa0"
+                "hash": "8bd5b5f14f4344d73d3d8b8bb33870a5d506037b7e20dc2e221c4694a4339626"
               },
               {
                 "path": "services/photo-booths/mini-pod",
@@ -168,7 +168,7 @@
         ]
       }
     ],
-    "date": "August 11th 2016, 9:03:54 pm"
+    "date": "August 11th 2016, 9:07:11 pm"
   },
   "public/css": {
     "path": "public/css",
@@ -214,6 +214,6 @@
         "hash": "467519f34c1340d598188280caf31ad2d5373138a3e5d2d57978286e4311cc75"
       }
     ],
-    "date": "August 11th 2016, 9:03:54 pm"
+    "date": "August 11th 2016, 9:07:37 pm"
   }
 }
