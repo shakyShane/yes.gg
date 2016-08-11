@@ -197,9 +197,25 @@ export default function () {
         const extrasTotal       = ns.extras.reduce((acc, item) => {
             if (ns.selectedExtras.indexOf(item.id) > -1) {
                 const parentId = item.id.split('.')[0];
-                const parent = flattenedServices.filter(x => x.id === parentId)[0];
-                if (ns.selected.indexOf(parent.id) > -1) {
-                    return acc + item.subtotal;
+                const parent  = (function () {
+                    const match = flattenedServices.filter(x => x.id === parentId)[0];
+                    if (match) return match;
+
+                    // const doubleMatch = flattenedServices.filter(x => x.id === item.id.slice(0, 3));
+                    // console.log(doubleMatch);
+                    console.log(flattenedServices);
+
+                    // if (doubleMatch) {
+                    //     return doubleMatch;
+                    //
+                    // }
+                })();
+                if (!parent) {
+                    // console.log(parentId, item.id);
+                } else {
+                    if (ns.selected.indexOf(parent.id) > -1) {
+                        return acc + item.subtotal;
+                    }
                 }
             }
             return acc;

@@ -3,6 +3,7 @@ type: "Photo Booth"
 icon: "booths"
 thumb: "/content/choice-04.jpg"
 suited: "Ideal for most events"
+id: "2"
 hero:
   palm: "/content/photo-booths/selfie-pod/hero-01.jpg"
   large: "/content/photo-booths/selfie-pod/hero-01.jpg"
@@ -14,8 +15,8 @@ desc: >
   and any other party or event. The Pod is ideal for you and your guests to have fun and
   make your event a memorable one.
 price:
-  content: 4 hours, unlimited use
-  value: 525
+  content: 3 hours, unlimited use
+  value: 350
   type: toggle
 features:
   - Takes up to five people
@@ -28,6 +29,11 @@ features:
   - Personalised message or logo
   - A friendly pod attendant to assist with the pod
 extras:
+  - title: Additional Hour
+    content: 4 hours (instead of 3)
+    price:
+      type: 'toggle'
+      value: 80
   - title: "Memory Album"
     content: Memory album takes up to 120 photos for your guests to leave their personalised messages
     price:

@@ -3,6 +3,7 @@ type: "Photo Booth"
 icon: "booths"
 thumb: "/content/choice-02.jpg"
 suited: Perfect for any outdoor events
+id: "1"
 hero:
   palm: "/content/photo-booths/the-cab/hero-02.jpg"
   large: "/content/photo-booths/the-cab/hero-02.jpg"

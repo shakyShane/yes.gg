@@ -5,13 +5,21 @@
             <li>{{this}}</li>
         {{/each}}
     </ul>
-    <p class="card__price">
-        <strong>Price: £{{feature.price.value}}.00</strong> ({{feature.price.content}})
-    </p>
-    {{#if feature.price.additional}}
-    <p class="card__price">
-        <strong>Price: £{{feature.price.additional.value}}.00</strong> ({{feature.price.additional.content}})
-    </p>
+    {{#if feature.prices}}
+        {{#each feature.prices}}
+        <p class="card__price">
+            <strong>Price: £{{this.value}}.00</strong> ({{this.content}})
+        </p>
+        {{/each}}
+    {{else}}
+        <p class="card__price">
+            <strong>Price: £{{feature.price.value}}.00</strong> ({{feature.price.content}})
+        </p>
+        {{#if feature.price.additional}}
+        <p class="card__price">
+            <strong>Price: £{{feature.price.additional.value}}.00</strong> ({{feature.price.additional.content}})
+        </p>
+        {{/if}}
     {{/if}}
     {{#if feature.extras}}
     <p class="card__title">{{feature.title}} - Optional Extras:</p>
