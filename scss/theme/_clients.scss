@@ -1,0 +1,39 @@
+.clients {
+    background: $yellow;
+
+    @include media-query(min, $desk-start) {
+
+        padding-top: 0;
+        padding-bottom: $base-spacing*3;
+
+        .section-title {
+            margin-bottom: $base-spacing*2;
+        }
+    }
+}
+
+.client__list {
+    //@include clearfix;
+    background: $white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include media-query(min, $desk-start) {
+        padding: $half-spacing;
+    }
+}
+
+.client__logo {
+
+    width: 33.3333%;
+    padding: $half-spacing;
+
+    @include media-query(min, $lap-start) {
+        width: 16.6666%;
+        padding: $base-spacing;
+    }
+
+    &:nth-child(4n+1) {
+        clear: both;
+    }
+}

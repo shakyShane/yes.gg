@@ -299,13 +299,6 @@
     }
 }
 
-.detail__content {
-    @include media-query(min, $lap-start) {
-        width: 70%;
-        padding-left: $base-spacing;
-    }
-}
-
 .card-title {
     padding: 0;
     margin: -$base-spacing;

@@ -19,7 +19,14 @@
 }
 
 .detail__content {
+
     flex: 1;
+
+    @include media-query(min, $lap-start) {
+        width: 70%;
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
+    }
 }
 
 .detail__img {

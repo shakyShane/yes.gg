@@ -1,10 +1,11 @@
 .upsell {
+
     background: $yellow;
     position: relative;
 
     @include media-query(max, $lap-start) {
         padding-bottom: $half-spacing;
-        margin-bottom: $base-spacing* 2;
+        padding-bottom: $base-spacing * 2;
     }
 
     &:before {

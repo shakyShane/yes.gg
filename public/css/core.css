@@ -1364,7 +1364,7 @@ h6, .h6 {
 @media only screen and (max-width: 639px) {
     .upsell {
       padding-bottom: 12px;
-      margin-bottom: 48px; } }
+      padding-bottom: 48px; } }
 
 .upsell:before {
     width: 200%;
@@ -1838,11 +1838,6 @@ http://flickity.metafizzy.co
 .gallery__link img {
     width: 100%; }
 
-@media only screen and (min-width: 640px) {
-  .detail__content {
-    width: 70%;
-    padding-left: 24px; } }
-
 .card-title {
   padding: 0;
   margin: -24px;
@@ -2087,6 +2082,43 @@ http://flickity.metafizzy.co
 .banner__cta {
   padding-top: 24px;
   text-align: center; }
+
+.clients {
+  background: #FBC138; }
+
+@media only screen and (min-width: 960px) {
+    .clients {
+      padding-top: 0;
+      padding-bottom: 72px; }
+      .clients .section-title {
+        margin-bottom: 48px; } }
+
+.client__list {
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media only screen and (min-width: 960px) {
+    .client__list {
+      padding: 12px; } }
+
+.client__logo {
+  width: 33.3333%;
+  padding: 12px; }
+
+@media only screen and (min-width: 640px) {
+    .client__logo {
+      width: 16.6666%;
+      padding: 24px; } }
+
+.client__logo:nth-child(4n+1) {
+    clear: both; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
@@ -2943,6 +2975,12 @@ a.pswp__share--download:hover {
       -ms-flex: 1;
           flex: 1; }
 
+@media only screen and (min-width: 640px) {
+    .detail__content {
+      width: 70%;
+      padding-left: 24px;
+      padding-right: 24px; } }
+
 .detail__img {
   font-size: 0;
   width: 100%;
@@ -3071,41 +3109,6 @@ a.pswp__share--download:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 24px; }
-
-.clients {
-  border-top: 1px solid #f2f2f2; }
-
-@media only screen and (min-width: 960px) {
-    .clients {
-      padding-top: 72px;
-      padding-bottom: 72px; }
-      .clients .section-title {
-        margin-bottom: 48px; } }
-
-.client__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.client__logo {
-  width: 33.3333%;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-bottom: 24px; }
-
-@media only screen and (min-width: 640px) {
-    .client__logo {
-      width: 16.6666%;
-      padding-left: 24px;
-      padding-right: 24px; } }
-
-.client__logo:nth-child(4n+1) {
-    clear: both; }
 
 svg {
   display: inline-block;

@@ -2,17 +2,20 @@
 title: "Photo Booths, Event Photography, Grafiti Walls and More from YES.gg"
 description: >
     We’re an entertainments company with a difference we don’t just do events we create event solutions especially for you, whatever you need we can accommodate you
+hero:
+    tagline: Providing top class entertainment services<br> throughout the Channel Islands
 ---
 
 <section class="wrapper hero-list">
     <div class="container">
         <h1 hidden="">{{$$.site.title}}</h1>
         <article class="hero hero--loading">
-            <section class="hero__img" hero-src="/content/hero-01.jpg" hero-src-large="/content/hero-01.jpg">
+            <section class="hero__img"
+                     hero-src="/content/photo-booths/the-pod/hero-01.jpg"
+                     hero-src-large="/content/photo-booths/the-pod/hero-01.jpg">
                 <section class="hero__content">
                     <h2 class="hero__title">{{$$.site.title}}</h2>
-                    <p class="hero__summary">We’re an entertainments company with a difference we don’t just do events we create event solutions
-                        especially for you, whatever you need we can accommodate you</p>
+                    <p class="hero__summary">{{{page.hero.tagline}}}</p>
                     <div class="hero__cta">
                         <a href="/services" class="button" ui-please-wait>Our Services</a>
                         <a href="/contact" class="button button--trans" ui-please-wait>Get In Touch</a>
@@ -37,61 +40,22 @@ description: >
     </div>
 </section>
 
-<div class="wrapper banner">
+<section class="wrapper detail">
     <div class="container">
-        <h3 class="section-title">Photo booths, Event Photography & much more</h3>
-        <div class="banner__items">
-            <a class="banner__item" href="/services/photo-booths">
-                <figure class="banner__img">
-                    <img src="/content/photo-booths/the-pod/service-thumb.jpg" alt="">
-                </figure>
-                <div class="banner__overlay">
-                    <p class="banner__title">Photo Booths</p>
-                    <p class="banner__tagline">from £525.00</p>
-                </div>
-            </a>
-            <a class="banner__item" href="/services/event-photography">
-                <figure class="banner__img">
-                    <img src="/content/event-photography/service-thumb.jpg" alt="">
-                </figure>
-                <div class="banner__overlay">
-                    <p class="banner__title">Event Photography</p>
-                    <p class="banner__tagline">from £70.00</p>
-                </div>
-            </a>
-            <a class="banner__item" href="/services/the-wall">
-                <figure class="banner__img">
-                    <img src="/content/the-wall/service-thumb.jpg" alt="">
-                </figure>
-                <div class="banner__overlay">
-                    <p class="banner__title">The Wall</p>
-                    <p class="banner__tagline">from £750.00</p>
-                </div>
-            </a>
+        <div class="detail__img">
+            <img src="/content/home-01.jpg" alt="">
         </div>
-        <div class="banner__cta">
-            <p><a href="/services">View all services...</a></p>
+        <div class="detail__content">
+            <h2>We offer both package and bespoke services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci alias doloremque ea earum eius
+                esse eum fugit impedit ipsam ipsum neque, quam quasi qui, quibusdam, reiciendis rerum voluptas
+                voluptate?</p>
+            <p>
+                <a href="/services" class="button" ui-please-wait>Our Services</a>
+            </p>
         </div>
-
-    </div>
-</div>
-
-<section class="wrapper clients">
-    <div class="container">
-        <h3 class="section-title">Some of the Companies we've worked with...</h3>
-        <div class="client__list">
-            <figure class="client__logo"><img src="/content/logos/2-kleinwort-benson.jpg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/butterfield-logo-black.png" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/7e653b4e7c93specsavers.jpg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/36_img_28052014_1111STEP_Guernsey.jpg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/images.jpeg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/betway.png" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/creditsuisse.jpg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/download%20(1).jpeg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/download%20(1).png" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/download%20(2).jpeg" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/download%20(2).png" alt=""></figure>
-            <figure class="client__logo"><img src="/content/logos/download%20(3).jpeg" alt=""></figure>
+        <div class="detail__img detail__img--right">
+            <img src="/content/home-03.jpg" alt="">
         </div>
     </div>
 </section>
@@ -115,3 +79,25 @@ description: >
         </div>
     </div>
 </section>
+
+<div class="wrapper clients">
+    <div class="container">
+        <h3 class="section-title">Some of the Companies we've worked with...</h3>
+        <div class="client__list">
+            <figure class="client__logo"><img src="/content/logos/2-kleinwort-benson.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/butterfield-logo-black.png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/7e653b4e7c93specsavers.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/36_img_28052014_1111STEP_Guernsey.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/images.jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/betway.png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/creditsuisse.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(1).jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(1).png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(2).jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(2).png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(3).jpeg" alt=""></figure>
+        </div>
+    </div>
+</div>
+
+
