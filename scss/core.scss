@@ -8,7 +8,7 @@
 @import "theme/layout";
 @import "theme/tables";
 @import "theme/fonts";
-@import "base/headings.scss";
+@import "base/headings";
 //@import "theme/typography";
 @import "theme/helpers";
 @import "theme/buttons";
@@ -34,8 +34,8 @@
 @import "theme/cards";
 @import "theme/service-list";
 @import "theme/service";
-
 @import "theme/faq";
+@import "theme/banner";
 
 $pswp__assets-path: '/photoswipe/default-skin/';
 
@@ -52,6 +52,8 @@ $pswp__assets-path: '/photoswipe/default-skin/';
 @import "theme/footer";
 @import "theme/social";
 @import "theme/footer-nav";
+@import "theme/misc";
+
 
 svg {
 

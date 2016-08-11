@@ -37,31 +37,70 @@ description: >
     </div>
 </section>
 
-<section class="wrapper detail">
+<div class="wrapper banner">
     <div class="container">
-        <div class="detail__img">
-            <img src="/content/home-01.jpg" alt="">
+        <h3 class="section-title">Photo booths, Event Photography & much more</h3>
+        <div class="banner__items">
+            <a class="banner__item" href="/services/photo-booths">
+                <figure class="banner__img">
+                    <img src="/content/photo-booths/the-pod/service-thumb.jpg" alt="">
+                </figure>
+                <div class="banner__overlay">
+                    <p class="banner__title">Photo Booths</p>
+                    <p class="banner__tagline">from £525.00</p>
+                </div>
+            </a>
+            <a class="banner__item" href="/services/event-photography">
+                <figure class="banner__img">
+                    <img src="/content/event-photography/service-thumb.jpg" alt="">
+                </figure>
+                <div class="banner__overlay">
+                    <p class="banner__title">Event Photography</p>
+                    <p class="banner__tagline">from £70.00</p>
+                </div>
+            </a>
+            <a class="banner__item" href="/services/the-wall">
+                <figure class="banner__img">
+                    <img src="/content/the-wall/service-thumb.jpg" alt="">
+                </figure>
+                <div class="banner__overlay">
+                    <p class="banner__title">The Wall</p>
+                    <p class="banner__tagline">from £750.00</p>
+                </div>
+            </a>
         </div>
-        <div class="detail__content">
-            <h2>We offer both package and bespoke services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci alias doloremque ea earum eius
-                esse eum fugit impedit ipsam ipsum neque, quam quasi qui, quibusdam, reiciendis rerum voluptas
-                voluptate?</p>
-            <p>
-                <a href="/services" class="button" ui-please-wait>Our Services</a>
-            </p>
+        <div class="banner__cta">
+            <p><a href="/services">View all services...</a></p>
         </div>
-        <div class="detail__img detail__img--right">
-            <img src="/content/home-02.jpg" alt="">
+
+    </div>
+</div>
+
+<section class="wrapper clients">
+    <div class="container">
+        <h3 class="section-title">Some of the Companies we've worked with...</h3>
+        <div class="client__list">
+            <figure class="client__logo"><img src="/content/logos/2-kleinwort-benson.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/butterfield-logo-black.png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/7e653b4e7c93specsavers.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/36_img_28052014_1111STEP_Guernsey.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/images.jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/betway.png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/creditsuisse.jpg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(1).jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(1).png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(2).jpeg" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(2).png" alt=""></figure>
+            <figure class="client__logo"><img src="/content/logos/download%20(3).jpeg" alt=""></figure>
         </div>
     </div>
 </section>
 
 <section class="wrapper upsell">
     <div class="container">
-        <h1 class="page-title">
+        <h4 class="section-title">
             What our customers are saying about us...
-        </h1>
+        </h4>
         <div class="cards cards--carousel" id="testimonial-cards">
             {{#each $$.testimonials}}
             <div class="card">

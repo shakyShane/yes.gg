@@ -503,6 +503,9 @@ h3 {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
 
+a {
+  color: #000; }
+
 .wrapper {
   padding: 24px 0; }
 
@@ -1416,6 +1419,62 @@ h6, .h6 {
 .breadcrumb__item--current {
   color: #939296; }
 
+@media only screen and (min-width: 960px) {
+  .banner {
+    padding-top: 72px;
+    padding-bottom: 72px; }
+    .banner .section-title {
+      margin-bottom: 48px; } }
+
+.banner__items:before, .banner__items:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.banner__items:after {
+  clear: both; }
+
+.banner__item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.has-mouse .banner__item:hover .banner__title {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 640px) {
+    .banner__item {
+      float: left;
+      width: 33.333%; } }
+
+.banner__img {
+  font-size: 0; }
+
+.banner__overlay {
+  padding: 12px 0 12px;
+  width: 100%; }
+
+.banner__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+.banner__tagline {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #939296;
+  margin-bottom: 0; }
+
+.banner__cta {
+  padding-top: 24px;
+  text-align: center; }
+
 /*! Flickity v1.2.1
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -1972,6 +2031,62 @@ http://flickity.metafizzy.co
 
 .faq__answer {
   margin-bottom: 48px; }
+
+@media only screen and (min-width: 960px) {
+  .banner {
+    padding-top: 72px;
+    padding-bottom: 72px; }
+    .banner .section-title {
+      margin-bottom: 48px; } }
+
+.banner__items:before, .banner__items:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.banner__items:after {
+  clear: both; }
+
+.banner__item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.has-mouse .banner__item:hover .banner__title {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 640px) {
+    .banner__item {
+      float: left;
+      width: 33.333%; } }
+
+.banner__img {
+  font-size: 0; }
+
+.banner__overlay {
+  padding: 12px 0 12px;
+  width: 100%; }
+
+.banner__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+.banner__tagline {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #939296;
+  margin-bottom: 0; }
+
+.banner__cta {
+  padding-top: 24px;
+  text-align: center; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
@@ -2951,6 +3066,46 @@ a.pswp__share--download:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; } }
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 24px; }
+
+.clients {
+  border-top: 1px solid #f2f2f2; }
+
+@media only screen and (min-width: 960px) {
+    .clients {
+      padding-top: 72px;
+      padding-bottom: 72px; }
+      .clients .section-title {
+        margin-bottom: 48px; } }
+
+.client__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.client__logo {
+  width: 33.3333%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 24px; }
+
+@media only screen and (min-width: 640px) {
+    .client__logo {
+      width: 16.6666%;
+      padding-left: 24px;
+      padding-right: 24px; } }
+
+.client__logo:nth-child(4n+1) {
+    clear: both; }
 
 svg {
   display: inline-block;

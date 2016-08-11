@@ -69,3 +69,12 @@ h3 {
         transform: translateY(0);
     }
 }
+
+a {
+    color: $black;
+    .has-mouse & {
+        &:hover {
+            //text-decoration: un;
+        }
+    }
+}
