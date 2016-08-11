@@ -1,16 +1,38 @@
-<div class="wrapper">
+---
+title: About YES
+breadcrumbs:
+    - label: Home
+      url: /
+lede: >
+    YES is a <strong>premium</strong> events and entertainments business specialising in supplying
+    <strong>high quality</strong>, interactive entertainments for corporate or private customers in the
+    <strong>Channel Islands</strong>.
+blocks:
+    - If it’s fun and games you are looking for to enhance your next special event then we will be delighted to help.
+    - >
+        The website shows some entertainment ideas for every kind of occasion, be it for
+        promotion of your company, corporate event, proms, summer or winter balls or a
+        wedding.  If you don’t see what you are looking for or have a special theme in mind
+        please contact us and we will endeavor to help you.
+    - Please contact our team regarding your event and entertainment requirements.
+    - At YES, we work hard to create unforgettable events.
+---
+
+<div class="wrapper skinny">
     <div class="container">
+        {{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage="About"}}
         <h1>{{page.title}}</h1>
-        <p>This Page will provide general Company information</p>
+        <p class="lede">
+            {{{page.lede}}}
+        </p>
+        {{#each page.blocks}}
+            <p>{{this}}</p>
+        {{/each}}
+        <p class="cta">
+            <a href="/services" ui-please-wait class="button">View Our Services</a>
+        </p>
     </div>
 </div>
 
-<div class="wrapper breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb__items">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
-            <li class="breadcrumb__item breadcrumb__item--current">About</li>
-        </ul>
-    </div>
-</div>
+
 

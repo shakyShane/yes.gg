@@ -2120,6 +2120,10 @@ http://flickity.metafizzy.co
 .client__logo:nth-child(4n+1) {
     clear: both; }
 
+.skinny {
+  max-width: 600px;
+  margin: 0 auto; }
+
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 
 /*
