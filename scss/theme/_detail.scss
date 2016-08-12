@@ -22,7 +22,7 @@
 
     flex: 1;
 
-    @include media-query(min, $lap-start) {
+    @include media-query(min, $desk-start) {
         width: 70%;
         padding-left: $base-spacing;
         padding-right: $base-spacing;

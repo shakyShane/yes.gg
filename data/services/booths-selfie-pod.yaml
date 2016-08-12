@@ -30,7 +30,7 @@ features:
   - A friendly pod attendant to assist with the pod
 extras:
   - title: Additional Hour
-    content: 4 hours (instead of 3)
+    content: Additional Hour (4 hours instead of 3)
     price:
       type: 'toggle'
       value: 80
