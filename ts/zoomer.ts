@@ -5,6 +5,19 @@ const PhotoSwipe = require('photoswipe');
 const PhotoswipeUIDefault = require('photoswipe/dist/photoswipe-ui-default');
 
 export default function () {
+
+    // snapchat icon
+    $('.social__link--snapchat').click(function (evt) {
+        evt.preventDefault();
+        console.log(this.href);
+        const item = {
+            src: this.href,
+            h: 863,
+            w: 863
+        };
+        initGallery([item], 0, this);
+    });
+
     const $linkItems = $('.gallery__link');
 
     if (!$linkItems.length) return;
@@ -23,6 +36,8 @@ export default function () {
         initGallery(items, index, this);
     });
 }
+
+
 
 function initGallery (items, index, elem) {
     const gallery = new PhotoSwipe(

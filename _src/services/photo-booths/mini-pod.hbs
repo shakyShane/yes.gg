@@ -1,6 +1,5 @@
 ---
-description: >
-    Mini-pod, for kids parties
+description: Our Mini-pod is the perfect choice for kids parties
 cta: true
 features: mini-pod-features
 gallery:  mini-pod-gallery
@@ -11,6 +10,8 @@ breadcrumbs:
       url: /services
     - label: Photo Booths
       url: /services/photo-booths
+og:
+    image: /content/photo-booths/mini-pod/service-thumb.jpg
 ---
 
 {{inc src="hero.hbs" service=$$.services.booths-mini-pod}}
@@ -58,7 +59,7 @@ breadcrumbs:
                 <p class="card__title">{{$$.services.booths-mini-pod-01.title}}</p>
                 <ul class="card__feature-list">
                     {{#each $$.services.booths-mini-pod-01.features}}
-                        <li>{{this}}</li>
+                        <li>{{{this}}}</li>
                     {{/each}}
                 </ul>
                 <div class="card__cta card__cta--bottom">
@@ -72,7 +73,7 @@ breadcrumbs:
                 <p class="card__title">{{$$.services.booths-mini-pod-02.title}}</p>
                 <ul class="card__feature-list">
                     {{#each $$.services.booths-mini-pod-02.features}}
-                        <li>{{this}}</li>
+                        <li>{{{this}}}</li>
                     {{/each}}
                 </ul>
                 <div class="card__cta card__cta--bottom">

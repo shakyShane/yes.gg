@@ -14,7 +14,11 @@
     <!-- CSS Includes (PRODUCTION) -->
     <link rel="stylesheet" href="/css/core.min.{{hash src="public/css/core.min.css"}}.css"/>
 
-    <meta property="og:image" content="/img/logo.svg"/>
+    {{#if page.og.image}}
+        <meta property="og:image" content="{{page.og.image}}"/>
+    {{else}}
+        <meta property="og:image" content="/img/logo.svg"/>
+    {{/if}}
 
 </head>
 

@@ -1,6 +1,5 @@
 ---
-description: >
-    The Pod, for adults
+description: The Selfie Pod - Great fun for any event
 cta: true
 features: selfie-pod-features
 gallery:  selfie-pod-gallery
@@ -12,6 +11,8 @@ breadcrumbs:
       url: /services
     - label: Photo Booths
       url: /services/photo-booths
+og:
+    image: /content/photo-booths/selfie-pod/service-thumb.jpg
 ---
 
 {{inc src="hero.hbs" service=$$.services.booths-selfie-pod}}
@@ -45,12 +46,10 @@ breadcrumbs:
                 <a data-scroll href="#{{page.faq}}" class="button button--alt">FAQ</a>
             </p>
         </div>
-
     </div>
 </section>
 
 {{inc src="features.hbs" feature=$$.services.booths-selfie-pod id=page.features}}
-
 {{inc src="faq.hbs" faq=$$.services.booths-selfie-pod.faq}}
 
 

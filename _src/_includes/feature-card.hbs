@@ -2,7 +2,7 @@
     <p class="card__title">{{feature.title}} - Features:</p>
     <ul class="card__feature-list">
         {{#each feature.features}}
-            <li>{{this}}</li>
+            <li>{{{this}}}</li>
         {{/each}}
     </ul>
     {{#if feature.prices}}
