@@ -1,0 +1,30 @@
+title: "DJ Services"
+slug: "dj"
+id: "11"
+icon: "headphones"
+hero:
+  palm: "/content/dj/hero-01.jpg"
+  large: "/content/dj/hero-01.jpg"
+url: "/services/dj"
+tagline: >
+  Professional DJ Services
+lede: Josh has been in the local DJ scene for 5 years, 3 of which he's been a resident DJ at a local bar and Nightclub.
+desc: >
+    He knows exactly how to get your guests busting a groove on the dance floor and singing like there's no tomorrow!
+price:
+  content: each
+  value: 30
+  type: toggle
+features:
+    - 14 mega pixel compact digital camera
+    - SD memory card which can hold up to 160 photos
+    - 6 x 4 print of all photos taken
+    - a usb stick containing all the photos
+    - An online gallery on our website with free download
+extras:
+  - title: Additional Cameras
+    content: Additional Cameras
+    price:
+      content: 'Each'
+      value: 30
+      type: qty

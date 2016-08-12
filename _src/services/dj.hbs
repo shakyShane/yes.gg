@@ -1,0 +1,32 @@
+---
+description: >
+    DJ Services
+cta: true
+features: dj-features
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+---
+
+{{inc src="hero.hbs" service=$$.services.dj}}
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.dj.title}}
+
+<section class="wrapper detail">
+    <div class="container">
+        <div class="detail__img">
+            <img src="/content/dj/JV200_FRONT_OPEN_S.png" alt="">
+        </div>
+        <div class="detail__content">
+            <h2>{{{$$.services.dj.title}}}</h2>
+            <p class="lede">{{{$$.services.dj.lede}}}</p>
+            <p>{{$$.services.dj.desc}}</p>
+            <p>
+                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+{{inc src="features.hbs" feature=$$.services.dj id=page.features}}
