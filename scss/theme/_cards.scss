@@ -253,7 +253,9 @@
     }
 }
 
-.gallery {}
+.gallery {
+    font-size: 0;
+}
 .gallery--inline {
     margin-bottom: $base-spacing;
 }
@@ -270,13 +272,13 @@
 
 .gallery__link {
     font-size: 0;
-    display: inline-block;
-    //max-width: 100px;
     width: 100px;
     height: 65px;
     overflow: hidden;
     margin: 0;
     display: none;
+
+    padding: 4px 2px;
 
     &:nth-child(-n+11) {
         display: inline-block;

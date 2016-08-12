@@ -869,6 +869,7 @@ h6, .h6 {
   margin-bottom: 0; }
 
 .contact {
+  -webkit-font-smoothing: antialiased;
   background: #000;
   color: #FFF;
   background: #000 url(/img/footer-bg.svg) no-repeat -100px 0; }
@@ -1804,6 +1805,9 @@ http://flickity.metafizzy.co
       text-align: left;
       width: 30%; } }
 
+.gallery {
+  font-size: 0; }
+
 .gallery--inline {
   margin-bottom: 24px; }
 
@@ -1817,12 +1821,12 @@ http://flickity.metafizzy.co
 
 .gallery__link {
   font-size: 0;
-  display: inline-block;
   width: 100px;
   height: 65px;
   overflow: hidden;
   margin: 0;
-  display: none; }
+  display: none;
+  padding: 4px 2px; }
 
 .gallery__link:nth-child(-n+11) {
     display: inline-block; }
@@ -2979,7 +2983,7 @@ a.pswp__share--download:hover {
       -ms-flex: 1;
           flex: 1; }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 960px) {
     .detail__content {
       width: 70%;
       padding-left: 24px;
@@ -2988,7 +2992,8 @@ a.pswp__share--download:hover {
 .detail__img {
   font-size: 0;
   width: 100%;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  max-width: 456px; }
 
 .detail__img img {
     width: 100%;

@@ -141,3 +141,7 @@
         clear: both;
     }
 }
+
+@mixin antialias {
+    -webkit-font-smoothing: antialiased;
+}

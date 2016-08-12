@@ -1,5 +1,6 @@
 .contact {
 
+    @include antialias;
     background: $black;
     color: $white;
     background: $black url(/img/footer-bg.svg) no-repeat -100px 0;

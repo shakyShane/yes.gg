@@ -8,25 +8,33 @@ breadcrumbs:
       url: /
     - label: Services
       url: /services
+thumb: /content/dj/service-thumb.jpg
+gallery: "dir:public/content/dj/gallery"
 ---
 
-{{inc src="hero.hbs" service=$$.services.dj}}
 {{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.dj.title}}
 
 <section class="wrapper detail">
     <div class="container">
-        <div class="detail__img">
-            <img src="/content/dj/JV200_FRONT_OPEN_S.png" alt="">
+        <div class="detail__img gallery" data-pswp-uid="1">
+            <div class="gallery__header">
+                <img src="{{page.thumb}}" alt="">
+            </div>
+            <div class="gallery__hint">Click to zoom</div>
+            {{#imgs src=page.gallery rel="public"}}
+                <a class="gallery__link" href="{{this.large.src}}"
+                   data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                    <figure><img src="{{this.thumb.src}}" alt=""></figure>
+                </a>
+            {{/imgs}}
         </div>
         <div class="detail__content">
             <h2>{{{$$.services.dj.title}}}</h2>
             <p class="lede">{{{$$.services.dj.lede}}}</p>
             <p>{{$$.services.dj.desc}}</p>
             <p>
-                <a data-scroll href="#{{page.features}}" class="button button--alt">Prices and Features</a>
+                <a ui-please-wait href="/contact" class="button button--alt">Contact us for Prices</a>
             </p>
         </div>
     </div>
 </section>
-
-{{inc src="features.hbs" feature=$$.services.dj id=page.features}}
