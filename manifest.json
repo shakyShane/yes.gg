@@ -1,15 +1,15 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "bf811867e892dccfda2eaf344f02603b2084688c46bef198e0c6fc7ec7496a73",
+    "hash": "60a4d0c2179ed600cd0e731fc7dda224add402b3c19633a79846fe7f274251e6",
     "tree": [
       {
         "path": "about",
-        "hash": "fd0bd773ae04560d839a15a9023ff7df1a429cdbdb6788bdaf7ec3c8e4a93476",
+        "hash": "173234bb253edae7f732285cc5fd449014ca92cd86505e89ce8073f9648c0716",
         "tree": [
           {
             "path": "about/index.html",
-            "hash": "3bbe872d7055ddef722bb8692fde08015b22e592109d977cfb7ffd29347bc462"
+            "hash": "2b120ae8a9aa75926b7815d5459c7f6630fed78bf81009d2cf3a54e1a23fc3a9"
           }
         ]
       },
@@ -25,17 +25,17 @@
       },
       {
         "path": "contact",
-        "hash": "166c4206069e1c4367df8bc7818216be6b02617e0b193db7da00fba2780499de",
+        "hash": "d99bb22e1871aa4e21055fe27a48b1ef0ec6fee2571c5904e1e67931d37ec12e",
         "tree": [
           {
             "path": "contact/index.html",
-            "hash": "5c3a7a1933cf9e828aa21d49f2a696159caaf131b5bbccf198bb26cdadc73b6b"
+            "hash": "230418eba21fade1df2ccb7df48e2450463a36cb06cdc169813a5617b6d59f52"
           }
         ]
       },
       {
         "path": "index.html",
-        "hash": "064104dc16c2717ef02e4cc793d2d31065475126248560443e52108a235c02c9"
+        "hash": "ea19ec26a3a4680c0daea42d51a71a7247f8db1333574eab0e79f371c4864f40"
       },
       {
         "path": "markup",
@@ -178,7 +178,7 @@
         ]
       }
     ],
-    "date": "August 12th 2016, 10:18:16 pm"
+    "date": "August 12th 2016, 10:32:09 pm"
   },
   "public/css": {
     "path": "public/css",
