@@ -1,3 +1,6 @@
+config:
+  progress: true
+
 watch:
   default:
     before:
