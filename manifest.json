@@ -1,7 +1,7 @@
 {
   "public-html": {
     "path": "public-html",
-    "hash": "215120cd3fceb641f5c7f61f63c7b8a95e817df141748e41fcb090a218740d29",
+    "hash": "e805ee136a14aa263225ca86152d33d2310c686526f0f56b1ed6fb7cd7e7ce5c",
     "tree": [
       {
         "path": "about",
@@ -35,7 +35,7 @@
       },
       {
         "path": "index.html",
-        "hash": "4d1992d245a51a535b3dd01ead4d3fee0110f132d8b191ca2989df3e7cff3337"
+        "hash": "bc47e28f2f9fbec43cc3313279221aa2338637dfb81b79a64f12b78ecf492e81"
       },
       {
         "path": "markup",
@@ -178,7 +178,7 @@
         ]
       }
     ],
-    "date": "August 14th 2016, 10:59:03 am"
+    "date": "August 14th 2016, 11:10:31 am"
   },
   "public/css": {
     "path": "public/css",
