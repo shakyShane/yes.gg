@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx:
     container_name: yes.gg
-    image: nginx:latest
+    image: donbeave/nginx-pagespeed:1.8.0-1
     ports:
       - 8080:80
     volumes:

@@ -1,6 +1,27 @@
+#
+#
+# Crossbow Config
+#
+#
 config:
   progress: true
 
+#
+#
+# Environment Vars
+#
+#
+env:
+  AUTH: root@178.62.100.243
+  DO_IP: 178.62.100.243
+  DO_USER: root
+  DOCKER_NAME: yes.gg
+
+#
+#
+# Environment Vars
+#
+#
 watch:
   default:
     before:
@@ -10,8 +31,13 @@ watch:
       - crossbow
       - bs --reload
     scss:
-      - crossbow-sass --production
+      - crossbow-sass
 
+#
+#
+# Crossbow Tasks
+#
+#
 tasks:
 
   build-all:
@@ -25,8 +51,9 @@ tasks:
       - _merkle
 
   build-css:
-    - crossbow-sass
-    - crossbow-sass --production
+    description: Wipe compiled files & re-create HTML/JS/CSS
+    tasks:
+      - crossbow-sass
 
   build-js:
     - webpack
@@ -70,14 +97,17 @@ tasks:
       - >
         @sh rsync -rav
         public public-html docker-compose.yaml nginx.conf manifest.json
-        $AUTH:~/yes.gg --delete
+        $AUTH:~/$DOCKER_NAME --delete
 
   docker-remote: >
-    @sh ssh $AUTH 'cd yes.gg && docker-compose restart'
+    @sh ssh $AUTH "cd $DOCKER_NAME && docker-compose restart"
 
   open:
     description: Open the live site for previewing
     input: '@sh open http://$DO_IP'
+
+  reload-nginx:
+    - '@sh docker exec $DOCKER_NAME nginx -s reload'
 
   clean:
     description: Wipe built assets (html/js/css)
@@ -85,14 +115,12 @@ tasks:
       @sh rm -rf
       public-html/**
       public/js/**
-      public/css/core.min.css
-      public/css/core.min.css.map
 
-env:
-  AUTH: root@178.62.100.243
-  DO_IP: 178.62.100.243
-  DO_USER: root
-
+#
+#
+# Crossbow Task options
+#
+#
 options:
 
   crossbow:
