@@ -33,7 +33,7 @@
 {{#if_eq env 'dev'}}
 <script src="/js/bundle.js"></script>
 {{else}}
-<script src="{{$assets.bundle}}"></script>
+<script async src="{{$assets.bundle}}"></script>
 {{/if_eq}}
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </body>
