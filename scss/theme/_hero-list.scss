@@ -167,15 +167,22 @@
 // Summary is the serif line below the title
 // -----------------------------------------
 .hero__summary {
-    //font-family: $serif;
-    //color: $orange;
 
     font-size: 1.8rem;
     line-height: 29px;
-
     max-width: 660px;
     margin: 0 auto;
     margin-bottom: $base-spacing;
+
+    br {
+        display: none;
+    }
+
+    @include media-query(min, $desk-start) {
+        br {
+            display: block;
+        }
+    }
 }
 
 // -------------------------------------

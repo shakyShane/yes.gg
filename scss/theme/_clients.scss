@@ -13,11 +13,11 @@
 }
 
 .client__list {
-    //@include clearfix;
     background: $white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
     @include media-query(min, $desk-start) {
         padding: $half-spacing;
     }
@@ -25,12 +25,16 @@
 
 .client__logo {
 
-    width: 33.3333%;
+    width: 50%;
     padding: $half-spacing;
 
     @include media-query(min, $lap-start) {
-        width: 16.6666%;
+        width: 25%;
         padding: $base-spacing;
+    }
+
+    @include media-query(min, $desk-start) {
+        width: 16.6666%;
     }
 
     &:nth-child(4n+1) {

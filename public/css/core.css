@@ -2113,13 +2113,17 @@ http://flickity.metafizzy.co
       padding: 12px; } }
 
 .client__logo {
-  width: 33.3333%;
+  width: 50%;
   padding: 12px; }
 
 @media only screen and (min-width: 640px) {
     .client__logo {
-      width: 16.6666%;
+      width: 25%;
       padding: 24px; } }
+
+@media only screen and (min-width: 960px) {
+    .client__logo {
+      width: 16.6666%; } }
 
 .client__logo:nth-child(4n+1) {
     clear: both; }
@@ -2942,6 +2946,13 @@ a.pswp__share--download:hover {
   max-width: 660px;
   margin: 0 auto;
   margin-bottom: 24px; }
+
+.hero__summary br {
+    display: none; }
+
+@media only screen and (min-width: 960px) {
+    .hero__summary br {
+      display: block; } }
 
 .hero__cta {
   margin: 0 auto; }
