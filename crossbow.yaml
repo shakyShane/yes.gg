@@ -78,7 +78,9 @@ tasks:
     - '@npm webpack --config webpack-prod.config.js'
 
   build-html:
-    - crossbow --production
+    if: ['_src']
+    tasks:
+      - crossbow --production
 
   _merkle:
     - merkle --dir public-html

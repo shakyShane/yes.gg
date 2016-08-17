@@ -5,3 +5,4 @@ node_modules
 /public/css/core.min.css.map
 /public/js/
 .DS_Store
+/.crossbow

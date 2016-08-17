@@ -1,5 +1,7 @@
 title: Your Event Solutions
 description: Some Awesome Title
+form:
+  formspree: https://formspree.io/yes@suremail.gg
 contact:
   T:
     title: Telephone
