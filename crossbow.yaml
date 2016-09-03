@@ -63,6 +63,7 @@ tasks:
     tasks:
       - build-html
       - _merkle
+      - rsync
       - docker-remote
       - open
 
