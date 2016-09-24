@@ -51,7 +51,7 @@ tasks:
       - _merkle
 
   build-css:
-    description: Wipe compiled files & re-create HTML/JS/CSS
+    description: Build production ready CSS files
     tasks:
       - crossbow-sass
 

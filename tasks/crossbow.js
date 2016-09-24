@@ -1,5 +1,5 @@
 var vfs = require('vinyl-fs');
-var crossbow = require('crossbow');
+var crossbow = require('crossbow-sites');
 
 module.exports = function (opts) {
     if (opts.production) {
