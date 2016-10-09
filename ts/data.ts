@@ -31,6 +31,30 @@ export default function getData(): ServiceGroups {
         };
     });
 
+    const chairs = yaml('giant-deck-chairs.yaml');
+    const chairItems = chairs.prices.map(function (item) {
+        const title = `${chairs.title} - ${item.content}`;
+        if (item.type === 'qty') {
+            return {
+                title: title,
+                price: item,
+                extras: [
+                    {
+                        "title": "Additional Chairs",
+                        "content": "Additional Chairs",
+                        "price": {
+                            "content": "Each",
+                            "value": 6,
+                            "type": "qty"
+                        }
+                    }
+                ]
+            };
+        }
+
+        return {title, price: item, extras: []};
+    });
+
     const out = <ServiceGroups>{
         "photoBooths": {
             title: "Photo Booths",
@@ -51,7 +75,8 @@ export default function getData(): ServiceGroups {
                 yaml('camera-hire.yaml'),
                 yaml('magical-mirror.yaml'),
                 yaml('the-wall.yaml'),
-                ...items
+                ...items,
+                ...chairItems
             ]
                 .map(applyId)
                 .map(applyIdsToExtras)

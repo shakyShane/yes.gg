@@ -13,10 +13,17 @@ desc: >
   The fun begins when they start to try and climb in and realise how giant they really are.
   It makes a fabulous photo opportunity for your guests, perfect for sharing on social media
   and a fantastic talking point.
-price:
-  content: each
-  value: 25
-  type: toggle
+
+prices:
+  - content: Full Day Hire
+    value: 125
+    type: toggle
+  - content: Full Day Hire (2 chairs)
+    value: 200
+    type: toggle
+  - content: Regular Deck Chairs
+    value: 6
+    type: qty
 
 faq:
   - q: Colours

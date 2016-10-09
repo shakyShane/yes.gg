@@ -103,8 +103,9 @@ tasks:
         public public-html docker-compose.yaml nginx.conf manifest.json
         $AUTH:~/$DOCKER_NAME --delete
 
-  docker-remote: >
-    @sh ssh $AUTH "cd $DOCKER_NAME && docker-compose restart"
+  docker-remote:
+    - '@sh ssh $AUTH "cd $DOCKER_NAME && docker-compose restart"'
+    - '@sh ssh $AUTH "docker exec $DOCKER_NAME rm -rf /var/ngx_pagespeed_cache"'
 
   open:
     description: Open the live site for previewing
