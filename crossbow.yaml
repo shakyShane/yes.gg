@@ -32,6 +32,7 @@ watch:
       - bs --reload
     scss:
       - crossbow-sass
+      - bs --reload *.css
 
 #
 #

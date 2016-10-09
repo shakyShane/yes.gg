@@ -1,0 +1,38 @@
+title: "Giant Deck Chairs"
+slug: "giant-deck-chairs"
+id: "12"
+icon: "deck-chairs"
+hero:
+  palm: "/content/camera-hire/hero-01.jpg"
+  large: "/content/camera-hire/hero-01.jpg"
+url: "/services/giant-deck-chairs"
+lede: This is a fantastic fun prop that is perfect for your next event, all your guests will love the Deck Chairs.
+tagline: >
+  Tagline about the deckchairs
+desc: >
+  The fun begins when they start to try and climb in and realise how giant they really are.
+  It makes a fabulous photo opportunity for your guests, perfect for sharing on social media
+  and a fantastic talking point.
+price:
+  content: each
+  value: 25
+  type: toggle
+
+faq:
+  - q: Colours
+    a: >
+      Red and White Stripes and Blue and White Stripes
+  - q: Equipment size
+    a: >
+      1.57m wide x 2.30m deep x 2.10m high seat height 0.91m
+  - q: Operational Area Required
+    a: >
+      2.57m wide x 3.30m deep
+  - q: Recommend minimum age
+    a: >
+      5 years and over
+  - q: Access requirements
+    a: >
+      Please note that a width of .82m is required when moving the equipment
+      through doorways and corridors.  If required indoors please contact us and we can do a venue check
+      to see if the room is suitable.

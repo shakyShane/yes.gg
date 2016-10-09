@@ -1305,9 +1305,11 @@ h6, .h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .quick-nav__item {
   display: block;
@@ -1329,12 +1331,31 @@ h6, .h6 {
 
 @media only screen and (min-width: 640px) {
     .quick-nav__item {
+      padding-left: 12px;
+      padding-right: 12px;
       display: block;
-      width: auto;
+      width: 130px;
       border-bottom: 0; }
       .has-mouse .quick-nav__item:hover {
         -webkit-transform: scale(1.1);
                 transform: scale(1.1); } }
+
+@media only screen and (min-width: 960px) {
+    .quick-nav__item:nth-child(n+7) {
+      display: none; }
+    .quick-nav__item:last-child {
+      display: block; } }
+
+@media only screen and (min-width: 1160px) {
+    .quick-nav__item {
+      width: 150px; } }
+
+.quick-nav__item--more {
+  display: none; }
+
+@media only screen and (min-width: 960px) {
+    .quick-nav__item--more {
+      display: block; } }
 
 .quick-nav__item__icon {
   display: block; }
@@ -2024,6 +2045,13 @@ http://flickity.metafizzy.co
 
 .faq .section-title {
   margin-bottom: 24px; }
+
+.page-giant-deck-chairs .faq > .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.page-giant-deck-chairs .faq .section-title {
+  text-align: left; }
 
 .faq__question {
   margin-bottom: 12px; }

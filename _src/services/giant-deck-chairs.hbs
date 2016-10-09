@@ -1,0 +1,48 @@
+---
+description: This is a fantastic fun prop that is perfect for your next event, all your guests will love the Deck Chairs.
+cta: true
+features: giant-deck-chairs
+breadcrumbs:
+    - label: Home
+      url: /
+    - label: Services
+      url: /services
+thumb: /content/giant-deck-chairs/service-thumb-01.jpg
+gallery: "dir:public/content/giant-deck-chairs/gallery"
+og:
+    image: /content/giant-deck-chairs/service-thumb.jpg
+---
+
+{{inc src="breadcrumbs.hbs" items=page.breadcrumbs currentPage=$$.services.giant-deck-chairs.title}}
+
+<section class="wrapper detail">
+    <div class="container">
+        <div class="detail__img gallery" data-pswp-uid="1">
+            <div class="gallery__header">
+                <img src="{{page.thumb}}" alt="">
+            </div>
+            <div class="gallery__hint">Click to zoom</div>
+            {{#imgs src=page.gallery rel="public"}}
+                <a class="gallery__link" href="{{this.large.src}}"
+                   data-width="{{this.large.width}}" data-height="{{this.large.height}}">
+                    <figure><img src="{{this.thumb.src}}" alt=""></figure>
+                </a>
+            {{/imgs}}
+        </div>
+        <div class="detail__content">
+            <h2>{{{$$.services.giant-deck-chairs.title}}}</h2>
+            <p class="lede">{{{$$.services.giant-deck-chairs.lede}}}</p>
+            <p>{{$$.services.giant-deck-chairs.desc}}</p>
+            <p class="card__price">
+                Full Day Hire: <strong>£125.00 each delivered</strong> (£200.00 for 2)
+            </p>
+            <p class="card__price">
+                Regular Deck Chairs, Full Day Hire: <strong>£6.00 each</strong>
+            </p>
+            <p>
+                <a href="/contact" class="button">Book now</a>
+            </p>
+            {{inc src="faq.hbs" faq=$$.services.giant-deck-chairs.faq}}
+        </div>
+    </div>
+</section>
