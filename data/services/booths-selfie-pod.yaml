@@ -19,8 +19,7 @@ price:
   value: 350
   type: toggle
 features:
-  - Takes up to five people
-  - Price includes up to 4 hours unlimited pod use
+  - Price includes up to 3 hours unlimited pod use
   - Unlimited photos in colour or black and white
   - Choice of Background Colour
   - Box of props (hats, wigs, glasses, etc.)
@@ -29,11 +28,11 @@ features:
   - Personalised message or logo
   - A friendly pod attendant to assist with the pod
 extras:
-  - title: Additional Hour
-    content: Additional Hour (4 hours instead of 3)
+  - title: Additional Hours
+    content: Additional Hours
     price:
-      type: 'toggle'
       value: 80
+      type: qty
   - title: "Memory Album"
     content: Memory album takes up to 120 photos for your guests to leave their personalised messages
     price:
@@ -45,14 +44,9 @@ extras:
     price:
       value: 60
       type: qty
-  - title: Additional Hours
-    content: Additional Hours
-    price:
-      value: 80
-      type: qty
 
 faq:
-  - q: How do we hire the Photo Pod?
+  - q: How do we hire the Selfie Pod?
     a: >
       Either telephone us on 720007 or 07781 104851 or drop us an email, we will check the date is available and advise
       you accordingly. We will then send you a booking form by email or post this needs to be returned as soon as possible
@@ -60,37 +54,37 @@ faq:
 
   - q: What are the Venue requirements?
     a: >
-      We require a flat level surface 2.3m x 1.5m x 2m high for the photo pod and access to a 13amp electricity socket
-      within 5 metres of the photo pod. The photo pod must be under cover.
+      We require a flat level surface 600mm x 1.2m x 2m high for the selfie pod and access to a 13amp electricity socket
+      within 5 metres of the selfie pod. The selfie pod must be under cover.
 
-  - q: How long does the Photo Pod run for?
+  - q: How long does the Selfie Pod run for?
     a: >
-      Standard hire is for up to 4 hours running time. Additional hours are available at £80.00 per hour which includes the additional prints.
+      Standard hire is for up to 3 hours running time. Additional hours are available at £80.00 per hour which includes the additional prints.
 
   - q: How long does it take to set up?
     a: >
       Set up takes 1 hour
 
-  - q: Who looks after the Photo Pod?
+  - q: Who looks after the Selfie Pod?
     a: >
-      All our Photo Pod's are supplied complete with an attendant who will not only set up the Photo Pod but stay in attendance
-      to assist, facilitate and ensure the Photo Pod runs smoothly.
+      All our Selfie Pod's are supplied complete with an attendant who will not only set up the Selfie Pod but stay in attendance
+      to assist, facilitate and ensure the Selfie Pod runs smoothly.
 
-  - q: Can you set the Photo Pod up early and return later on to run it?
+  - q: Can you set the Selfie Pod up early and return later on to run it?
     a: >
       We can arrange early set up before your guests arrival, providing it is in a secure area.
 
-  - q: How long does it take to dismantle and when do you dismantle the Photo Pod?
+  - q: How long does it take to dismantle and when do you dismantle the Selfie Pod?
     a: >
       It is dismantled at the end of your hire time and takes 45 minutes.
 
-  - q: How many people can fit in the Photo Pod?
+  - q: How many people can fit in the Selfie Pod?
     a: >
-      The Photo Pod takes 5 people
+      It is an open air booth
 
   - q: Can I have a choice of black and white or colour photos?
     a: >
-      Yes your guest can choose to have black and white or colour photos when they enter the Photo Pod.
+      Yes your guest can choose to have black and white or colour photos when they enter the Selfie Pod.
 
   - q: What quality are the photos and prints?
     a: >

@@ -2173,9 +2173,9 @@ gulplog@^1.0.0:
   dependencies:
     glogg "^1.0.0"
 
-"handlebars@git://github.com/shakyshane/hb-fork.git":
+"handlebars@git://github.com/shakyshane/hb-fork":
   version "2.0.0"
-  resolved "git://github.com/shakyshane/hb-fork.git#6ba2367794026fd0cdfbff809a58e62481c2b2c4"
+  resolved "git://github.com/shakyshane/hb-fork#6ba2367794026fd0cdfbff809a58e62481c2b2c4"
   dependencies:
     optimist "~0.3"
     source-map "^0.1.40"

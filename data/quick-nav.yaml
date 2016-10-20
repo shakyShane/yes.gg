@@ -8,11 +8,11 @@
   thumb: /content/event-photography/service-thumb.jpg
   url: "/services/event-photography"
   tagline: We offer a professional corporate event photography service capturing your event as it unfolds naturally.
-- title: "DJ Services"
-  icon: "headphones"
-  thumb: /content/dj/service-thumb.jpg
-  url: "/services/dj"
-  tagline: Professional DJ service
+#- title: "DJ Services"
+#  icon: "headphones"
+#  thumb: /content/dj/service-thumb.jpg
+#  url: "/services/dj"
+#  tagline: Professional DJ service
 - title: "The Wall"
   icon: "wall"
   url: "/services/the-wall"
