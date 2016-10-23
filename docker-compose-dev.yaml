@@ -5,6 +5,8 @@ services:
     image: donbeave/nginx-pagespeed:1.8.0-1
     ports:
       - 8080:80
+      - 8081:443
     volumes:
       - ./:/usr/share/nginx/html
       - ./nginx-dev.conf:/etc/nginx/conf.d/default.conf
+      - ./certs:/etc/letsencrypt
