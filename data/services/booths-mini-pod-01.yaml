@@ -26,5 +26,5 @@ features:
   - <strong>Photos printed at the event</strong>
 price:
   content: 'unlimited use'
-  value: 150
+  value: 200
   type: toggle
