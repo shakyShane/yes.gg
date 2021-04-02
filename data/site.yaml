@@ -3,9 +3,6 @@ description: Some Awesome Title
 form:
   formspree: https://formspree.io/yes@suremail.gg
 contact:
-  T:
-    title: Telephone
-    value: 01481 720007
   M:
     title: Mobile
     value: 07781 104851
