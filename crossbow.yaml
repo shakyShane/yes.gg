@@ -139,7 +139,7 @@ options:
       - _src/*.hbs
       - _src/services/*.hbs
       - _src/services/photo-booths/*.hbs
-    output: 'public-html'
+    output: 'public'
 
     data:
       $$: "all:data"

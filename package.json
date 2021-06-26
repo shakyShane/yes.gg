@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "watch": "crossbow watch",
-    "build-all": "crossbow build-all"
+    "build-all": "crossbow build-all",
+    "build": "crossbow build-all"
   },
   "devDependencies": {
     "ansispan": "0.0.4",
@@ -15,8 +16,8 @@
     "bs-html-injector": "3.0.2",
     "bs-latency": "1.0.0",
     "choo": "^3.0.2",
-    "crossbow": "^3.6.16",
-    "crossbow-sass": "4.0.3",
+    "crossbow": "^4.6.0",
+    "crossbow-sass": "^5.0.0",
     "crossbow-sites": "^1.0.1",
     "easy-svg": "1.0.5",
     "flickity": "1.2.1",
