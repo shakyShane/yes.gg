@@ -85,9 +85,7 @@ tasks:
       - crossbow --production
 
   _merkle:
-    - merkle --dir public-html
-    - merkle --dir public/css
-    - merkle --dir public/js
+    - merkle --dir public
 
   docker:
     description: Run docker-compose with **dev** config files
