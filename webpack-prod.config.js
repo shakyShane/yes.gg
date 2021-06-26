@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: __dirname + '/public/js',
         filename: '[name]-[hash].js',
-        publicPath: 'js/',
+        publicPath: '/js/',
         sourceMapFilename: '[name]-[hash].js.map'
     },
     devtool: 'sourcemap',
