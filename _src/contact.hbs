@@ -25,7 +25,7 @@ description: Tell us about your event, and which services you're interested in -
         <h2 class="card-title">Send us a message...</h2>
         <p class="card-description">Tell us about your event, and which services you're interested in - then we'll get back to you ASAP with availability details.</p>
 
-        <form action="{{$$.site.form.formspree}}" method="POST" class="validate-form">
+        <form netlify class="validate-form">
 
             <input type="hidden" name="_next" value="/thanks" />
             <input type="hidden" name="_subject" value="Submission from the yes.gg website!" />
