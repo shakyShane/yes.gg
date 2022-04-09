@@ -24,7 +24,7 @@
     "jquery": "3.0.0",
     "json-loader": "^0.5.4",
     "merkle-dir": "0.0.0",
-    "moment": "2.13.0",
+    "moment": "2.29.2",
     "normalize.css": "4.1.1",
     "photoswipe": "4.1.1",
     "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git#dd0553ff80213e42c47500f2e47843f53eebf289",
